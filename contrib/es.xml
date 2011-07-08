@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Share On - Spanish Tranlation]]></title>
+		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious or Technorati.]]></description>
+		<author-group>
+			<author>
+				<realname><![CDATA[Salva]]></realname>
+				<username><![CDATA[Saske1]]></username>
+				<homepage><![CDATA[http://www.phpbbsaske.zobyhost.com/foro/index.php]]></homepage>
+				<email><![CDATA[salva_bxt@hotmail.com]]></email>
+				<contributions-group>
+					<contributions status="current" from="2011-06-0" position="Developer"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>1.1.1</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>120</time>
+			<target-version>3.0.9</target-version>
+		</installation>
+		<link-group>
+			<link type="parent" href="../install.xml" lang="en">Main Install</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/styles/prosilver/imageset/es/share_on_buttons/*.*" to="styles/prosilver/imageset/es/share_on_buttons/*.*"/>
+			<file from="root/styles/subsilver2/imageset/es/share_on_buttons/*.*" to="styles/subsilver2/imageset/es/share_on_buttons/*.*"/>
+			<file from="root/language/es/mods/info_acp_shareon.php" to="language/es/mods/info_acp_shareon.php"/>
+		</copy>
+		<open src="language/es/common.php">
+			<edit>
+				<find><![CDATA[	'SETTINGS'	=> 'Preferencias',]]></find>
+				<action type="after-add"><![CDATA[	// Share On 1.1.1 MOD
+	'SHARE_ON_FACEBOOK'	=> 'Compartir en Facebook',
+	'SHARE_ON_TWITTER'	=> 'Compartir en Twitter',
+	'SHARE_ON_TUENTI'	=> 'Compartir en Tuenti',
+	'SHARE_ON_SONICO'	=> 'Compartir en Sonico',
+	'SHARE_ON_FRIENDFEED'	=> 'Compartir en FriendFeed',
+	'SHARE_ON_ORKUT'	=> 'Compartir en Orkut',
+	'SHARE_ON_DIGG'		=> 'Compartir en Digg',
+	'SHARE_ON_MYSPACE'	=> 'Compartir en MySpace',
+	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
+	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
+	// Share On 1.1.1 MOD]]></action>
+			</edit>
+		</open>
+	</action-group>
+</mod>

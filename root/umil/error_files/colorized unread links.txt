@@ -1,0 +1,8 @@
+Colorized Unread Links
+PHP Version: 5.3.0
+DBMS: MySQL 5.1.37-community-log
+phpBB3 Version: 3.0.8
+
+Adding new config variable: colorized_links
+ERROR: Config variable colorized_links already exists.
+
