@@ -45,7 +45,7 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>1.1.1</mod-version>
+		<mod-version>1.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
@@ -64,7 +64,7 @@
 				<find><![CDATA[						<tr valign="middle">
 							<td class="gensmall" align="{S_CONTENT_FLOW_END}">
 							<!-- IF not S_IS_BOT -->]]></find>
-				<action type="after-add"><![CDATA[	<!-- Share_On_1.1.1_MOD -->
+				<action type="after-add"><![CDATA[	<!-- Share_On_1.2.0_MOD -->
 		<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS -->
 			<!-- IF postrow.S_SO_FACEBOOK -->	<a href="{postrow.U_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TWITTER -->	<a href="{postrow.U_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" title="{L_SHARE_ON_TWITTER}" /></a><!-- ENDIF -->
@@ -77,7 +77,7 @@
 			<!-- IF postrow.S_SO_DELICIOUS -->		<a href="{postrow.U_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TECHNORATI -->		<a href="{postrow.U_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" title="{L_SHARE_ON_TECHNORATI}" /></a><!-- ENDIF -->
 		<!-- ENDIF -->
-	<!-- Share_On_1.1.1_MOD -->]]></action>
+	<!-- Share_On_1.2.0_MOD -->]]></action>
 			</edit>
 		</open>
 		<diy-instructions lang="en"><![CDATA[Purge the cache and refresh the subsilver2 template.]]></diy-instructions>

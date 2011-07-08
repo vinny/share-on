@@ -19,7 +19,7 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>1.1.1</mod-version>
+		<mod-version>1.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -38,7 +38,7 @@
 		<open src="language/es/common.php">
 			<edit>
 				<find><![CDATA[	'SETTINGS'	=> 'Preferencias',]]></find>
-				<action type="after-add"><![CDATA[	// Share On 1.1.1 MOD
+				<action type="after-add"><![CDATA[	// Share On 1.2.0 MOD
 	'SHARE_ON_FACEBOOK'	=> 'Compartir en Facebook',
 	'SHARE_ON_TWITTER'	=> 'Compartir en Twitter',
 	'SHARE_ON_TUENTI'	=> 'Compartir en Tuenti',
@@ -49,7 +49,7 @@
 	'SHARE_ON_MYSPACE'	=> 'Compartir en MySpace',
 	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
-	// Share On 1.1.1 MOD]]></action>
+	// Share On 1.2.0 MOD]]></action>
 			</edit>
 		</open>
 	</action-group>

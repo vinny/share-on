@@ -3,7 +3,7 @@
 /**
 * @author _Vinny_ vinny@suportephpbb.com.br http://www.suportephpbb.com.br
 * @package Share On
-* @version $Id share_on_install.php.php
+* @version $Id install.php.php
 * @copyright (c) 2011 _Vinny_ ( http://www.suportephpbb.com.br ), Saske1 ( http://www.phpbbsaske.eshost.es/ )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -57,8 +57,8 @@ $version_config_name = 'shareon_version';
 * The version numbering must otherwise be compatible with the version_compare function - http://php.net/manual/en/function.version-compare.php
 */
 $versions = array(
-   // Version 1.0.0
-   '1.1.1'   => array(
+   // Version 1.2.0
+   '1.2.0'   => array(
       // Lets add a config setting
       'config_add' => array(
          array('so_status'),
