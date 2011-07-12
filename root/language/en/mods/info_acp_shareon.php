@@ -56,9 +56,6 @@ $lang = array_merge($lang, array(
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'		=> 'FriendFeed',
 	
-	// Installation
-	'SHAREON_MOD_INSTALLED'	=> 'ShareOn MOD successfully installed',
-	'SHAREON_MOD_UPDATED'	=> 'ShareOn MOD successfully updated',
 ));
 
 ?>
