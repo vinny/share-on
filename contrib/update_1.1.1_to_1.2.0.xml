@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Share On - Update from 1.1.1 to 1.2.0]]></title>
+		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious or Technorati.]]></description>
+		<author-group>
+			<author>
+				<realname><![CDATA[Salva]]></realname>
+				<username><![CDATA[Saske1]]></username>
+				<homepage><![CDATA[http://www.phpbbsaske.zobyhost.com/foro/index.php]]></homepage>
+				<email><![CDATA[salva_bxt@hotmail.com]]></email>
+				<contributions-group>
+					<contributions status="current" from="2011-06-0" position="Developer"/>
+				</contributions-group>
+			</author>
+			<author>
+				<realname><![CDATA[Marcus Vinicius]]></realname>
+				<username><![CDATA[_Vinny_]]></username>
+				<homepage><![CDATA[vinny@suportephpbb.com.br]]></homepage>
+				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
+				<contributions-group>
+					<contributions status="current" from="2011-07-03" position="Co-Author"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>1.2.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>240</time>
+			<target-version>3.0.9</target-version>
+		</installation>
+		<link-group>
+			<link type="parent" href="../install.xml" lang="en">Main Install</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/umil/*.*" to="umil/*.*"/>
+			<file from="root/install.php" to="install.php"/>
+		</copy>
+		<open src="viewtopic.php">
+			<edit>
+				<find><![CDATA[// Share On 1.1.1 MOD
+'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+'U_TWITTER'		=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . ' (from &#064;YOUR_FORUM_TWITTER_ID) '. generate_board_url() . '/viewtopic.php?t=' . $topic_data['topic_id'],
+'U_DIGG'		=> 'http://digg.com/submit?phase=2&url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&title=' . $topic_data['topic_title'],
+'U_MYSPACE'		=> 'http://www.myspace.com/Modules/PostTo/Pages/?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&t=' . $topic_data['topic_title'],
+'U_DELICIOUS' 	=> 'http://delicious.com/post?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&title=' . $topic_data['topic_title'],		
+'U_TECHNORATI'	=> 'http://technorati.com/faves?add=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+'U_TUENTI'		=> 'http://www.tuenti.com/?m=Share&func=index&url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+'U_SONICO'		=> 'http://www.sonico.com/share.php?title=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+'U_FRIENDFEED'		=>  'http://friendfeed.com/share?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+// Share On 1.1.1 MOD]]></find>
+				<action type="replace-with"><![CDATA[		// Share On 1.2.0 MOD
+		'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+		'U_TWITTER'	=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . generate_board_url() . '/viewtopic.php?t=' . $topic_data['topic_id'],
+		'U_DIGG'	=> 'http://digg.com/submit?phase=2&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&amp;title=' . $topic_data['topic_title'],
+		'U_MYSPACE'	=> 'http://www.myspace.com/Modules/PostTo/Pages/?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&amp;t=' . $topic_data['topic_title'],
+		'U_DELICIOUS' 	=> 'http://delicious.com/post?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&amp;title=' . $topic_data['topic_title'],		
+		'U_TECHNORATI'	=> 'http://technorati.com/faves?add=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+		'U_FRIENDFEED'	=>  'http://friendfeed.com/share?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+		// Share On 1.2.0 MOD]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[		// Share On 1.1.1 MOD	
+		'S_SO_STATUS'		=> $config['so_status'],
+		'S_SO_FACEBOOK'		=> $config['so_facebook'],
+		'S_SO_TWITTER'		=> $config['so_twitter'],
+		'S_SO_TUENTI'		=> $config['so_tuenti'],
+		'S_SO_SONICO'		=> $config['so_sonico'],
+		'S_FRIENDFEED'		=> $config['so_friendfeed']
+		'S_SO_ORKUT'		=> $config['so_orkut'],
+		'S_SO_DIGG'			=> $config['so_digg'],
+		'S_SO_MYSPACE'		=> $config['so_myspace'],
+		'S_SO_DELICIOUS' 	=> $config['so_delicious'],
+		'S_SO_TECHNORATI'	=> $config['so_technorati'],
+		'S_SHARE_ON_FIRST_POST'	=> ($row['post_id'] == $topic_data['topic_first_post_id']) ? true : false,
+		// Share On 1.1.1 MOD]]></find>
+				<action type="replace-with"><![CDATA[		// Share On 1.2.0 MOD	
+		'S_SO_STATUS'		=> $config['so_status'],
+		'S_SO_FACEBOOK'		=> $config['so_facebook'],
+		'S_SO_TWITTER'		=> $config['so_twitter'],
+		'S_SO_TUENTI'		=> $config['so_tuenti'],
+		'S_SO_SONICO'		=> $config['so_sonico'],
+		'S_SO_FRIENDFEED'	=> $config['so_friendfeed'],
+		'S_SO_ORKUT'		=> $config['so_orkut'],
+		'S_SO_DIGG'		=> $config['so_digg'],
+		'S_SO_MYSPACE'		=> $config['so_myspace'],
+		'S_SO_DELICIOUS' 	=> $config['so_delicious'],
+		'S_SO_TECHNORATI'	=> $config['so_technorati'],
+		'S_SHARE_ON_FIRST_POST'	=> ($row['post_id'] == $topic_data['topic_first_post_id']) ? true : false,
+		// Share On 1.2.0 MOD]]></action>
+			</edit>
+		</open>
+		<open src="language/en/common.php">
+			<edit>
+				<find><![CDATA[	// Share On 1.1.1 MOD
+	'SHARE_ON_FACEBOOK'	=> 'Share on Facebook',
+	'SHARE_ON_TWITTER'	=> 'Share on Twitter',
+	'SHARE_ON_TUENTI'	=> 'Share on Tuenti',
+	'SHARE_ON_SONICO'	=> 'Share on Sonico'
+	'SHARE_ON_FRIENDFEED'	=> 'Share on FriendFeed'
+	'SHARE_ON_ORKUT'	=> 'Share on Orkut',
+	'SHARE_ON_DIGG'		=> 'Share on Digg',
+	'SHARE_ON_MYSPACE'	=> 'Share on MySpace',
+	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
+	'SHARE_ON_TECHNORATI'	=> 'Share on Technorati',
+	// Share On 1.1.1 MOD]]></find>
+				<action type="replace-with"><![CDATA[	// Share On 1.2.0 MOD
+	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
+	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
+	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
+	'SHARE_ON_SONICO'		=> 'Share on Sonico',
+	'SHARE_ON_FRIENDFEED'		=> 'Share on FriendFeed',
+	'SHARE_ON_ORKUT'		=> 'Share on Orkut',
+	'SHARE_ON_DIGG'			=> 'Share on Digg',
+	'SHARE_ON_MYSPACE'		=> 'Share on MySpace',
+	'SHARE_ON_DELICIOUS'		=> 'Share on Delicious',
+	'SHARE_ON_TECHNORATI'		=> 'Share on Technorati',
+	// Share On 1.2.0 MOD]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/viewtopic_body.html">
+			<edit>
+				<find><![CDATA[					<!-- Share_On_1.1.1_MOD -->
+						<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS and S_USER_LOGGED_IN -->
+							<!-- IF postrow.S_SO_FACEBOOK --><li class="facebook-icon"><a href="{postrow.U_FACEBOOK}" target="_blank" title="{L_SHARE_ON_FACEBOOK}"><span>{L_SHARE_ON_FACEBOOK}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TWITTER --><li class="twitter-icon"><a href="{postrow.U_TWITTER}" target="_blank" title="{L_SHARE_ON_TWITTER}"><span>{L_SHARE_ON_TWITTER}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TUENTI --><li class="tuenti-icon"><a href="{postrow.U_TUENTI}" target="_blank" title="{L_SHARE_ON_TUENTI}"><span>{L_SHARE_ON_TUENTI}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_SONICO --><li class="sonico-icon"><a href="{postrow.U_SONICO}" target="_blank" title="{L_SHARE_ON_SONICO}"><span>{L_SHARE_ON_SONICO}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_FRIENDFEED --><li class="firendfeed-icon"><a href="{postrow.U_FRIENDFEED}" target="_blank" title="{L_SHARE_ON_FRIENDFEED}"><span>{L_SHARE_ON_FRIENDFEED}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_ORKUT --><li class="orkut-icon"><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&v=1&nt=orkut.com&du='+e(l.href)+'&tt='+e(d.title),s='&rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();" title="{L_SHARE_ON_ORKUT}"><span>{L_SHARE_ON_ORKUT}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_DIGG --><li class="digg-icon"><a href="{postrow.U_DIGG}" target="_blank" title="{L_SHARE_ON_DIGG}"><span>{L_SHARE_ON_DIGG}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_MYSPACE --><li class="myspace-icon"><a href="{postrow.U_MYSPACE}" target="_blank" title="{L_SHARE_ON_MYSPACE}"><span>{L_SHARE_ON_MYSPACE}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_DELICIOUS --><li class="delicious-icon"><a href="{postrow.U_DELICIOUS}" target="_blank" title="{L_SHARE_ON_DELICIOUS}"><span>{L_SHARE_ON_DELICIOUS}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TECHNORATI --><li class="technorati-icon"><a href="{postrow.U_TECHNORATI}" target="_blank" title="{L_SHARE_ON_TECHNORATI}"><span>{L_SHARE_ON_TECHNORATI}</span></a></li><!-- ENDIF -->
+						<!-- ENDIF -->
+					<!-- Share_On_1.1.1_MOD -->]]></find>
+				<action type="replace-with"><![CDATA[					<!-- Share_On_1.2.0_MOD -->
+						<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS and S_USER_LOGGED_IN -->
+							<!-- IF postrow.S_SO_FACEBOOK --><li class="facebook-icon"><a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_FACEBOOK}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TWITTER --><li class="twitter-icon"><a href="{postrow.U_TWITTER}" title="{L_SHARE_ON_TWITTER}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TWITTER}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TUENTI --><li class="tuenti-icon"><a href="{postrow.U_TUENTI}" title="{L_SHARE_ON_TUENTI}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TUENTI}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_SONICO --><li class="sonico-icon"><a href="{postrow.U_SONICO}" title="{L_SHARE_ON_SONICO}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_SONICO}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_FRIENDFEED --><li class="friendfeed-icon"><a href="{postrow.U_FRIENDFEED}" title="{L_SHARE_ON_FRIENDFEED}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_FRIENDFEED}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_ORKUT --><li class="orkut-icon"><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();" title="{L_SHARE_ON_ORKUT}"><span>{L_SHARE_ON_ORKUT}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_DIGG --><li class="digg-icon"><a href="{postrow.U_DIGG}" title="{L_SHARE_ON_DIGG}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_DIGG}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_MYSPACE --><li class="myspace-icon"><a href="{postrow.U_MYSPACE}" title="{L_SHARE_ON_MYSPACE}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_MYSPACE}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_DELICIOUS --><li class="delicious-icon"><a href="{postrow.U_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_DELICIOUS}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TECHNORATI --><li class="technorati-icon"><a href="{postrow.U_TECHNORATI}" title="{L_SHARE_ON_TECHNORATI}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TECHNORATI}</span></a></li><!-- ENDIF -->
+						<!-- ENDIF -->
+					<!-- Share_On_1.2.0_MOD -->]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[			<!-- Share_On_1.1.1_MOD -->
+		<!-- IF postrow.S_FIRST_ROW and not S_USER_LOGGED_IN -->
+			<div class="panel">
+				<div class="inner">
+					<span class="corners-top"><span></span></span>
+					<h3>Share On</h3>
+					<table width="100%">
+						<tr>
+						   <!-- IF postrow.S_SO_FACEBOOK --><td align="center"><a href="{postrow.U_FACEBOOK}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}"/></a></td>
+						   <td><a href="{postrow.U_FACEBOOK}" target="_blank">Facebook</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_TWITTER --><td align="center"><a href="{postrow.U_TWITTER}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" title="{L_SHARE_ON_TWITTER}"/></a></td>
+						   <td><a href="{postrow.U_TWITTER}" target="_blank">Twitter</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_TUENTI --><td align="center"><a href="{postrow.U_TUENTI}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" title="{L_SHARE_ON_TUENTI}"/></a></td>
+						   <td><a href="{postrow.U_TUENTI}" target="_blank">Tuenti</a></td> <!-- ENDIF -->
+						   
+						   	<!-- IF postrow.S_SO_SONICO --><td align="center"><a href="{postrow.U_SONICO}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_SONICO}" title="{L_SHARE_ON_SONICO}"/></a></td>
+						   <td><a href="{postrow.U_TWITTER}" target="_blank">Sonico</a></td> <!-- ENDIF -->
+
+						   <!-- IF postrow.S_SO_FRIENDFEED --><td align="center"><a href="{postrow.U_FRIENDFEED}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" title="{L_SHARE_ON_FRIENDFEED}"/></a></td>
+						   <td><a href="{postrow.U_FRIENDFEED}" target="_blank">FriendFeed</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_ORKUT --><td align="center"><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&v=1&nt=orkut.com&du='+e(l.href)+'&tt='+e(d.title),s='&rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" title="{L_SHARE_ON_ORKUT}"/></a></td>
+						   <td><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&v=1&nt=orkut.com&du='+e(l.href)+'&tt='+e(d.title),s='&rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();">Orkut</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_DIGG --><td align="center"><a href="{postrow.U_DIGG}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" title="{L_SHARE_ON_DIGG}"/></a></td>
+						   <td><a href="{postrow.U_DIGG}" target="_blank">Digg</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_MYSPACE --><td align="center"><a href="{postrow.U_MYSPACE}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" title="{L_SHARE_ON_MYSPACE}"/></a></td>
+						   <td><a href="{postrow.U_MYSPACE}" target="_blank">MySpace</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_DELICIOUS --><td align="center"><a href="{postrow.U_DELICIOUS}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}"/></a></td>
+						   <td><a href="{postrow.U_DELICIOUS}" target="_blank">Delicious</a></td> <!-- ENDIF -->
+						   
+						   <!-- IF postrow.S_SO_TECHNORATI --><td align="center"><a href="{postrow.U_TECHNORATI}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" title="{L_SHARE_ON_TECHNORATI}"/></a></td>
+						   <td><a href="{postrow.U_TECHNORATI}" target="_blank">Technorati</a></td>	<!-- ENDIF -->				   
+						</tr>   			
+					</table>
+					<span class="corners-bottom"><span></span></span>
+				</div>
+			</div>
+		<!-- ENDIF -->
+	<!-- Share_On_1.1.1_MOD -->
+]]></find>
+				<action type="replace-with"><![CDATA[	<!-- Share_On_1.2.0_MOD -->
+		<!-- IF postrow.S_FIRST_ROW and not S_USER_LOGGED_IN -->
+			<div class="panel">
+				<div class="inner">
+					<span class="corners-top"><span></span></span>
+					<h3>{L_SO_SELECT}</h3>
+					<table width="100%">
+						<tr>
+							<!-- IF postrow.S_SO_FACEBOOK --><td align="center"><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a></td>
+							<td><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;">Facebook</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_TWITTER --><td align="center"><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" /></a></td>
+							<td><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;">Twitter</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_TUENTI --><td align="center"><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUENTI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" /></a></td>
+							<td><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;">Tuenti</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_SONICO --><td align="center"><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_SONICO}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png" alt="{L_SHARE_ON_SONICO}" /></a></td>
+							<td><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;">Sonico</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_FRIENDFEED --><td align="center"><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FRIENDFEED}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" /></a></td>
+							<td><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;">FriendFeed</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_ORKUT --><td align="center"><a title="{L_SHARE_ON_ORKUT}" href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" /></a></td>
+							<td><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();">Orkut</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_DIGG --><td align="center"><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a></td>
+							<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">Digg</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_MYSPACE --><td align="center"><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a></td>
+							<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">MySpace</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_DELICIOUS --><td align="center"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
+							<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">Delicious</a></td> <!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_TECHNORATI --><td align="center"><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a></td>
+							<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">Technorati</a></td>	<!-- ENDIF -->				   
+						</tr>   			
+					</table>
+					<span class="corners-bottom"><span></span></span>
+				</div>
+			</div>
+		<!-- ENDIF -->
+	<!-- Share_On_1.2.0_MOD -->
+]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/buttons.css">
+			<edit>
+				<find><![CDATA[/* Share On 1.1.1 */
+.facebook-icon, .facebook-icon a	{ background: none top left no-repeat; }
+.twitter-icon, .twitter-icon a		{ background: none top left no-repeat; }
+.tuenti-icon, .tuenti-icon a		{ background: none top left no-repeat; }
+.sonico-icon, .sonico-icon a		{ background: none top left no-repeat; }
+.friendfeed-icon, .sonico-icon a		{ background: none top left no-repeat; }
+.orkut-icon, .orkut-icon a		{ background: none top left no-repeat; }
+.digg-icon, .digg-icon a		{ background: none top left no-repeat; }
+.myspace-icon, .myspace-icon a		{ background: none top left no-repeat; }
+.delicious-icon, .delicious-icon a		{ background: none top left no-repeat; }
+.technorati-icon, .technorati-icon a		{ background: none top left no-repeat; }
+/* Share On 1.1.0 */]]></find>
+				<action type="replace-with"><![CDATA[/* Share On 1.2.0 */
+.facebook-icon, .facebook-icon a	{ background: none top left no-repeat; }
+.twitter-icon, .twitter-icon a		{ background: none top left no-repeat; }
+.tuenti-icon, .tuenti-icon a		{ background: none top left no-repeat; }
+.sonico-icon, .sonico-icon a		{ background: none top left no-repeat; }
+.friendfeed-icon, .friendfeed-icon a	{ background: none top left no-repeat; }
+.orkut-icon, .orkut-icon a		{ background: none top left no-repeat; }
+.digg-icon, .digg-icon a		{ background: none top left no-repeat; }
+.myspace-icon, .myspace-icon a		{ background: none top left no-repeat; }
+.delicious-icon, .delicious-icon a	{ background: none top left no-repeat; }
+.technorati-icon, .technorati-icon a	{ background: none top left no-repeat; }
+/* Share On 1.2.0 */]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/colours.css">
+			<edit>
+				<find><![CDATA[/* Share On 1.1.1 */
+.facebook-icon, .facebook-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png"); }
+.twitter-icon, .twitter-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png"); }
+.tuenti-icon, .tuenti-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png"); }
+.sonico-icon, .sonico-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png"); }
+.friendfeed-icon, .friendfee-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfee.png"); }
+.orkut-icon, .orkut-icon a			{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif"); }
+.digg-icon, .digg-icon a			{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif"); }
+.myspace-icon, .myspace-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png"); }
+.delicious-icon, .delicious-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif"); }
+.technorati-icon, .technorati-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png"); }
+/* Share On 1.1.1 */]]></find>
+				<action type="replace-with"><![CDATA[/* Share On 1.2.0 */
+.facebook-icon, .facebook-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png"); }
+.twitter-icon, .twitter-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png"); }
+.tuenti-icon, .tuenti-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png"); }
+.sonico-icon, .sonico-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png"); }
+.friendfeed-icon, .friendfeed-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png"); }
+.orkut-icon, .orkut-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif"); }
+.digg-icon, .digg-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif"); }
+.myspace-icon, .myspace-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png"); }
+.delicious-icon, .delicious-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif"); }
+.technorati-icon, .technorati-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png"); }
+/* Share On 1.2.0 */]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/viewtopic_body.html">
+			<edit>
+				<find><![CDATA[	<!-- Share_On_1.1.1_MOD -->
+		<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS -->
+			<!-- IF postrow.S_SO_FACEBOOK -->	<a href="{postrow.U_FACEBOOK}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TWITTER -->	<a href="{postrow.U_TWITTER}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" title="{L_SHARE_ON_TWITTER}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TUENTI -->	<a href="{postrow.U_TUENTI}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" title="{L_SHARE_ON_TUENTI}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_SONICO -->	<a href="{postrow.U_SONICO}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png" alt="{L_SHARE_ON_SONICO}" title="{L_SHARE_ON_SONICO}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_FRIENDFEED -->	<a href="{postrow.U_FRIENDFEED}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" title="{L_SHARE_ON_FRIENDFEED}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_ORKUT -->		<a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&v=1&nt=orkut.com&du='+e(l.href)+'&tt='+e(d.title),s='&rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" title="{L_SHARE_ON_ORKUT}"/></a><!-- ENDIF -->								
+			<!-- IF postrow.S_SO_DIGG -->		<a href="{postrow.U_DIGG}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" title="{L_SHARE_ON_DIGG}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_MYSPACE -->	<a href="{postrow.U_MYSPACE}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" title="{L_SHARE_ON_MYSPACE}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_DELICIOUS -->	<a href="{postrow.U_DELICIOUS}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}"/></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TECHNORATI -->	<a href="{postrow.U_TECHNORATI}" target="_blank"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" title="{L_SHARE_ON_TECHNORATI}"/></a><!-- ENDIF -->
+		<!-- ENDIF -->
+	<!-- Share_On_1.1.1_MOD -->]]></find>
+				<action type="replace-with"><![CDATA[	<!-- Share_On_1.2.0_MOD -->
+		<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS -->
+			<!-- IF postrow.S_SO_FACEBOOK --><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TWITTER --><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TUENTI --><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUENTI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_SONICO --><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_SONICO}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png" alt="{L_SHARE_ON_SONICO}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_FRIENDFEED --><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FRIENDFEED}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_ORKUT --><a title="{L_SHARE_ON_ORKUT}" href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" /></a><!-- ENDIF -->								
+			<!-- IF postrow.S_SO_DIGG --><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_MYSPACE --><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_DELICIOUS --><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TECHNORATI --><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a><!-- ENDIF -->
+		<!-- ENDIF -->
+	<!-- Share_On_1.2.0_MOD -->]]></action>
+			</edit>
+		</open>
+		<php-installer><![CDATA[install.php]]></php-installer>
+		<diy-instructions lang="en"><![CDATA[IMPORTANT! Once you modify and upload all the files :
+
+Log on to Administration Control Panel
+#####################################################################
+
+A) Purge the cache :
+
+	A.1) Navigate to "GENERAL" Tab.
+	A.2) Next to "Purge the cache" click on "Run now".
+	A.3) in the next screen, click on "Yes".
+
+#####################################################################
+
+B) Purge the templates, Themes and Images Galery from Prosilver and Subsilver2:
+
+	B.1) Navigate to "STYLES" Tab.
+	B.2) Under "Style components " click on "Templates".
+	B.3) Under "Actions" click on "Refresh".
+	B.4) in the next screen, click on "Yes" ( Repeat last 2 steps with Themes and Images Galery ).
+	
+#####################################################################
+
+C) Add the new MOD to your ACP
+
+	C.1) Run the install.php
+
+#####################################################################
+
+D) Enjoy :D]]></diy-instructions>
+	</action-group>
+</mod>
