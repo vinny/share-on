@@ -29,27 +29,10 @@ class acp_shareon
 		global $db, $user, $auth, $template, $cache;
 		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
 
-		include($phpbb_root_path . 'includes/acp/info/acp_shareon.' . $phpEx);
-
 		$user->add_lang('acp/common');
 		$this->tpl_name = 'acp_shareon';
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
-
-		// Install and update the ShareOn MOD through the ACP file
-		$version = new acp_shareon_info();
-				  
-		$shareon_version = $version->module();
-		$shareon_version = $shareon_version['version'];
-
-		if (!isset($config['shareon_mod_version']))
-		{
-			$version->install($this->u_action);
-		}
-		else if (version_compare($config['shareon_mod_version'], $shareon_version, '<'))
-		{
-			$version->update($this->u_action);
-		}
 
 		$submit = (isset($_POST['submit'])) ? true : false;
 		if ($submit)
@@ -75,18 +58,18 @@ class acp_shareon
 		}
 		
 		$template->assign_vars(array(
-			'SO_STATUS'      => $config['so_status'],
-			'SO_FACEBOOK'   => $config['so_facebook'],
-			'SO_TWITTER'   => $config['so_twitter'],
-			'SO_TUENTI'   => $config['so_tuenti'],
-			'SO_SONICO'   => $config['so_sonico'],
-			'SO_FRIENDFEED'   => $config['so_friendfeed'],
-			'SO_ORKUT'      => $config['so_orkut'],
+			'SO_STATUS'		=> $config['so_status'],
+			'SO_FACEBOOK'	=> $config['so_facebook'],
+			'SO_TWITTER'	=> $config['so_twitter'],
+			'SO_TUENTI'		=> $config['so_tuenti'],
+			'SO_SONICO'		=> $config['so_sonico'],
+			'SO_FRIENDFEED'	=> $config['so_friendfeed'],
+			'SO_ORKUT'		=> $config['so_orkut'],
 			'SO_DIGG'		=> $config['so_digg'],
 			'SO_MYSPACE'	=> $config['so_myspace'],
-			'SO_DELICIOUS' 	=> $config['so_delicious'],
+			'SO_DELICIOUS'	=> $config['so_delicious'],
 			'SO_TECHNORATI'	=> $config['so_technorati'],
-			'U_ACTION'      => $this->u_action,
+			'U_ACTION'		=> $this->u_action,
 		));
 	}
 }
