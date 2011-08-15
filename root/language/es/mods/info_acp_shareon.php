@@ -37,6 +37,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	// ACP
 	'SO_ACP'		=> 'Share On MOD',
     'SO_TITLE'		=> 'Configuración de MOD "SHARE ON"',
 	'SO_EXPLAIN'	=> 'Aquí puedes configurar en que páginas quieres compartir tus temas',	
@@ -54,7 +55,19 @@ $lang = array_merge($lang, array(
 	'SO_TECHNORATI'	=> 'Technorati',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
-	'SO_FRIENDFEED'		=> 'FriendFeed',
+	'SO_FRIENDFEED'	=> 'FriendFeed',
+	
+	// Share On viewtopic.php
+	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
+	'SHARE_ON_TWITTER'		=> 'Compartir en Twitter',
+	'SHARE_ON_TUENTI'		=> 'Compartir en Tuenti',
+	'SHARE_ON_SONICO'		=> 'Compartir en Sonico',
+	'SHARE_ON_FRIENDFEED'	=> 'Compartir en FriendFeed',
+	'SHARE_ON_ORKUT'		=> 'Compartir en Orkut',
+	'SHARE_ON_DIGG'			=> 'Compartir en Digg',
+	'SHARE_ON_MYSPACE'		=> 'Compartir en MySpace',
+	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
+	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
 	
 ));
 

@@ -157,6 +157,9 @@
 		</copy>
 		<open src="viewtopic.php">
 			<edit>
+				<find><![CDATA[$auth->acl($user->data);]]></find>
+				<action type="after-add"><![CDATA[$user->add_lang('mods/info_acp_shareon');]]></action>
+			
 				<find><![CDATA[		'U_JABBER'		=> $user_cache[$poster_id]['jabber'],]]></find>
 				<action type="after-add"><![CDATA[		// Share On 1.2.0 MOD
 		'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
@@ -188,23 +191,6 @@
 		'S_SO_TECHNORATI'	=> $config['so_technorati'],
 		'S_SHARE_ON_FIRST_POST'	=> ($row['post_id'] == $topic_data['topic_first_post_id']) ? true : false,
 		// Share On 1.2.0 MOD]]></action>
-			</edit>
-		</open>
-		<open src="language/en/common.php">
-			<edit>
-				<find><![CDATA[	'SETTINGS'					=> 'Settings',]]></find>
-				<action type="after-add"><![CDATA[	// Share On 1.2.0 MOD
-	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
-	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
-	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
-	'SHARE_ON_SONICO'		=> 'Share on Sonico',
-	'SHARE_ON_FRIENDFEED'		=> 'Share on FriendFeed',
-	'SHARE_ON_ORKUT'		=> 'Share on Orkut',
-	'SHARE_ON_DIGG'			=> 'Share on Digg',
-	'SHARE_ON_MYSPACE'		=> 'Share on MySpace',
-	'SHARE_ON_DELICIOUS'		=> 'Share on Delicious',
-	'SHARE_ON_TECHNORATI'		=> 'Share on Technorati',
-	// Share On 1.2.0 MOD]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/viewtopic_body.html">
