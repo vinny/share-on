@@ -68,7 +68,6 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_MYSPACE'		=> 'Compartir en MySpace',
 	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
-	
 ));
 
 ?>

@@ -214,7 +214,7 @@
 			<edit>
 				<find><![CDATA[<!-- END postrow -->]]></find>
 				<action type="before-add"><![CDATA[	<!-- Share_On_1.2.0_MOD -->
-		<!-- IF postrow.S_FIRST_ROW and not S_USER_LOGGED_IN -->
+		<!-- IF postrow.S_FIRST_ROW and postrow.S_SO_STATUS and not S_USER_LOGGED_IN -->
 			<div class="panel">
 				<div class="inner">
 					<span class="corners-top"><span></span></span>
