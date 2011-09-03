@@ -86,6 +86,11 @@ $versions = array(
 			),
 		),
    ),
+   
+   	// Version 2.0.0
+	'2.0.0' => array(
+		// Nothing changed in this version.
+	),
 );
 
 // Include the UMIF Auto file and everything else will be handled automatically.
