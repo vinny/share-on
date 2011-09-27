@@ -33,6 +33,8 @@ class acp_shareon
 		$this->tpl_name = 'acp_shareon';
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
+		// Version Check
+		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.0.0';
 
 		$submit = (isset($_POST['submit'])) ? true : false;
 		if ($submit)
@@ -70,7 +72,53 @@ class acp_shareon
 			'SO_DELICIOUS'	=> $config['so_delicious'],
 			'SO_TECHNORATI'	=> $config['so_technorati'],
 			'U_ACTION'		=> $this->u_action,
+			'SHAREON_VERSION'            => $config['SHAREON_VERSION'],
+			'S_VERSION_UP_TO_DATE'      => $this->shareon_version_compare($config['SHAREON_VERSION']),
 		));
+	}
+	/**
+	* Obtains the latest version information
+	* @param string    $current_version    version information
+	* @param int       $ttl             Cache version information for $ttl seconds. Defaults to 86400 (24 hours).
+	* 
+	* @return bool       false on failure.
+	**/
+	function shareon_version_compare($current_version = '', $version_up_to_date = true, $ttl = 86400)
+	{
+		global $cache, $template;
+
+		$info = $cache->get('shareon_versioncheck');
+
+		if ($info === false)
+		{
+		$errstr = '';
+		$errno = 0;
+
+		$info = get_remote_file('www.phpbbsaske.com', '/foro/shareon', 'shareon.txt', $errstr, $errno);
+		if ($info === false)
+		{
+			$template->assign_var('S_VERSIONCHECK_FAIL', true);
+			$cache->destroy('shareon_versioncheck');
+		}
+		}
+
+		if ($info !== false)
+	{
+		$cache->put('shareon_versioncheck', $info, $ttl);
+		$latest_version_info = explode("\n", $info);
+
+		$latest_version = strtolower(trim($latest_version_info[0]));
+		$current_version = strtolower(trim($current_version));
+		$version_up_to_date = version_compare($current_version, $latest_version, '<') ? false : true;
+
+		$template->assign_vars(array(
+			'U_VERSIONCHECK'	=> ($version_up_to_date) ? false : $latest_version_info[1],
+			'S_VERSION'			=> $current_version,
+			'S_VERSIONNEW'		=> ($version_up_to_date) ? false : $latest_version_info[0],
+		));
+	}
+
+		return $version_up_to_date;
 	}
 }
 
