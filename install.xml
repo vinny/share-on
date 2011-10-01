@@ -24,7 +24,7 @@
 				<homepage><![CDATA[http://www.suportephpbb.com.br]]></homepage>
 				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
 				<contributions-group>
-					<contributions status="current" from="2011-07-03" position="Co-Author"/>
+					<contributions status="current" from="2011-07-03" position="Developer"/>
 				</contributions-group>
 			</author>
 			<author>
@@ -54,7 +54,9 @@
 		<link-group>
 			<link type="template" href="contrib/subsilver2.xml" lang="en">Subsilver2</link>
 			<link type="contrib" href="contrib/es.xml" lang="en">Spanish Language</link>
+			<link type="contrib" href="contrib/pt_br.xml" lang="en">Brazilian Portuguese Language</link>
 			<link type="contrib" lang="en" href="contrib/update_1.1.1_to_1.2.0.xml">Update from 1.1.1 to 1.2.0</link>
+			<link type="contrib" lang="en" href="contrib/update_1.2.0_to_2.0.0.xml">Update from 1.2.0 to 2.0.0</link>
 		</link-group>
 		<history>
 			<entry>

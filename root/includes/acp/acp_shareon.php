@@ -72,8 +72,8 @@ class acp_shareon
 			'SO_DELICIOUS'	=> $config['so_delicious'],
 			'SO_TECHNORATI'	=> $config['so_technorati'],
 			'U_ACTION'		=> $this->u_action,
-			'SHAREON_VERSION'            => $config['SHAREON_VERSION'],
-			'S_VERSION_UP_TO_DATE'      => $this->shareon_version_compare($config['SHAREON_VERSION']),
+			'SHAREON_VERSION'		=> $config['SHAREON_VERSION'],
+			'S_VERSION_UP_TO_DATE'	=> $this->shareon_version_compare($config['SHAREON_VERSION']),
 		));
 	}
 	/**

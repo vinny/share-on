@@ -24,7 +24,7 @@
 				<homepage><![CDATA[vinny@suportephpbb.com.br]]></homepage>
 				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
 				<contributions-group>
-					<contributions status="current" from="2011-07-03" position="Co-Author"/>
+					<contributions status="current" from="2011-07-03" position="Developer"/>
 				</contributions-group>
 			</author>
 			<author>
@@ -45,7 +45,7 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>1.2.0</mod-version>
+		<mod-version>2.0.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
