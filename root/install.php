@@ -3,7 +3,7 @@
 /**
 * @author _Vinny_ vinny@suportephpbb.com.br http://www.suportephpbb.com.br
 * @package Share On
-* @version $Id install.php.php
+* @version $Id install.php
 * @copyright (c) 2011 _Vinny_ ( http://www.suportephpbb.com.br ), Saske1 ( http://www.phpbbsaske.com/ )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

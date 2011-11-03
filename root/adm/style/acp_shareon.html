@@ -13,12 +13,12 @@
 		</dl>
 		<dl>
 			<dt><label>{L_SO_VERSION_OLD}</label></dt>
-			<strong>{S_VERSION}</strong>
+			<dd><strong>{S_VERSIONOLD}</strong></dd>
 		</dl>
-		<dl>
+		<!-- IF S_VERSIONNEW --><dl>
 			<dt><label>{L_SO_VERSION_NEW}</label></dt>
-				<strong><a href="{U_VERSIONCHECK}" title="{L_MORE_INFORMATION}" style="color: #228822;" onclick="window.open(this.href);return false;">{S_VERSIONNEW}</a></strong>
-		</dl>
+			<dd><strong><a href="{U_VERSIONCHECK}" title="{L_MORE_INFORMATION}" style="color: #228822;" onclick="window.open(this.href);return false;">{S_VERSIONNEW}</a></strong></dd>
+		</dl><!-- ENDIF -->
 	</fieldset>
 	<fieldset>
 		<legend>{L_SO_SELECT}</legend>

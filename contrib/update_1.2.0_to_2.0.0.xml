@@ -21,7 +21,7 @@
 			<author>
 				<realname><![CDATA[Marcus Vinicius]]></realname>
 				<username><![CDATA[_Vinny_]]></username>
-				<homepage><![CDATA[vinny@suportephpbb.com.br]]></homepage>
+				<homepage><![CDATA[http://www.suportephpbb.com.br]]></homepage>
 				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
 				<contributions-group>
 					<contributions status="current" from="2011-07-03" position="Developer"/>
@@ -42,7 +42,11 @@
 		<copy>
 			<file from="root/adm/style/acp_shareon.html" to="adm/style/acp_shareon.html"/>
 			<file from="root/includes/acp/acp_shareon.php" to="includes/acp/acp_shareon.php"/>
+			<file from="root/includes/acp/info/acp_shareon.php" to="includes/acp/info/acp_shareon.php"/>
 			<file from="root/language/en/mods/info_acp_shareon.php" to="language/en/mods/info_acp_shareon.php"/>
+			<file from="root/styles/prosilver/imageset/en/share_on_buttons/*.*" to="styles/prosilver/imageset/en/share_on_buttons/*.*"/>
+			<file from="root/umil/*.*" to="umil/*.*"/>
+			<file from="root/install.php" to="install.php"/>
 		</copy>
 		<open src="viewtopic.php">
 			<edit>

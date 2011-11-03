@@ -57,6 +57,7 @@
 			<link type="contrib" href="contrib/pt_br.xml" lang="en">Brazilian Portuguese Language</link>
 			<link type="contrib" lang="en" href="contrib/update_1.1.1_to_1.2.0.xml">Update from 1.1.1 to 1.2.0</link>
 			<link type="contrib" lang="en" href="contrib/update_1.2.0_to_2.0.0.xml">Update from 1.2.0 to 2.0.0</link>
+			<link type="contrib" lang="en" href="contrib/addon_phpbb_seo.xml">[ADD-ON] phpBB SEO</link>
 		</link-group>
 		<history>
 			<entry>
