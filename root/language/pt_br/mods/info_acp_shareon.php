@@ -39,7 +39,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On MOD',
-    'SO_TITLE'		=> 'Configurações Share On Mod',
+	'SO_TITLE'		=> 'Configurações Share On Mod',
 	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos.',	
 	'SHARE_ON_MOD'	=> 'MOD "Share On"',	
 	'SO_CONFIG'		=> 'Configurações',

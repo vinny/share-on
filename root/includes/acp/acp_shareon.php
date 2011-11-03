@@ -113,7 +113,7 @@ class acp_shareon
 
 		$template->assign_vars(array(
 			'U_VERSIONCHECK'	=> ($version_up_to_date) ? false : $latest_version_info[1],
-			'S_VERSION'			=> $current_version,
+			'S_VERSIONOLD'		=> $current_version,
 			'S_VERSIONNEW'		=> ($version_up_to_date) ? false : $latest_version_info[0],
 		));
 	}
