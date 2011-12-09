@@ -16,11 +16,11 @@
 				<email><![CDATA[salva_bxt@hotmail.com]]></email>
 			</author>
 		</author-group>
-		<mod-version>2.0.0</mod-version>
+		<mod-version>2.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
-			<target-version>3.0.9</target-version>
+			<target-version>3.0.10</target-version>
 		</installation>
 		<link-group>
 			<link type="dependency" href="../install.xml" lang="en">Main Install</link>
@@ -29,7 +29,7 @@
 	<action-group>
 		<open src="viewtopic.php">
 			<edit>
-				<find><![CDATA[		// Share On 2.0.0 MOD
+				<find><![CDATA[		// Share On 2.0.1 MOD
 		'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_TWITTER'	=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . '&nbsp;' . generate_board_url() . '/viewtopic.php?t=' . $topic_data['topic_id'],
 		'U_DIGG'	=> 'http://digg.com/submit?phase=2&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&amp;title=' . $topic_data['topic_title'],
@@ -39,8 +39,8 @@
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
-		// Share On 2.0.0 MOD]]></find>
-				<action type="replace-with"><![CDATA[		// Share On 2.0.0 MOD
+		// Share On 2.0.1 MOD]]></find>
+				<action type="replace-with"><![CDATA[		// Share On 2.0.1 MOD
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
 		'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?u=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_TWITTER'	=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . '&nbsp;' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
@@ -52,7 +52,7 @@
 		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
-		// Share On 2.0.0 MOD]]></action>
+		// Share On 2.0.1 MOD]]></action>
 			</edit>
 		</open>
 	</action-group>

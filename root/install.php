@@ -72,7 +72,7 @@ $versions = array(
 		 array('so_myspace'),
 		 array('so_delicious'),
 		 array('so_technorati'),
-      ),
+		),
 	  
 	  // Now add the module
 		'module_add' => array(
@@ -85,12 +85,21 @@ $versions = array(
 				),
 			),
 		),
-   ),
+	),
    
    	// Version 2.0.0
 	'2.0.0' => array(
 		// Nothing changed in this version.
 	),
+
+	// Version 2.0.1
+	'2.0.1' => array(
+	// Lets add a config setting
+	'config_add' => array(
+		array('so_tumblr'),
+		),
+	),
+	
 );
 
 // Include the UMIF Auto file and everything else will be handled automatically.

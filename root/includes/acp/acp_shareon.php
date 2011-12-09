@@ -34,7 +34,7 @@ class acp_shareon
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
 		// Version Check
-		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.0.0';
+		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.0.1';
 
 		$submit = (isset($_POST['submit'])) ? true : false;
 		if ($submit)
@@ -55,6 +55,7 @@ class acp_shareon
 			set_config('so_myspace', request_var('so_myspace', 0));
 			set_config('so_delicious', request_var('so_delicious', 0));
 			set_config('so_technorati', request_var('so_technorati', 0));
+			set_config('so_tumblr', request_var('so_tumblr', 0));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
@@ -71,6 +72,7 @@ class acp_shareon
 			'SO_MYSPACE'	=> $config['so_myspace'],
 			'SO_DELICIOUS'	=> $config['so_delicious'],
 			'SO_TECHNORATI'	=> $config['so_technorati'],
+			'SO_TUMBLR'		=> $config['so_tumblr'],
 			'U_ACTION'		=> $this->u_action,
 			'SHAREON_VERSION'		=> $config['SHAREON_VERSION'],
 			'S_VERSION_UP_TO_DATE'	=> $this->shareon_version_compare($config['SHAREON_VERSION']),

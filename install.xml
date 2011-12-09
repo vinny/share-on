@@ -45,11 +45,11 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.0.0</mod-version>
+		<mod-version>2.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>600</time>
-			<target-version>3.0.9</target-version>
+			<target-version>3.0.10</target-version>
 		</installation>
 		<link-group>
 			<link type="template" href="contrib/subsilver2.xml" lang="en">Subsilver2</link>
@@ -57,6 +57,7 @@
 			<link type="contrib" href="contrib/pt_br.xml" lang="en">Brazilian Portuguese Language</link>
 			<link type="contrib" lang="en" href="contrib/update_1.1.1_to_1.2.0.xml">Update from 1.1.1 to 1.2.0</link>
 			<link type="contrib" lang="en" href="contrib/update_1.2.0_to_2.0.0.xml">Update from 1.2.0 to 2.0.0</link>
+			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.0.1.xml">Update from 2.0.0 to 2.0.1</link>
 			<link type="contrib" lang="en" href="contrib/addon_phpbb_seo.xml">[ADD-ON] phpBB SEO</link>
 		</link-group>
 		<history>
@@ -153,6 +154,20 @@
 					<change><![CDATA[Version 1.2.0 available on phpbb.com MODDB]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2011-11-30</date>
+				<rev-version>2.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Version 2.0.0 available on phpbb.com MODDB]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-12-08</date>
+				<rev-version>2.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[Add] Tumblr Share]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
@@ -172,7 +187,7 @@
 			</edit>
 			<edit>
 				<find><![CDATA[		'U_JABBER'		=> $user_cache[$poster_id]['jabber'],]]></find>
-				<action type="after-add"><![CDATA[		// Share On 2.0.0 MOD
+				<action type="after-add"><![CDATA[		// Share On 2.0.1 MOD
 		'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?u=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_TWITTER'	=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . '&nbsp;' . generate_board_url() . '/viewtopic.php?t=' . $topic_data['topic_id'],
 		'U_DIGG'	=> 'http://digg.com/submit?phase=2&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'] . '&amp;title=' . $topic_data['topic_title'],
@@ -182,13 +197,14 @@
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
-		// Share On 2.0.0 MOD]]></action>
+		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . urlencode(generate_board_url() . '/viewtopic.php?t='. ($topic_data['topic_id'])) . '&amp;name=' . ($topic_data['topic_title']),
+		// Share On 2.0.1 MOD]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[		'S_IGNORE_POST'		=> ($row['hide_post']) ? true : false,
 		'L_IGNORE_POST'		=> ($row['hide_post']) ? sprintf($user->lang['POST_BY_FOE'], get_username_string('full', $poster_id, $row['username'], $row['user_colour'], $row['post_username']), '<a href="' . $viewtopic_url . "&amp;p={$row['post_id']}&amp;view=show#p{$row['post_id']}" . '">', '</a>') : '',
 	);]]></find>
-				<action type="before-add"><![CDATA[		// Share On 2.0.0 MOD	
+				<action type="before-add"><![CDATA[		// Share On 2.0.1 MOD	
 		'S_SO_STATUS'		=> $config['so_status'],
 		'S_SO_FACEBOOK'		=> $config['so_facebook'],
 		'S_SO_TWITTER'		=> $config['so_twitter'],
@@ -200,14 +216,15 @@
 		'S_SO_MYSPACE'		=> $config['so_myspace'],
 		'S_SO_DELICIOUS' 	=> $config['so_delicious'],
 		'S_SO_TECHNORATI'	=> $config['so_technorati'],
+		'S_SO_TUMBLR'		=> $config['so_tumblr'],
 		'S_SHARE_ON_FIRST_POST'	=> ($row['post_id'] == $topic_data['topic_first_post_id']) ? true : false,
-		// Share On 2.0.0 MOD]]></action>
+		// Share On 2.0.1 MOD]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/viewtopic_body.html">
 			<edit>
 				<find><![CDATA[<!-- IF postrow.U_EDIT --><li class="edit-icon"><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}"><span>{L_EDIT_POST}</span></a></li><!-- ENDIF -->]]></find>
-				<action type="before-add"><![CDATA[					<!-- Share_On_2.0.0_MOD -->
+				<action type="before-add"><![CDATA[					<!-- Share_On_2.0.1_MOD -->
 						<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS and S_USER_LOGGED_IN -->
 							<!-- IF postrow.S_SO_FACEBOOK --><li class="facebook-icon"><a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_FACEBOOK}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_TWITTER --><li class="twitter-icon"><a href="{postrow.U_TWITTER}" title="{L_SHARE_ON_TWITTER}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TWITTER}</span></a></li><!-- ENDIF -->
@@ -219,12 +236,13 @@
 							<!-- IF postrow.S_SO_MYSPACE --><li class="myspace-icon"><a href="{postrow.U_MYSPACE}" title="{L_SHARE_ON_MYSPACE}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_MYSPACE}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_DELICIOUS --><li class="delicious-icon"><a href="{postrow.U_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_DELICIOUS}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_TECHNORATI --><li class="technorati-icon"><a href="{postrow.U_TECHNORATI}" title="{L_SHARE_ON_TECHNORATI}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TECHNORATI}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_TUMBLR --><li class="tumblr-icon"><a href="{postrow.U_TUMBLR}" title="{L_SHARE_ON_TUMBLR}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TUMBLR}</span></a></li><!-- ENDIF -->
 						<!-- ENDIF -->
-					<!-- Share_On_2.0.0_MOD -->]]></action>
+					<!-- Share_On_2.0.1_MOD -->]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[<!-- END postrow -->]]></find>
-				<action type="before-add"><![CDATA[	<!-- Share_On_2.0.0_MOD -->
+				<action type="before-add"><![CDATA[	<!-- Share_On_2.0.1_MOD -->
 		<!-- IF postrow.S_FIRST_ROW and postrow.S_SO_STATUS and not S_USER_LOGGED_IN -->
 			<div class="panel">
 				<div class="inner">
@@ -260,21 +278,24 @@
 							<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">Delicious</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_TECHNORATI --><td align="center"><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a></td>
-							<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">Technorati</a></td>	<!-- ENDIF -->				   
+							<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">Technorati</a></td>	<!-- ENDIF -->
+
+							<!-- IF postrow.S_SO_TUMBLR --><td align="center"><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a></td>
+							<td><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;">Tumblr</a></td><!-- ENDIF -->
 						</tr>   			
 					</table>
 					<span class="corners-bottom"><span></span></span>
 				</div>
 			</div>
 		<!-- ENDIF -->
-	<!-- Share_On_2.0.0_MOD -->
+	<!-- Share_On_2.0.1_MOD -->
 ]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/theme/buttons.css">
 			<edit>
 				<find><![CDATA[.quote-icon, .quote-icon a		{ background: none top left no-repeat; }]]></find>
-				<action type="after-add"><![CDATA[/* Share On 2.0.0 */
+				<action type="after-add"><![CDATA[/* Share On 2.0.1 */
 .facebook-icon, .facebook-icon a	{ background: none top left no-repeat; }
 .twitter-icon, .twitter-icon a		{ background: none top left no-repeat; }
 .tuenti-icon, .tuenti-icon a		{ background: none top left no-repeat; }
@@ -285,11 +306,12 @@
 .myspace-icon, .myspace-icon a		{ background: none top left no-repeat; }
 .delicious-icon, .delicious-icon a	{ background: none top left no-repeat; }
 .technorati-icon, .technorati-icon a	{ background: none top left no-repeat; }
-/* Share On 2.0.0 */]]></action>
+.tumblr-icon, .tumblr-icon a		{ background: none top left no-repeat; }
+/* Share On 2.0.1 */]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[ul.profile-icons li.quote-icon	{ width: {IMG_ICON_POST_QUOTE_WIDTH}px; height: {IMG_ICON_POST_QUOTE_HEIGHT}px; }]]></find>
-				<action type="after-add"><![CDATA[/* Share On 2.0.0 */
+				<action type="after-add"><![CDATA[/* Share On 2.0.1 */
 ul.profile-icons li.facebook-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.twitter-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.tuenti-icon		{ width: 20px; height: 20px; }
@@ -300,13 +322,14 @@ ul.profile-icons li.digg-icon		{ width: 20px; height: 20px; }
 ul.profile-icons li.myspace-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.delicious-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.technorati-icon	{ width: 20px; height: 20px; }
-/* Share On 2.0.0 */]]></action>
+ul.profile-icons li.tumblr-icon		{ width: 20px; height: 20px; }
+/* Share On 2.0.1 */]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/theme/colours.css">
 			<edit>
 				<find><![CDATA[.quote-icon, .quote-icon a		{ background-image: url("{IMG_ICON_POST_QUOTE_SRC}"); }]]></find>
-				<action type="after-add"><![CDATA[/* Share On 2.0.0 */
+				<action type="after-add"><![CDATA[/* Share On 2.0.1 */
 .facebook-icon, .facebook-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png"); }
 .twitter-icon, .twitter-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png"); }
 .tuenti-icon, .tuenti-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png"); }
@@ -317,7 +340,8 @@ ul.profile-icons li.technorati-icon	{ width: 20px; height: 20px; }
 .myspace-icon, .myspace-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png"); }
 .delicious-icon, .delicious-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif"); }
 .technorati-icon, .technorati-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png"); }
-/* Share On 2.0.0 */]]></action>
+.tumblr-icon, .tumblr-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png"); }
+/* Share On 2.0.1 */]]></action>
 			</edit>
 		</open>
 		<php-installer><![CDATA[install.php]]></php-installer>

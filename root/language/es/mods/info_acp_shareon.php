@@ -58,6 +58,7 @@ $lang = array_merge($lang, array(
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
+	'SO_TUMBLR'		=> 'Tumblr',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
@@ -70,6 +71,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_MYSPACE'		=> 'Compartir en MySpace',
 	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
+	'SHARE_ON_TUMBLR'		=> 'Compartir en Tumblr',
 ));
 
 ?>
