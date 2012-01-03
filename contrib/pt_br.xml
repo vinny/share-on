@@ -6,16 +6,16 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Share On - Spanish Translation]]></title>
+		<title lang="en"><![CDATA[Share On - Brazilian Portuguese Translation]]></title>
 		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious, Technorati or Tumblr.]]></description>
 		<author-group>
 			<author>
-				<realname><![CDATA[Salva]]></realname>
-				<username><![CDATA[Saske1]]></username>
-				<homepage><![CDATA[http://www.phpbbsaske.com]]></homepage>
-				<email><![CDATA[salva_bxt@hotmail.com]]></email>
+				<realname><![CDATA[Marcus Vinicius]]></realname>
+				<username><![CDATA[_Vinny_]]></username>
+				<homepage><![CDATA[http://www.suportephpbb.com.br]]></homepage>
+				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
 				<contributions-group>
-					<contributions status="current" from="2011-06-07" position="Developer"/>
+					<contributions status="current" from="2011-07-03" position="Developer"/>
 				</contributions-group>
 			</author>
 		</author-group>
@@ -31,9 +31,9 @@
 	</header>
 	<action-group>
 		<copy>
-			<file from="root/styles/prosilver/imageset/es/share_on_buttons/*.*" to="styles/prosilver/imageset/es/share_on_buttons/*.*"/>
-			<file from="root/styles/subsilver2/imageset/es/share_on_buttons/*.*" to="styles/subsilver2/imageset/es/share_on_buttons/*.*"/>
-			<file from="root/language/es/mods/info_acp_shareon.php" to="language/es/mods/info_acp_shareon.php"/>
+			<file from="root/styles/prosilver/imageset/pt_br/share_on_buttons/*.*" to="styles/prosilver/imageset/pt_br/share_on_buttons/*.*"/>
+			<file from="root/styles/subsilver2/imageset/pt_br/share_on_buttons/*.*" to="styles/subsilver2/imageset/pt_br/share_on_buttons/*.*"/>
+			<file from="root/language/pt_br/mods/info_acp_shareon.php" to="language/pt_br/mods/info_acp_shareon.php"/>
 		</copy>
 	</action-group>
 </mod>

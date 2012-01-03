@@ -11,6 +11,14 @@
 			<dd><input type="radio" class="radio" name="so_status" value="1" <!-- IF SO_STATUS -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
 				<input type="radio" class="radio" name="so_status" value="0" <!-- IF not SO_STATUS -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>
+		<dl>
+			<dt><label>{L_SO_VERSION_OLD}</label></dt>
+			<dd><strong>{S_VERSIONOLD}</strong></dd>
+		</dl>
+		<!-- IF S_VERSIONNEW --><dl>
+			<dt><label>{L_SO_VERSION_NEW}</label></dt>
+			<dd><strong><a href="{U_VERSIONCHECK}" title="{L_MORE_INFORMATION}" style="color: #228822;" onclick="window.open(this.href);return false;">{S_VERSIONNEW}</a></strong></dd>
+		</dl><!-- ENDIF -->
 	</fieldset>
 	<fieldset>
 		<legend>{L_SO_SELECT}</legend>
@@ -63,6 +71,11 @@
 			<dt><label for="so_friendfeed">{L_SO_FRIENDFEED}</label></dt>
 			<dd><input type="radio" class="radio" name="so_friendfeed" value="1" <!-- IF SO_FRIENDFEED -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
 				<input type="radio" class="radio" name="so_friendfeed" value="0" <!-- IF not SO_FRIENDFEED -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="so_tumblr">{L_SO_TUMBLR}</label></dt>
+			<dd><input type="radio" class="radio" name="so_tumblr" value="1" <!-- IF SO_TUMBLR -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
+				<input type="radio" class="radio" name="so_tumblr" value="0" <!-- IF not SO_TUMBLR -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>		
 	</fieldset>
 	<fieldset>

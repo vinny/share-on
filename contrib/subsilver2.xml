@@ -7,7 +7,8 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Share On - Install in Subsilver2]]></title>
-		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious or Technorati.]]></description>
+		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious, Technorati or Tumblr.]]></description>
+		<author-notes lang="en"><![CDATA[If you want to contribute to the development of this MOD, consider making a donation visiting: http://goo.gl/erGPa]]></author-notes>
 		<author-group>
 			<author>
 				<realname><![CDATA[Salva]]></realname>
@@ -24,7 +25,7 @@
 				<homepage><![CDATA[vinny@suportephpbb.com.br]]></homepage>
 				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
 				<contributions-group>
-					<contributions status="current" from="2011-07-03" position="Co-Author"/>
+					<contributions status="current" from="2011-07-03" position="Developer"/>
 				</contributions-group>
 			</author>
 			<author>
@@ -45,11 +46,11 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>1.2.0</mod-version>
+		<mod-version>2.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
-			<target-version>3.0.9</target-version>
+			<target-version>3.0.10</target-version>
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Main Install</link>
@@ -64,7 +65,7 @@
 				<find><![CDATA[						<tr valign="middle">
 							<td class="gensmall" align="{S_CONTENT_FLOW_END}">
 							<!-- IF not S_IS_BOT -->]]></find>
-				<action type="after-add"><![CDATA[	<!-- Share_On_1.2.0_MOD -->
+				<action type="after-add"><![CDATA[	<!-- Share_On_2.0.1_MOD -->
 		<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS -->
 			<!-- IF postrow.S_SO_FACEBOOK --><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TWITTER --><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" /></a><!-- ENDIF -->
@@ -76,8 +77,9 @@
 			<!-- IF postrow.S_SO_MYSPACE --><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_DELICIOUS --><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TECHNORATI --><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_TUMBLR --><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a><!-- ENDIF -->
 		<!-- ENDIF -->
-	<!-- Share_On_1.2.0_MOD -->]]></action>
+	<!-- Share_On_2.0.1_MOD -->]]></action>
 			</edit>
 		</open>
 		<diy-instructions lang="en"><![CDATA[Purge the cache and refresh the subsilver2 template.]]></diy-instructions>
