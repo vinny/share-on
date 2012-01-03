@@ -39,6 +39,7 @@
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . generate_board_url() . '/viewtopic.php?t='. $topic_data['topic_id'],
+		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . urlencode(generate_board_url() . '/viewtopic.php?t='. ($topic_data['topic_id'])) . '&amp;name=' . ($topic_data['topic_title']),
 		// Share On 2.0.1 MOD]]></find>
 				<action type="replace-with"><![CDATA[		// Share On 2.0.1 MOD
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
@@ -51,6 +52,7 @@
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
+		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : urlencode(generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id")), . '&amp;name=' . ($topic_data['topic_title']),
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
 		// Share On 2.0.1 MOD]]></action>
 			</edit>

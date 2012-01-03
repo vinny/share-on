@@ -96,7 +96,7 @@ class acp_shareon
 		$errstr = '';
 		$errno = 0;
 
-		$info = get_remote_file('www.phpbbsaske.com', '/foro/shareon', 'shareon.txt', $errstr, $errno);
+		$info = get_remote_file('www.suportephpbb.com.br', '/shareon', 'shareon.txt', $errstr, $errno);
 		if ($info === false)
 		{
 			$template->assign_var('S_VERSIONCHECK_FAIL', true);
