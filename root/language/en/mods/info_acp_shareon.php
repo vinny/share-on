@@ -37,11 +37,14 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	// ACP
 	'SO_ACP'		=> 'Share On MOD',
     'SO_TITLE'		=> 'SHARE ON MOD Settings',
 	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics',	
 	'SHARE_ON_MOD'	=> 'MOD "Share On"',	
 	'SO_CONFIG'		=> 'Settings',
+	'SO_VERSION_OLD'	=> 'Current version of the MOD:',
+	'SO_VERSION_NEW'	=> 'Latest version of the MOD:',
 	'SO_SAVED'		=> 'Changes Saved.',
 	'SO_SELECT'		=> 'Share On:',
 	'SO_STATUS'		=> 'Enable MOD "Share On"',
@@ -54,8 +57,21 @@ $lang = array_merge($lang, array(
 	'SO_TECHNORATI'	=> 'Technorati',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
-	'SO_FRIENDFEED'		=> 'FriendFeed',
+	'SO_FRIENDFEED'	=> 'FriendFeed',
+	'SO_TUMBLR'		=> 'Tumblr',
 	
+	// Share On viewtopic.php
+	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
+	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
+	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
+	'SHARE_ON_SONICO'		=> 'Share on Sonico',
+	'SHARE_ON_FRIENDFEED'	=> 'Share on FriendFeed',
+	'SHARE_ON_ORKUT'		=> 'Share on Orkut',
+	'SHARE_ON_DIGG'			=> 'Share on Digg',
+	'SHARE_ON_MYSPACE'		=> 'Share on MySpace',
+	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
+	'SHARE_ON_TECHNORATI'	=> 'Share on Technorati',
+	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
 ));
 
 ?>
