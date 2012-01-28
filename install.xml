@@ -7,7 +7,27 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Share On]]></title>
-		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious, Technorati or Tumblr.]]></description>
+		<description lang="en"><![CDATA[With Share On MOD, users can share the topics(the buttons are displayed only in the first post of each topic) in the following social networks:
+- Facebook
+- Twitter
+- Digg
+- MySpace
+- Orkut
+- Delicious
+- Technorati
+- Tuenti
+- Sonico
+- Friendfeed
+- Tumblr
+
+For Google Plus[ADD-ON], visit: http://goo.gl/ajHWY
+
+You can follow the development through the repository: http://goo.gl/zGvsP
+
+** FEATURES **
+- ACP module to manage the MOD.
+- Each button can be enabled/disabled individually.
+- Check version: displays when a new version is available.]]></description>
 		<author-notes lang="en"><![CDATA[If you want to contribute to the development of this MOD, consider making a donation visiting: http://goo.gl/erGPa]]></author-notes>
 		<author-group>
 			<author>
@@ -355,29 +375,28 @@ ul.profile-icons li.tumblr-icon		{ width: 20px; height: 20px; }
 		<php-installer><![CDATA[install.php]]></php-installer>
 		<diy-instructions lang="en"><![CDATA[IMPORTANT! Once you modify and upload all the files :
 
-Log on to Administration Control Panel
 #####################################################################
 
-A) Purge the cache :
+A) Add the new MOD to your ACP
 
-	A.1) Navigate to "GENERAL" Tab.
-	A.2) Next to "Purge the cache" click on "Run now".
-	A.3) in the next screen, click on "Yes".
+	A.1) Run the install.php
 
 #####################################################################
 
-B) Purge the templates, Themes and Images Galery from Prosilver and Subsilver2:
+B) Purge the cache :
 
-	B.1) Navigate to "STYLES" Tab.
-	B.2) Under "Style components " click on "Templates".
-	B.3) Under "Actions" click on "Refresh".
-	B.4) in the next screen, click on "Yes" ( Repeat last 2 steps with Themes and Images Galery ).
-	
+	B.1) Navigate to "GENERAL" Tab.
+	B.2) Next to "Purge the cache" click on "Run now".
+	B.3) in the next screen, click on "Yes".
+
 #####################################################################
 
-C) Add the new MOD to your ACP
+C) Purge the templates, Themes and Images Galery from Prosilver and Subsilver2:
 
-	C.1) Run the install.php
+	C.1) Navigate to "STYLES" Tab.
+	C.2) Under "Style components " click on "Templates".
+	C.3) Under "Actions" click on "Refresh".
+	C.4) in the next screen, click on "Yes" ( Repeat last 2 steps with Themes and Images Galery ).
 
 #####################################################################
 
