@@ -7,7 +7,26 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Share On - Update from 1.2.0 to 2.0.0]]></title>
-		<description lang="en"><![CDATA[After installing this mod, user can share his posts on Facebook, Twitter, Orkut, Digg, MySpace, Delicious or Technorati.]]></description>
+		<description lang="en"><![CDATA[With Share On MOD, users can share the topics(the buttons are displayed only in the first post of each topic) in the following social networks:
+- Facebook
+- Twitter
+- Digg
+- MySpace
+- Orkut
+- Delicious
+- Technorati
+- Tuenti
+- Sonico
+- Friendfeed
+
+For Google Plus[ADD-ON], visit: http://goo.gl/ajHWY
+
+You can follow the development through the repository: http://goo.gl/zGvsP
+
+** FEATURES **
+- ACP module to manage the MOD.
+- Each button can be enabled/disabled individually.
+- Check version: displays when a new version is available.]]></description>
 		<author-group>
 			<author>
 				<realname><![CDATA[Salva]]></realname>
