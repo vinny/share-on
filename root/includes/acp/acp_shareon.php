@@ -61,7 +61,7 @@ class acp_shareon
 		}
 		
 		$template->assign_vars(array(
-			'SO_STATUS'		=> $config['so_status'],
+			'SO_STATUS'		=> (!empty($config['so_status'])) ? true : false,
 			'SO_FACEBOOK'	=> $config['so_facebook'],
 			'SO_TWITTER'	=> $config['so_twitter'],
 			'SO_TUENTI'		=> $config['so_tuenti'],
