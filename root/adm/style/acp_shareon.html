@@ -77,13 +77,12 @@
 			<dd><input type="radio" class="radio" name="so_tumblr" value="1" <!-- IF SO_TUMBLR -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
 				<input type="radio" class="radio" name="so_tumblr" value="0" <!-- IF not SO_TUMBLR -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>		
-	</fieldset>
-	<fieldset>
+
 		<p class="submit-buttons">
 			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
 			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
 		</p>
+		{S_FORM_TOKEN}
 	</fieldset>
-	{S_FORM_TOKEN}
 </form>
 <!-- INCLUDE overall_footer.html -->

@@ -6,14 +6,43 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Share On ~ phpBB SEO]]></title>
-		<description lang="en"><![CDATA[This add-on for Share On MOD]]></description>
+		<title lang="en"><![CDATA[Share On for http://www.phpBB-SEO.com SEO TOOLKIT]]></title>
+		<description lang="en"><![CDATA[With Share On MOD, users can share the topics(the buttons are displayed only in the first post of each topic) in the following social networks:
+- Facebook
+- Twitter
+- Digg
+- MySpace
+- Orkut
+- Delicious
+- Technorati
+- Tuenti
+- Sonico
+- Friendfeed
+- Tumblr
+
+For Google Plus[ADD-ON], visit: http://goo.gl/ajHWY
+
+You can follow the development through the repository: http://goo.gl/zGvsP
+
+** FEATURES **
+- ACP module to manage the MOD.
+- Each button can be enabled/disabled individually.
+- Check version: displays when a new version is available.]]></description>
 		<author-group>
 			<author>
 				<realname><![CDATA[Salva]]></realname>
 				<username><![CDATA[Saske1]]></username>
 				<homepage><![CDATA[http://www.phpbbsaske.com]]></homepage>
 				<email><![CDATA[salva_bxt@hotmail.com]]></email>
+			</author>
+			<author>
+				<realname><![CDATA[Marcus Vinicius]]></realname>
+				<username><![CDATA[_Vinny_]]></username>
+				<homepage><![CDATA[http://www.suportephpbb.com.br]]></homepage>
+				<email><![CDATA[vinny@suportephpbb.com.br]]></email>
+				<contributions-group>
+					<contributions status="current" from="2011-07-03" position="Developer"/>
+				</contributions-group>
 			</author>
 		</author-group>
 		<mod-version>2.0.1</mod-version>
@@ -23,7 +52,7 @@
 			<target-version>3.0.10</target-version>
 		</installation>
 		<link-group>
-			<link type="dependency" href="../install.xml" lang="en">Main Install</link>
+			<link type="parent" href="../install.xml" lang="en">Main Install</link>
 		</link-group>
 	</header>
 	<action-group>
@@ -52,7 +81,7 @@
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_SONICO'	=> 'http://www.sonico.com/share.php?title=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
-		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : urlencode(generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id")), . '&amp;name=' . ($topic_data['topic_title']),
+		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : urlencode(generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id")) . '&amp;name=' . ($topic_data['topic_title']),
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
 		// Share On 2.0.1 MOD]]></action>
 			</edit>
