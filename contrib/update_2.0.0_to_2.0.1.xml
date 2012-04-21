@@ -62,6 +62,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		<copy>
 			<file from="root/adm/style/acp_shareon.html" to="adm/style/acp_shareon.html"/>
 			<file from="root/includes/acp/acp_shareon.php" to="includes/acp/acp_shareon.php"/>
+			<file from="root/includes/acp/info/acp_shareon.php" to="includes/acp/info/acp_shareon.php"/>
 			<file from="root/language/en/mods/info_acp_shareon.php" to="language/en/mods/info_acp_shareon.php"/>
 			<file from="root/styles/prosilver/imageset/en/share_on_buttons/*.*" to="styles/prosilver/imageset/en/share_on_buttons/*.*"/>
 			<file from="root/umil/*.*" to="umil/*.*"/>
@@ -136,37 +137,37 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 					<table width="100%">
 						<tr>
 							<!-- IF postrow.S_SO_FACEBOOK --><td align="right"><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a></td>
-							<td><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;">Facebook</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;">{L_SO_FACEBOOK}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_TWITTER --><td align="right"><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" /></a></td>
-							<td><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;">Twitter</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;">{L_SO_TWITTER}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_TUENTI --><td align="right"><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUENTI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" /></a></td>
-							<td><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;">Tuenti</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;">{L_SO_TUENTI}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_SONICO --><td align="right"><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_SONICO}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png" alt="{L_SHARE_ON_SONICO}" /></a></td>
-							<td><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;">Sonico</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;">{L_SO_SONICO}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_FRIENDFEED --><td align="right"><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FRIENDFEED}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" /></a></td>
-							<td><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;">FriendFeed</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;">{L_SO_FRIENDFEED}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_ORKUT --><td align="right"><a title="{L_SHARE_ON_ORKUT}" href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();" ><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" /></a></td>
-							<td><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();">Orkut</a></td> <!-- ENDIF -->
+							<td><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();">{L_SO_ORKUT}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_DIGG --><td align="right"><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a></td>
-							<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">Digg</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">{L_SO_DIGG}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_MYSPACE --><td align="right"><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a></td>
-							<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">MySpace</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">{L_SO_MYSPACE}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_DELICIOUS --><td align="right"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
-							<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">Delicious</a></td> <!-- ENDIF -->
+							<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">{L_SO_DELICIOUS}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_TECHNORATI --><td align="right"><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a></td>
-							<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">Technorati</a></td>	<!-- ENDIF -->
+							<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">{L_SO_TECHNORATI}</a></td>	<!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_TUMBLR --><td align="right"><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a></td>
-							<td><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;">Tumblr</a></td><!-- ENDIF -->
+							<td><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;">{L_SO_TUMBLR}</a></td><!-- ENDIF -->
 						</tr>   			
 					</table>
 					<span class="corners-bottom"><span></span></span>
@@ -206,12 +207,12 @@ A) Purge the cache :
 
 #####################################################################
 
-B) Purge the templates, Themes and Images Galery from Prosilver and Subsilver2:
+B) Purge the templates and themes:
 
 	B.1) Navigate to "STYLES" Tab.
 	B.2) Under "Style components " click on "Templates".
 	B.3) Under "Actions" click on "Refresh".
-	B.4) in the next screen, click on "Yes" ( Repeat last 2 steps with Themes and Images Galery ).
+	B.4) in the next screen, click on "Yes" ( Repeat last 2 steps with Themes and templates ).
 	
 #####################################################################
 

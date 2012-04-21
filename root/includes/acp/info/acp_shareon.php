@@ -26,7 +26,7 @@ class acp_shareon_info
 		return array(
 			'filename'	=> 'acp_shareon',
 			'title'		=> 'SO_ACP',
-			'version'	=> '1.2.0',
+			'version'	=> '2.0.1',
 			'modes'		=> array(
 				'settings'		=> array('title' => 'SO_CONFIG', 'auth' => 'acl_a_board', 'cat' => array('SHARE_ON_MOD')),
 			),

@@ -98,6 +98,7 @@ $versions = array(
 	'config_add' => array(
 		array('so_tumblr'),
 		),
+	'cache_purge' => array('', 'template', 'theme'),
 	),
 	
 );
