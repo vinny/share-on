@@ -18,9 +18,9 @@
 - Tuenti
 - Sonico
 - Friendfeed
-- Tumblr
+- Google+
 
-For Google Plus[ADD-ON], visit: http://goo.gl/ajHWY
+For Google+ Pulseone[ADD-ON], visit: http://goo.gl/ajHWY
 
 You can follow the development through the repository: http://goo.gl/zGvsP
 
@@ -66,11 +66,11 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.0.1</mod-version>
+		<mod-version>2.1.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
-			<target-version>3.0.10</target-version>
+			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Main Install</link>
@@ -98,6 +98,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_DELICIOUS --><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TECHNORATI --><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TUMBLR --><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_GOOGLE --><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.png" alt="{L_SHARE_ON_GOOGLE}" /></a><!-- ENDIF -->
 		<!-- ENDIF -->
 	<!-- Share_On_2.0.1_MOD -->]]></action>
 			</edit>

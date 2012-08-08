@@ -59,6 +59,12 @@ $lang = array_merge($lang, array(
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
+	'SO_GOOGLE'		=> 'Google+',
+
+	// Share On Position
+	'SO_POSITION'	=> 'Position',
+	'SO_DEFAULT'	=> 'Standard',
+	'SO_BOTTOM_BAR'	=> 'Bottom bar',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
@@ -72,6 +78,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Share on Technorati',
 	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
 ));
 
 ?>

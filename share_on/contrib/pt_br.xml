@@ -18,9 +18,9 @@
 - Tuenti
 - Sonico
 - Friendfeed
-- Tumblr
+- Google+
 
-For Google Plus[ADD-ON], visit: http://goo.gl/ajHWY
+For Google+ Pulseone[ADD-ON], visit: http://goo.gl/ajHWY
 
 You can follow the development through the repository: http://goo.gl/zGvsP
 
@@ -39,11 +39,11 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.0.1</mod-version>
+		<mod-version>2.1.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
-			<target-version>3.0.10</target-version>
+			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Main Install</link>
