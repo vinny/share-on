@@ -21,7 +21,7 @@
 - Tumblr
 - Google+
 
-For Google+ Pulseone[ADD-ON], visit: http://goo.gl/ajHWY
+For Google+ PulseOne[ADD-ON], visit: http://goo.gl/ajHWY
 
 You can follow the development through the repository: http://goo.gl/zGvsP
 
@@ -86,8 +86,9 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				<find><![CDATA[						<tr valign="middle">
 							<td class="gensmall" align="{S_CONTENT_FLOW_END}">
 							<!-- IF not S_IS_BOT -->]]></find>
-				<action type="after-add"><![CDATA[	<!-- Share_On_2.0.1_MOD -->
-		<!-- IF postrow.S_SHARE_ON_FIRST_POST and postrow.S_SO_STATUS -->
+				<action type="after-add"><![CDATA[<!-- Share_On_2.1.0_MOD -->
+	<!-- IF postrow.S_SO_POSITION eq 1 -->
+		<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 			<!-- IF postrow.S_SO_FACEBOOK --><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TWITTER --><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TUENTI --><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUENTI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" /></a><!-- ENDIF -->
@@ -101,7 +102,61 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_TUMBLR --><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_GOOGLE --><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.png" alt="{L_SHARE_ON_GOOGLE}" /></a><!-- ENDIF -->
 		<!-- ENDIF -->
-	<!-- Share_On_2.0.1_MOD -->]]></action>
+	<!-- ENDIF -->
+<!-- Share_On_2.1.0_MOD -->]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[<!-- END postrow -->]]></find>
+				<action type="before-add"><![CDATA[<!-- Share_On_2.1.0_MOD -->
+<!-- IF postrow.S_SO_POSITION eq 0 -->
+	<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
+<br clear="all" />
+	<table>
+		<tr>
+			<td width="100%"><h4>{L_SO_SELECT}</h4></td>
+		</tr>
+		<tr>
+			<!-- IF postrow.S_SO_FACEBOOK --><td align="right"><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a></td>
+			<td><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;">{L_SO_FACEBOOK}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_TWITTER --><td align="right"><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TWITTER}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png" alt="{L_SHARE_ON_TWITTER}" /></a></td>
+			<td><a href="{postrow.U_TWITTER}" onclick="window.open(this.href);return false;">{L_SO_TWITTER}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_TUENTI --><td align="right"><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUENTI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png" alt="{L_SHARE_ON_TUENTI}" /></a></td>
+			<td><a href="{postrow.U_TUENTI}" onclick="window.open(this.href);return false;">{L_SO_TUENTI}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_SONICO --><td align="right"><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_SONICO}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_sonico.png" alt="{L_SHARE_ON_SONICO}" /></a></td>
+			<td><a href="{postrow.U_SONICO}" onclick="window.open(this.href);return false;">{L_SO_SONICO}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_FRIENDFEED --><td align="right"><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FRIENDFEED}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" /></a></td>
+			<td><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;">{L_SO_FRIENDFEED}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_ORKUT --><td align="right"><a title="{L_SHARE_ON_ORKUT}" href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();" ><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" /></a></td>
+			<td><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();">{L_SO_ORKUT}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_DIGG --><td align="right"><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a></td>
+			<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">{L_SO_DIGG}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_MYSPACE --><td align="right"><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a></td>
+			<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">{L_SO_MYSPACE}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_DELICIOUS --><td align="right"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
+			<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">{L_SO_DELICIOUS}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_TECHNORATI --><td align="right"><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a></td>
+			<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">{L_SO_TECHNORATI}</a></td><!-- ENDIF -->
+
+			<!-- IF postrow.S_SO_TUMBLR --><td align="right"><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a></td>
+			<td><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;">{L_SO_TUMBLR}</a></td><!-- ENDIF -->
+							
+			<!-- IF postrow.S_SO_GOOGLE --><td align="right"><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.png" alt="{L_SHARE_ON_GOOGLE}"/></a></td>
+			<td><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;">{L_SO_GOOGLE}</a></td><!-- ENDIF -->
+		</tr>   			
+	</table>
+<br clear="all" />
+	<!-- ENDIF -->
+<!-- ENDIF -->
+<!-- Share_On_2.1.0_MOD -->]]></action>
 			</edit>
 		</open>
 		<diy-instructions lang="en"><![CDATA[Purge the cache and refresh the subsilver2 template.]]></diy-instructions>

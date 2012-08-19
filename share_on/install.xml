@@ -21,7 +21,7 @@
 - Tumblr
 - Google+
 
-For Google+ Pulseone[ADD-ON], visit: http://goo.gl/ajHWY
+For Google+ PulseOne[ADD-ON], visit: http://goo.gl/ajHWY
 
 You can follow the development through the repository: http://goo.gl/zGvsP
 
@@ -78,6 +78,8 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<link type="language" href="contrib/es.xml" lang="en">Spanish Language</link>
 			<link type="language" href="contrib/pt_br.xml" lang="en">Brazilian Portuguese Language</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.0.1.xml">Update from 2.0.0 to 2.0.1</link>
+			<link type="contrib" lang="en" href="#">Update from 2.0.0 to 2.1.0</link>
+			<link type="contrib" lang="en" href="#">Update from 2.0.1 to 2.1.0</link>
 			<link type="contrib" lang="en" href="contrib/addon_phpbb_seo.xml">[ADD-ON] phpBB SEO</link>
 		</link-group>
 		<history>
@@ -255,7 +257,6 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		'S_SO_TECHNORATI'	=> (!empty($config['so_technorati'])) ? true : false,
 		'S_SO_TUMBLR'		=> (!empty($config['so_tumblr'])) ? true : false,
 		'S_SO_GOOGLE'		=> (!empty($config['so_google'])) ? true : false,
-		'S_SO_FIRST_POST'	=> $topic_data['topic_first_post_id'],
 		// Share On 2.1.0 MOD]]></action>
 			</edit>
 		</open>
@@ -264,7 +265,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				<find><![CDATA[<!-- IF postrow.U_EDIT --><li class="edit-icon"><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}"><span>{L_EDIT_POST}</span></a></li><!-- ENDIF -->]]></find>
 				<action type="before-add"><![CDATA[					<!-- Share_On_2.1.0_MOD -->
 					<!-- IF postrow.S_SO_POSITION eq 1 -->
-						<!-- IF postrow.S_SO_STATUS and postrow.S_SO_FIRST_POST -->
+						<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 							<!-- IF postrow.S_SO_FACEBOOK --><li class="facebook-icon"><a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_FACEBOOK}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_TWITTER --><li class="twitter-icon"><a href="{postrow.U_TWITTER}" title="{L_SHARE_ON_TWITTER}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TWITTER}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_TUENTI --><li class="tuenti-icon"><a href="{postrow.U_TUENTI}" title="{L_SHARE_ON_TUENTI}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TUENTI}</span></a></li><!-- ENDIF -->
@@ -285,7 +286,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				<find><![CDATA[<!-- END postrow -->]]></find>
 				<action type="before-add"><![CDATA[	<!-- Share_On_2.1.0_MOD -->
 	<!-- IF postrow.S_SO_POSITION eq 0 -->
-		<!-- IF postrow.S_SO_STATUS and postrow.S_SO_FIRST_POST -->
+		<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 			<div class="panel">
 				<div class="inner">
 					<span class="corners-top"><span></span></span>
@@ -334,8 +335,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			</div>
 		<!-- ENDIF -->
 	<!-- ENDIF -->
-	<!-- Share_On_2.1.0_MOD -->
-]]></action>
+	<!-- Share_On_2.1.0_MOD -->]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/theme/buttons.css">
@@ -389,7 +389,7 @@ ul.profile-icons li.google-icon		{ width: 20px; height: 20px; }
 .delicious-icon, .delicious-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif"); }
 .technorati-icon, .technorati-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png"); }
 .tumblr-icon, .tumblr-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png"); }
-.google-icon, .google-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.png"); }
+.google-icon, .google-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.gif"); }
 /* Share On 2.1.0 */]]></action>
 			</edit>
 		</open>

@@ -6,15 +6,16 @@
 
 <form id="acp_shareon" method="post" action="{U_ACTION}">
 	<fieldset>
+		<legend>{L_SO_CONFIG}</legend>
 		<dl>
 			<dt><label id="so_status" for="so_status">{L_SO_STATUS}</label></dt>
 			<dd><input type="radio" class="radio" name="so_status" value="1" <!-- IF SO_STATUS -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
 				<input type="radio" class="radio" name="so_status" value="0" <!-- IF not SO_STATUS -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>
 		<dl>
-			<dt><label id="so_position" for="so_position">{L_SO_POSITION}</label></dt>
+			<dt><label id="so_position" for="so_position">{L_SO_POSITION}</label><br /><span>{L_SO_POSITION_EXPLAIN}</span></dt>
 			<dd><input type="radio" class="radio" name="so_position" value="1" <!-- IF SO_POSITION -->checked="checked"<!-- ENDIF -->/> {L_SO_DEFAULT} &nbsp; 
-				<input type="radio" class="radio" name="so_position" value="0" <!-- IF not SO_POSITION -->checked="checked"<!-- ENDIF --> /> {L_SO_BOTTOM_BAR}</dd>
+				<input type="radio" class="radio" name="so_position" value="0" <!-- IF not SO_POSITION -->checked="checked"<!-- ENDIF --> /> {L_SO_AFTER_POST}</dd>
 		</dl>
 		<dl>
 			<dt><label>{L_SO_VERSION_OLD}</label></dt>
