@@ -76,7 +76,7 @@ $versions = array(
 	'config_add' => array(
 		array('so_tumblr', true),
 		array('so_google', true),
-		array('so_position', true),
+		array('so_position', '1'),
 		),
 
 	'cache_purge' => array('', 'template', 'theme'),

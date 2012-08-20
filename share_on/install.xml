@@ -78,8 +78,8 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<link type="language" href="contrib/es.xml" lang="en">Spanish Language</link>
 			<link type="language" href="contrib/pt_br.xml" lang="en">Brazilian Portuguese Language</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.0.1.xml">Update from 2.0.0 to 2.0.1</link>
-			<link type="contrib" lang="en" href="#">Update from 2.0.0 to 2.1.0</link>
-			<link type="contrib" lang="en" href="#">Update from 2.0.1 to 2.1.0</link>
+			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.1.0.xml">Update from 2.0.0 to 2.1.0</link>
+			<link type="contrib" lang="en" href="contrib/update_2.0.1_to_2.1.0.xml">Update from 2.0.1 to 2.1.0</link>
 			<link type="contrib" lang="en" href="contrib/addon_phpbb_seo.xml">[ADD-ON] phpBB SEO</link>
 		</link-group>
 		<history>
@@ -326,7 +326,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 							<!-- IF postrow.S_SO_TUMBLR --><td align="right"><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a></td>
 							<td><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;">{L_SO_TUMBLR}</a></td><!-- ENDIF -->
 							
-							<!-- IF postrow.S_SO_GOOGLE --><td align="right"><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.png" alt="{L_SHARE_ON_GOOGLE}"/></a></td>
+							<!-- IF postrow.S_SO_GOOGLE --><td align="right"><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.gif" alt="{L_SHARE_ON_GOOGLE}"/></a></td>
 							<td><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;">{L_SO_GOOGLE}</a></td><!-- ENDIF -->
 						</tr>   			
 					</table>
