@@ -74,17 +74,17 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		// Share On 2.1.0 MOD]]></find>
 				<action type="replace-with"><![CDATA[		// Share On 2.1.0 MOD
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
-		'U_FACEBOOK'	=> 'http://www.facebook.com/share.$phpEx?u=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
+		'U_FACEBOOK'	=> "http://www.facebook.com/share.$phpEx?u=" . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_TWITTER'	=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . '&nbsp;' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_DIGG'	=> 'http://digg.com/submit?phase=2&amp;url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_MYSPACE'	=> 'http://www.myspace.com/Modules/PostTo/Pages/?u=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_DELICIOUS' 	=> 'http://delicious.com/post?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_TECHNORATI'	=> 'http://technorati.com/faves?add=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
-		'U_SONICO'	=> 'http://www.sonico.com/share.$phpEx?title=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
+		'U_SONICO'	=> "http://www.sonico.com/share.$phpEx?title=" . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : urlencode(generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id")) . '&amp;name=' . ($topic_data['topic_title']),
-		'U_GOOGLE'	=> 'https://plus.google.com/share?url='. (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),   ,
+		'U_GOOGLE'	=> 'https://plus.google.com/share?url='. (!empty($phpbb_seo->seo_opt['url_rewrite']) ? $phpbb_seo->drop_sid($viewtopic_url) : generate_board_url() . "/viewtopic.$phpEx?f=$forum_id&amp;t=$topic_id"),
 		// www.phpBB-SEO.com SEO TOOLKIT BEGIN
 		// Share On 2.0.1 MOD]]></action>
 			</edit>
