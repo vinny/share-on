@@ -70,11 +70,17 @@ $versions = array(
 		// Nothing changed in this version.
 	),
 
+	// Version 2.0.1
+	'2.0.1' => array(
+	// Lets add a config setting
+	'config_add' => array(
+		array('so_tumblr', true),
+	),
+
 	// Version 2.1.0
 	'2.1.0' => array(
 	// Lets add a config setting
 	'config_add' => array(
-		array('so_tumblr', true),
 		array('so_google', true),
 		array('so_position', '1'),
 		),
