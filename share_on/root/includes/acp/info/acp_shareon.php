@@ -3,7 +3,7 @@
 *
 * @package - Share On
 * @version $Id: acp_shareon.php 2010-03-12 02:40 Saske1 $
-* @copyright (c) Saske1 ( http://www.phpbbsaske.com )
+* @copyright (c) Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

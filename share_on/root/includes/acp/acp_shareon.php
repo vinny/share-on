@@ -4,7 +4,7 @@
 *
 * @package - Share On
 * @version $Id: acp_shareon.php 2010-03-12 02:40 Saske1 $
-* @copyright (c) Saske1 ( http://www.phpbbsaske.com )
+* @copyright (c) Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -44,20 +44,20 @@ class acp_shareon
 				trigger_error('FORM_INVALID');
 			}
 
-			set_config('so_status', request_var('so_status', 0));
-			set_config('so_position', request_var('so_position', 0));
-			set_config('so_facebook', request_var('so_facebook', 0));
-			set_config('so_twitter', request_var('so_twitter', 0));
-			set_config('so_tuenti', request_var('so_tuenti', 0));
-			set_config('so_sonico', request_var('so_sonico', 0));
-			set_config('so_friendfeed', request_var('so_friendfeed', 0));
-			set_config('so_orkut', request_var('so_orkut', 0));
-			set_config('so_digg', request_var('so_digg', 0));
-			set_config('so_myspace', request_var('so_myspace', 0));
-			set_config('so_delicious', request_var('so_delicious', 0));
-			set_config('so_technorati', request_var('so_technorati', 0));
-			set_config('so_tumblr', request_var('so_tumblr', 0));
-			set_config('so_google', request_var('so_google', 0));
+			set_config('so_status', request_var('so_status', true));
+			set_config('so_position', request_var('so_position', true));
+			set_config('so_facebook', request_var('so_facebook', true));
+			set_config('so_twitter', request_var('so_twitter', true));
+			set_config('so_tuenti', request_var('so_tuenti', true));
+			set_config('so_sonico', request_var('so_sonico', true));
+			set_config('so_friendfeed', request_var('so_friendfeed', true));
+			set_config('so_orkut', request_var('so_orkut', true));
+			set_config('so_digg', request_var('so_digg', true));
+			set_config('so_myspace', request_var('so_myspace', true));
+			set_config('so_delicious', request_var('so_delicious', true));
+			set_config('so_technorati', request_var('so_technorati', true));
+			set_config('so_tumblr', request_var('so_tumblr', true));
+			set_config('so_google', request_var('so_google', true));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}

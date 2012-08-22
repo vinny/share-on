@@ -4,7 +4,7 @@
 * @author _Vinny_ vinny@suportephpbb.com.br
 * @package Share On
 * @version $Id install.php
-* @copyright (c) 2012 _Vinny_ ( http://www.suportephpbb.com.br ), Saske1 ( http://www.phpbbsaske.com/ )
+* @copyright (c) 2012 _Vinny_ ( http://www.suportephpbb.com.br ), Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -75,6 +75,7 @@ $versions = array(
 	// Lets add a config setting
 	'config_add' => array(
 		array('so_tumblr', true),
+		),
 	),
 
 	// Version 2.1.0
@@ -82,7 +83,7 @@ $versions = array(
 	// Lets add a config setting
 	'config_add' => array(
 		array('so_google', true),
-		array('so_position', '1'),
+		array('so_position', true),
 		),
 
 	'cache_purge' => array('', 'template', 'theme'),

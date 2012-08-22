@@ -5,7 +5,7 @@
 *
 * @package language
 * @version $Id: info_acp_shareon.php
-* @copyright (c) Saske1 ( http://www.phpbbsaske.com )
+* @copyright (c) Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 * 
 */
