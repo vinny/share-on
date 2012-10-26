@@ -1,10 +1,11 @@
 <?php
-
 /**
 *
-* @package - Share On
-* @version $Id: info_acp_shareon.php 2010-03-12 02:40 Saske1 $
-* @copyright (c) Saske1 ( http://www.phpbbsaske.com )
+* Share On [English]
+*
+* @package language
+* @version $Id: info_acp_shareon.php
+* @copyright (c) Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 * 
 */
@@ -39,15 +40,15 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On MOD',
-    'SO_TITLE'		=> 'SHARE ON MOD Settings',
-	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics',	
-	'SHARE_ON_MOD'	=> 'MOD "Share On"',	
+    'SO_TITLE'		=> 'Share On MOD Settings',
+	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics.',	
+	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Settings',
 	'SO_VERSION_OLD'	=> 'Current version of the MOD:',
 	'SO_VERSION_NEW'	=> 'Latest version of the MOD:',
 	'SO_SAVED'		=> 'Changes Saved.',
 	'SO_SELECT'		=> 'Share On:',
-	'SO_STATUS'		=> 'Enable MOD "Share On"',
+	'SO_STATUS'		=> 'Enable Share On MOD:',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_ORKUT'		=> 'Orkut',
@@ -59,6 +60,13 @@ $lang = array_merge($lang, array(
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
+	'SO_GOOGLE'		=> 'Google+',
+
+	// Share On Position
+	'SO_POSITION'	=> 'Position:',
+	'SO_DEFAULT'	=> 'Standard',
+	'SO_AFTER_POST'	=> 'After the first post',
+	'SO_POSITION_EXPLAIN'	=> 'The <strong>Standard</strong> position shows the buttons next to the edit button for prosilver and in subsilver2 next to the report button. On <strong>After the first post</strong> position shows the buttons, obviously, after each first post on topic.',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
@@ -72,6 +80,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Share on Technorati',
 	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
 ));
 
 ?>

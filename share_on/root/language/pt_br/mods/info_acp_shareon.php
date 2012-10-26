@@ -1,8 +1,9 @@
 <?php
-
 /**
 *
-* @package - Share On
+* Share On [Português Brasileiro]
+*
+* @package language
 * @version $Id: info_acp_shareon.php
 * @copyright (c) _Vinny_ ( http://www.suportephpbb.com.br )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -41,13 +42,13 @@ $lang = array_merge($lang, array(
 	'SO_ACP'		=> 'Share On MOD',
 	'SO_TITLE'		=> 'Configurações Share On Mod',
 	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos.',	
-	'SHARE_ON_MOD'	=> 'MOD "Share On"',	
+	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Configurações',
 	'SO_VERSION_OLD'	=> 'Versão atual instalada:',
 	'SO_VERSION_NEW'	=> 'Última versão:',
 	'SO_SAVED'		=> 'Configurações alteradas com sucesso.',
 	'SO_SELECT'		=> 'Compartilhar Em:',
-	'SO_STATUS'		=> 'Ativar MOD "Share On"',
+	'SO_STATUS'		=> 'Ativar Share On MOD:',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_ORKUT'		=> 'Orkut',
@@ -59,6 +60,13 @@ $lang = array_merge($lang, array(
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
+	'SO_GOOGLE'		=> 'Google+',
+
+	// Share On Position
+	'SO_POSITION'	=> 'Posição:',
+	'SO_DEFAULT'	=> 'Padrão',
+	'SO_AFTER_POST'	=> 'Após primeira mensagem',
+	'SO_POSITION_EXPLAIN'	=> 'A posição <strong>Padrão</strong> mostra os botões ao lado do icone Editar em prosilver e o subsilver2 ao lado do icone Reportar. Na posição <strong>Após primeira mensagem</strong> mostra os botões, obvio, após a primeira mensagem no tópico.',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
@@ -72,6 +80,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DELICIOUS'	=> 'Compartilhar no Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Compartilhar no Technorati',
 	'SHARE_ON_TUMBLR'		=> 'Compartilhar no Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Compartilhar no Google+',
 ));
 
 ?>
