@@ -1,10 +1,11 @@
 <?php
-
 /**
 *
-* @package - Share On
-* @version $Id: info_acp_shareon.php 2010-03-12 02:40 Saske1 $
-* @copyright (c) Saske1 ( http://www.phpbbsaske.com )
+* Share On [Español]
+*
+* @package language
+* @version $Id: info_acp_shareon.php
+* @copyright (c) Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 * 
 */
@@ -39,15 +40,15 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On MOD',
-    'SO_TITLE'		=> 'Configuración de MOD "SHARE ON"',
-	'SO_EXPLAIN'	=> 'Aquí puedes configurar en que páginas quieres compartir tus temas',	
-	'SHARE_ON_MOD'	=> 'MOD "Share On"',	
+    'SO_TITLE'		=> 'Configuración de Share On MOD',
+	'SO_EXPLAIN'	=> 'Aquí puedes configurar en que páginas quieres compartir tus temas.',	
+	'SHARE_ON_MOD'	=> 'Share On',	
 	'SO_CONFIG'		=> 'Configuración',
 	'SO_VERSION_OLD'	=> 'Versión Actual del MOD:',
 	'SO_VERSION_NEW'	=> 'Versión mas reciente del MOD:',
 	'SO_SAVED'		=> 'Cambios Guardados.',
 	'SO_SELECT'		=> 'Compartir en:',
-	'SO_STATUS'		=> 'Activar MOD "Share On"',
+	'SO_STATUS'		=> 'Activar Share On MOD:',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_ORKUT'		=> 'Orkut',
@@ -59,6 +60,13 @@ $lang = array_merge($lang, array(
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
+	'SO_GOOGLE'		=> 'Google+',
+
+	// Share On Position
+	'SO_POSITION'	=> 'Posición:',
+	'SO_DEFAULT'	=> 'Estándar',
+	'SO_AFTER_POST'	=> 'Después del primer mensaje',
+	'SO_POSITION_EXPLAIN'	=> 'La posición <strong>Estándar</strong> muestra los botones después del botón de editar en prosilver y después del botón de reportar en subsilver2. La posición <strong>Después del primer mensaje</strong> muestra los botones después del primer mensaje.',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
@@ -72,6 +80,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
 	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
 	'SHARE_ON_TUMBLR'		=> 'Compartir en Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Compartir en Google+',
 ));
 
 ?>

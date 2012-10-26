@@ -17,6 +17,7 @@ The following Social Networks are supported.
 * [Sonico](http://www.sonico.com/)
 * [Friendfeed](http://friendfeed.com/)
 * [Tumblr](http://www.tumblr.com/)
+* [Google+](https://plus.google.com/)
 
 
 Installation

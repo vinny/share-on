@@ -1,10 +1,10 @@
 <?php
 
 /**
-* @author _Vinny_ vinny@suportephpbb.com.br http://www.suportephpbb.com.br
+* @author _Vinny_ vinny@suportephpbb.com.br
 * @package Share On
 * @version $Id install.php
-* @copyright (c) 2011 _Vinny_ ( http://www.suportephpbb.com.br ), Saske1 ( http://www.phpbbsaske.com/ )
+* @copyright (c) 2012 _Vinny_ ( http://www.suportephpbb.com.br ), Saske1 ( http://www.phpbb-es.com )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -27,51 +27,29 @@ if (!file_exists($phpbb_root_path . 'umil/umil_auto.' . $phpEx))
    trigger_error('Please download the latest UMIL (Unified MOD Install Library) from: <a href="http://www.phpbb.com/mods/umil/">phpBB.com/mods/umil</a>', E_USER_ERROR);
 }
 
-/*
-* The language file which will be included when installing
-* Language entries that should exist in the language file for UMIL (replace $mod_name with the mod's name you set to $mod_name above)
-* $mod_name
-* 'INSTALL_' . $mod_name
-* 'INSTALL_' . $mod_name . '_CONFIRM'
-* 'UPDATE_' . $mod_name
-* 'UPDATE_' . $mod_name . '_CONFIRM'
-* 'UNINSTALL_' . $mod_name
-* 'UNINSTALL_' . $mod_name . '_CONFIRM'
-*/
 $language_file = 'mods/info_acp_shareon';
 
 // The name of the mod to be displayed during installation.
 $mod_name = 'SO_ACP';
 
-/*
-* The name of the config variable which will hold the currently installed version
-* You do not need to set this yourself, UMIL will handle setting and updating the version itself.
-*/
 $version_config_name = 'shareon_version';
 
-/*
-* The array of versions and actions within each.
-* You do not need to order it a specific way (it will be sorted automatically), however, you must enter every version, even if no actions are done for it.
-*
-* You must use correct version numbering.  Unless you know exactly what you can use, only use X.X.X (replacing X with an integer).
-* The version numbering must otherwise be compatible with the version_compare function - http://php.net/manual/en/function.version-compare.php
-*/
 $versions = array(
    // Version 1.2.0
    '1.2.0'   => array(
       // Lets add a config setting
       'config_add' => array(
-         array('so_status'),
-		 array('so_facebook'),
-		 array('so_twitter'),
-		 array('so_tuenti'),
-		 array('so_sonico'),
-		 array('so_friendfeed'),
-		 array('so_orkut'),
-		 array('so_digg'),
-		 array('so_myspace'),
-		 array('so_delicious'),
-		 array('so_technorati'),
+         array('so_status', true),
+		 array('so_facebook', true),
+		 array('so_twitter', true),
+		 array('so_tuenti', true),
+		 array('so_sonico', true),
+		 array('so_friendfeed', true),
+		 array('so_orkut', true),
+		 array('so_digg', true),
+		 array('so_myspace', true),
+		 array('so_delicious', true),
+		 array('so_technorati', true),
 		),
 	  
 	  // Now add the module
@@ -96,8 +74,18 @@ $versions = array(
 	'2.0.1' => array(
 	// Lets add a config setting
 	'config_add' => array(
-		array('so_tumblr'),
+		array('so_tumblr', true),
 		),
+	),
+
+	// Version 2.1.0
+	'2.1.0' => array(
+	// Lets add a config setting
+	'config_add' => array(
+		array('so_google', true),
+		array('so_position', true),
+		),
+
 	'cache_purge' => array('', 'template', 'theme'),
 	),
 	

@@ -7,7 +7,7 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Share On - Brazilian Portuguese Translation]]></title>
-		<description lang="en"><![CDATA[With Share On MOD, users can share the topics(the buttons are displayed only in the first post of each topic) in the following social networks:
+		<description lang="en"><![CDATA[With Share On MOD, users can share the topics in the following social networks:
 - Facebook
 - Twitter
 - Digg
@@ -19,14 +19,14 @@
 - Sonico
 - Friendfeed
 - Tumblr
-
-For Google Plus[ADD-ON], visit: http://goo.gl/ajHWY
+- Google+
 
 You can follow the development through the repository: http://goo.gl/zGvsP
 
 ** FEATURES **
 - ACP module to manage the MOD.
 - Each button can be enabled/disabled individually.
+- Buttons position.
 - Check version: displays when a new version is available.]]></description>
 		<author-group>
 			<author>
@@ -39,11 +39,11 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.0.1</mod-version>
+		<mod-version>2.1.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
-			<target-version>3.0.10</target-version>
+			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Main Install</link>
