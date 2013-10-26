@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* Share On [PortuguÍs Brasileiro]
+* Share On [Portugu√™s Brasileiro]
 *
 * @package language
 * @version $Id: info_acp_shareon.php
@@ -40,13 +40,13 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On MOD',
-	'SO_TITLE'		=> 'ConfiguraÁıes Share On Mod',
-	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais vocÍ deseja compartilhar seus tÛpicos.',	
+	'SO_TITLE'		=> 'Configura√ß√µes Share On Mod',
+	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais voc√™ deseja compartilhar seus t√≥picos.',	
 	'SHARE_ON_MOD'	=> 'Share On',
-	'SO_CONFIG'		=> 'ConfiguraÁıes',
-	'SO_VERSION_OLD'	=> 'Vers„o atual instalada:',
-	'SO_VERSION_NEW'	=> '⁄ltima vers„o:',
-	'SO_SAVED'		=> 'ConfiguraÁıes alteradas com sucesso.',
+	'SO_CONFIG'		=> 'Configura√ß√µes',
+	'SO_VERSION_OLD'	=> 'Vers√£o atual instalada:',
+	'SO_VERSION_NEW'	=> '√öltima vers√£o:',
+	'SO_SAVED'		=> 'Configura√ß√µes alteradas com sucesso.',
 	'SO_SELECT'		=> 'Compartilhar Em:',
 	'SO_STATUS'		=> 'Ativar Share On MOD:',
 	'SO_FACEBOOK'	=> 'Facebook',
@@ -63,10 +63,10 @@ $lang = array_merge($lang, array(
 	'SO_GOOGLE'		=> 'Google+',
 
 	// Share On Position
-	'SO_POSITION'	=> 'PosiÁ„o:',
-	'SO_DEFAULT'	=> 'Padr„o',
-	'SO_AFTER_POST'	=> 'ApÛs primeira mensagem',
-	'SO_POSITION_EXPLAIN'	=> 'A posiÁ„o <strong>Padr„o</strong> mostra os botıes ao lado do icone Editar em prosilver e o subsilver2 ao lado do icone Reportar. Na posiÁ„o <strong>ApÛs primeira mensagem</strong> mostra os botıes, obvio, apÛs a primeira mensagem no tÛpico.',
+	'SO_POSITION'	=> 'Posi√ß√£o:',
+	'SO_DEFAULT'	=> 'Padr√£o',
+	'SO_AFTER_POST'	=> 'Ap√≥s primeira mensagem',
+	'SO_POSITION_EXPLAIN'	=> 'A posi√ß√£o <strong>Padr√£o</strong> mostra os bot√µes ao lado do icone Editar em prosilver e o subsilver2 ao lado do icone Reportar. Na posi√ß√£o <strong>Ap√≥s primeira mensagem</strong> mostra os bot√µes, obvio, ap√≥s a primeira mensagem no t√≥pico.',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
