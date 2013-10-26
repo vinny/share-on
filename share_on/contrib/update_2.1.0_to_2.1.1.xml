@@ -52,7 +52,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		<installation>
 			<level>easy</level>
 			<time>240</time>
-			<target-version>3.0.11</target-version>
+			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Main Install</link>
@@ -77,7 +77,46 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 $user->setup('viewtopic', $topic_data['forum_style']);]]></find>
 				<action type="before-add"><![CDATA[$user->add_lang('mods/info_acp_shareon');]]></action>
 			</edit>
+			<edit>
+				<find><![CDATA[		'U_MYSPACE'	=> 'http://www.myspace.com/Modules/PostTo/Pages/?u=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'] . '&amp;t=' . $topic_data['topic_title'],]]></find>
+				<action type="replace-with"><![CDATA[		'U_REDDIT'	=> 'http://www.reddit.com/submit?url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[		'S_SO_MYSPACE'		=> (!empty($config['so_myspace'])) ? true : false,]]></find>
+				<action type="replace-with"><![CDATA[		'S_SO_REDDIT'		=> (!empty($config['so_reddit'])) ? true : false,]]></action>
+			</edit>
 		</open>
+		<open src="styles/prosilver/template/viewtopic_body.html">
+			<edit>
+				<find><![CDATA[							<!-- IF postrow.S_SO_MYSPACE --><li class="myspace-icon"><a href="{postrow.U_MYSPACE}" title="{L_SHARE_ON_MYSPACE}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_MYSPACE}</span></a></li><!-- ENDIF -->]]></find>
+				<action type="replace-with"><![CDATA[							<!-- IF postrow.S_SO_REDDIT --><li class="reddit-icon"><a href="{postrow.U_REDDIT}" title="{L_SHARE_ON_REDDIT}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_REDDIT}</span></a></li><!-- ENDIF -->]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[							<!-- IF postrow.S_SO_MYSPACE --><td align="right"><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a></td>
+							<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">{L_SO_MYSPACE}</a></td> <!-- ENDIF -->]]></find>
+				<action type="replace-with"><![CDATA[							<!-- IF postrow.S_SO_REDDIT --><td align="right"><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png" alt="{L_SHARE_ON_REDDIT}" /></a></td>
+							<td><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;">{L_SO_REDDIT}</a></td> <!-- ENDIF -->]]></action>
+			</edit>
+		</open>
+		
+		
+		<open src="styles/prosilver/theme/buttons.css">
+			<edit>
+				<find><![CDATA[.myspace-icon, .myspace-icon a		{ background: none top left no-repeat; }]]></find>
+				<action type="replace-with"><![CDATA[.reddit-icon, .reddit-icon a		{ background: none top left no-repeat; }]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[ul.profile-icons li.myspace-icon		{ width: 20px; height: 20px; }]]></find>
+				<action type="replace-with"><![CDATA[ul.profile-icons li.reddit-icon		{ width: 20px; height: 20px; }]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/colours.css">
+			<edit>
+				<find><![CDATA[.myspace-icon, .myspace-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png"); }]]></find>
+				<action type="replace-with"><![CDATA[.reddit-icon, .reddit-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png"); }]]></action>
+			</edit>
+		</open>
+		
 		<php-installer><![CDATA[install.php]]></php-installer>
 	</action-group>
 </mod>
