@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* Share On [EspaÃ±ol]
+* Share On [Español]
 *
 * @package language
 * @version $Id: info_acp_shareon.php
@@ -40,12 +40,12 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On MOD',
-    'SO_TITLE'		=> 'ConfiguraciÃ³n de Share On MOD',
-	'SO_EXPLAIN'	=> 'AquÃ­ puedes configurar en que pÃ¡ginas quieres compartir tus temas.',	
+    'SO_TITLE'		=> 'Configuración de Share On MOD',
+	'SO_EXPLAIN'	=> 'Aquí puedes configurar en que páginas quieres compartir tus temas.',	
 	'SHARE_ON_MOD'	=> 'Share On',	
-	'SO_CONFIG'		=> 'ConfiguraciÃ³n',
-	'SO_VERSION_OLD'	=> 'VersiÃ³n Actual del MOD:',
-	'SO_VERSION_NEW'	=> 'VersiÃ³n mas reciente del MOD:',
+	'SO_CONFIG'		=> 'Configuración',
+	'SO_VERSION_OLD'	=> 'Versión Actual del MOD:',
+	'SO_VERSION_NEW'	=> 'Versión mas reciente del MOD:',
 	'SO_SAVED'		=> 'Cambios Guardados.',
 	'SO_SELECT'		=> 'Compartir en:',
 	'SO_STATUS'		=> 'Activar Share On MOD:',
@@ -63,10 +63,10 @@ $lang = array_merge($lang, array(
 	'SO_GOOGLE'		=> 'Google+',
 
 	// Share On Position
-	'SO_POSITION'	=> 'PosiciÃ³n:',
-	'SO_DEFAULT'	=> 'EstÃ¡ndar',
-	'SO_AFTER_POST'	=> 'DespuÃ©s del primer mensaje',
-	'SO_POSITION_EXPLAIN'	=> 'La posiciÃ³n <strong>EstÃ¡ndar</strong> muestra los botones despuÃ©s del botÃ³n de editar en prosilver y despuÃ©s del botÃ³n de reportar en subsilver2. La posiciÃ³n <strong>DespuÃ©s del primer mensaje</strong> muestra los botones despuÃ©s del primer mensaje.',
+	'SO_POSITION'	=> 'Posición:',
+	'SO_DEFAULT'	=> 'Estándar',
+	'SO_AFTER_POST'	=> 'Después del primer mensaje',
+	'SO_POSITION_EXPLAIN'	=> 'La posición <strong>Estándar</strong> muestra los botones después del botón de editar en prosilver y después del botón de reportar en subsilver2. La posición <strong>Después del primer mensaje</strong> muestra los botones después del primer mensaje.',
 	
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
