@@ -98,8 +98,6 @@ $user->setup('viewtopic', $topic_data['forum_style']);]]></find>
 							<td><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;">{L_SO_REDDIT}</a></td> <!-- ENDIF -->]]></action>
 			</edit>
 		</open>
-		
-		
 		<open src="styles/prosilver/theme/buttons.css">
 			<edit>
 				<find><![CDATA[.myspace-icon, .myspace-icon a		{ background: none top left no-repeat; }]]></find>
@@ -116,7 +114,6 @@ $user->setup('viewtopic', $topic_data['forum_style']);]]></find>
 				<action type="replace-with"><![CDATA[.reddit-icon, .reddit-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png"); }]]></action>
 			</edit>
 		</open>
-		
 		<php-installer><![CDATA[install.php]]></php-installer>
 	</action-group>
 </mod>
