@@ -136,7 +136,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_DIGG --><td align="right"><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a></td>
 			<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">{L_SO_DIGG}</a></td><!-- ENDIF -->
 
-			<!-- IF postrow.S_SO_REDDIT --><td align="right"><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_REDDIT}" /></a></td>
+			<!-- IF postrow.S_SO_REDDIT --><td align="right"><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png" alt="{L_SHARE_ON_REDDIT}" /></a></td>
 			<td><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;">{L_SO_REDDIT}</a></td><!-- ENDIF -->
 
 			<!-- IF postrow.S_SO_DELICIOUS --><td align="right"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
