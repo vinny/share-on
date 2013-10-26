@@ -88,6 +88,19 @@ $versions = array(
 
 	'cache_purge' => array('', 'template', 'theme'),
 	),
+
+	// Version 2.1.1
+	'2.1.1' => array(
+	// Lets add a config setting
+	'config_add' => array(
+		array('so_reddit', true),
+		),
+
+	// Lets remove a config setting
+	'config_remove' => array(
+		array('so_myspace'),
+		),
+	),
 	
 );
 
