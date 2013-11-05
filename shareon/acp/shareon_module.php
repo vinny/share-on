@@ -30,6 +30,7 @@ class shareon_module
 		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
 
 		$user->add_lang('acp/common');
+		$user->add_lang_ext('vinny/shareon', 'shareon');
 		$this->tpl_name = 'acp_shareon';
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
