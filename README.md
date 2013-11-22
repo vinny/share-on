@@ -9,7 +9,7 @@ The following Social Networks are supported.
 * [Facebook](http://www.facebook.com/)
 * [Twitter](http://twitter.com/)
 * [Digg](http://digg.com/)
-* [MySpace](http://www.myspace.com/)
+* [Reddit](http://www.reddit.com/)
 * [Orkut](http://www.orkut.com/)
 * [Delicious](http://delicious.com/)
 * [Technorati](http://technorati.com/)

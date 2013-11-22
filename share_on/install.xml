@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
 <!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
 <!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
-<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
@@ -11,7 +11,7 @@
 - Facebook
 - Twitter
 - Digg
-- MySpace
+- Reddit
 - Orkut
 - Delicious
 - Technorati
@@ -66,11 +66,11 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.1.0</mod-version>
+		<mod-version>2.1.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>600</time>
-			<target-version>3.0.11</target-version>
+			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
 			<link type="template" href="contrib/subsilver2.xml" lang="en">Subsilver2</link>
@@ -79,6 +79,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.0.1.xml">Update from 2.0.0 to 2.0.1</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.1.0.xml">Update from 2.0.0 to 2.1.0</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.1_to_2.1.0.xml">Update from 2.0.1 to 2.1.0</link>
+			<link type="contrib" lang="en" href="contrib/update_2.1.0_to_2.1.1.xml">Update from 2.1.0 to 2.1.1</link>
 			<link type="contrib" lang="en" href="contrib/addon_phpbb_seo.xml">[ADD-ON] phpBB SEO</link>
 		</link-group>
 		<history>
@@ -204,6 +205,15 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 					<change><![CDATA[[Add] Google+ Share]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-10-25</date>
+				<rev-version>2.1.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Version 2.1.1 available]]></change>
+					<change><![CDATA[[Add] Reddit]]></change>
+					<change><![CDATA[[Remove] MySpace]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
@@ -218,16 +228,17 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		</copy>
 		<open src="viewtopic.php">
 			<edit>
-				<find><![CDATA[$auth->acl($user->data);]]></find>
+				<find><![CDATA[// Setup look and feel
+$user->setup('viewtopic', $topic_data['forum_style']);]]></find>
 				<action type="after-add"><![CDATA[$user->add_lang('mods/info_acp_shareon');]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[		'U_JABBER'		=> $user_cache[$poster_id]['jabber'],]]></find>
-				<action type="after-add"><![CDATA[		// Share On 2.1.0 MOD
+				<action type="after-add"><![CDATA[		// Share On 2.1.1 MOD
 		'U_FACEBOOK'	=> "http://www.facebook.com/share.$phpEx?u=" . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],
 		'U_TWITTER'	=> 'http://twitter.com/?status=' . $topic_data['topic_title'] . '&nbsp;' . generate_board_url() . "/viewtopic.$phpEx?t=" . $topic_data['topic_id'],
 		'U_DIGG'	=> 'http://digg.com/submit?phase=2&amp;url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'] . '&amp;title=' . $topic_data['topic_title'],
-		'U_MYSPACE'	=> 'http://www.myspace.com/Modules/PostTo/Pages/?u=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'] . '&amp;t=' . $topic_data['topic_title'],
+		'U_REDDIT'	=> 'http://www.reddit.com/submit?url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],
 		'U_DELICIOUS' 	=> 'http://delicious.com/post?url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'] . '&amp;title=' . $topic_data['topic_title'],		
 		'U_TECHNORATI'	=> 'http://technorati.com/faves?add=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],
 		'U_TUENTI'	=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],
@@ -235,13 +246,13 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],
 		'U_TUMBLR'	=> 'http://www.tumblr.com/share/link?url=' . urlencode(generate_board_url() . "/viewtopic.$phpEx?t=". ($topic_data['topic_id'])) . '&amp;name=' . ($topic_data['topic_title']),
 		'U_GOOGLE'	=> 'https://plus.google.com/share?url=' . generate_board_url() . "/viewtopic.$phpEx?t=". $topic_data['topic_id'],
-		// Share On 2.1.0 MOD]]></action>
+		// Share On 2.1.1 MOD]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[		'S_IGNORE_POST'		=> ($row['hide_post']) ? true : false,
 		'L_IGNORE_POST'		=> ($row['hide_post']) ? sprintf($user->lang['POST_BY_FOE'], get_username_string('full', $poster_id, $row['username'], $row['user_colour'], $row['post_username']), '<a href="' . $viewtopic_url . "&amp;p={$row['post_id']}&amp;view=show#p{$row['post_id']}" . '">', '</a>') : '',
 	);]]></find>
-				<action type="before-add"><![CDATA[		// Share On 2.1.0 MOD
+				<action type="before-add"><![CDATA[		// Share On 2.1.1 MOD
 		'S_SO_STATUS'		=> (!empty($config['so_status'])) ? true : false,
 		'S_SO_POSITION'		=> (!empty($config['so_position'])) ? true : false,
 		'S_SO_FACEBOOK'		=> (!empty($config['so_facebook'])) ? true : false,
@@ -251,18 +262,18 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 		'S_SO_FRIENDFEED'	=> (!empty($config['so_friendfeed'])) ? true : false,
 		'S_SO_ORKUT'		=> (!empty($config['so_orkut'])) ? true : false,
 		'S_SO_DIGG'			=> (!empty($config['so_digg'])) ? true : false,
-		'S_SO_MYSPACE'		=> (!empty($config['so_myspace'])) ? true : false,
+		'S_SO_REDDIT'		=> (!empty($config['so_reddit'])) ? true : false,
 		'S_SO_DELICIOUS' 	=> (!empty($config['so_delicious'])) ? true : false,
 		'S_SO_TECHNORATI'	=> (!empty($config['so_technorati'])) ? true : false,
 		'S_SO_TUMBLR'		=> (!empty($config['so_tumblr'])) ? true : false,
 		'S_SO_GOOGLE'		=> (!empty($config['so_google'])) ? true : false,
-		// Share On 2.1.0 MOD]]></action>
+		// Share On 2.1.1 MOD]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/viewtopic_body.html">
 			<edit>
 				<find><![CDATA[<!-- IF postrow.U_EDIT --><li class="edit-icon"><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}"><span>{L_EDIT_POST}</span></a></li><!-- ENDIF -->]]></find>
-				<action type="before-add"><![CDATA[					<!-- Share_On_2.1.0_MOD -->
+				<action type="before-add"><![CDATA[					<!-- Share_On_2.1.1_MOD -->
 					<!-- IF postrow.S_SO_POSITION eq 1 -->
 						<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 							<!-- IF postrow.S_SO_FACEBOOK --><li class="facebook-icon"><a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_FACEBOOK}</span></a></li><!-- ENDIF -->
@@ -272,18 +283,18 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 							<!-- IF postrow.S_SO_FRIENDFEED --><li class="friendfeed-icon"><a href="{postrow.U_FRIENDFEED}" title="{L_SHARE_ON_FRIENDFEED}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_FRIENDFEED}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_ORKUT --><li class="orkut-icon"><a href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();" title="{L_SHARE_ON_ORKUT}"><span>{L_SHARE_ON_ORKUT}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_DIGG --><li class="digg-icon"><a href="{postrow.U_DIGG}" title="{L_SHARE_ON_DIGG}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_DIGG}</span></a></li><!-- ENDIF -->
-							<!-- IF postrow.S_SO_MYSPACE --><li class="myspace-icon"><a href="{postrow.U_MYSPACE}" title="{L_SHARE_ON_MYSPACE}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_MYSPACE}</span></a></li><!-- ENDIF -->
+							<!-- IF postrow.S_SO_REDDIT --><li class="reddit-icon"><a href="{postrow.U_REDDIT}" title="{L_SHARE_ON_REDDIT}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_REDDIT}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_DELICIOUS --><li class="delicious-icon"><a href="{postrow.U_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_DELICIOUS}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_TECHNORATI --><li class="technorati-icon"><a href="{postrow.U_TECHNORATI}" title="{L_SHARE_ON_TECHNORATI}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TECHNORATI}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_TUMBLR --><li class="tumblr-icon"><a href="{postrow.U_TUMBLR}" title="{L_SHARE_ON_TUMBLR}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_TUMBLR}</span></a></li><!-- ENDIF -->
 							<!-- IF postrow.S_SO_GOOGLE --><li class="google-icon"><a href="{postrow.U_GOOGLE}" title="{L_SHARE_ON_GOOGLE}" onclick="window.open(this.href);return false;"><span>{L_SHARE_ON_GOOGLE}</span></a></li><!-- ENDIF -->
 						<!-- ENDIF -->
 					<!-- ENDIF -->
-					<!-- Share_On_2.1.0_MOD -->]]></action>
+					<!-- Share_On_2.1.1_MOD -->]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[<!-- END postrow -->]]></find>
-				<action type="before-add"><![CDATA[	<!-- Share_On_2.1.0_MOD -->
+				<action type="before-add"><![CDATA[	<!-- Share_On_2.1.1_MOD -->
 	<!-- IF postrow.S_SO_POSITION eq 0 -->
 		<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 			<div class="panel">
@@ -313,8 +324,8 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 							<!-- IF postrow.S_SO_DIGG --><td align="right"><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a></td>
 							<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">{L_SO_DIGG}</a></td> <!-- ENDIF -->
 
-							<!-- IF postrow.S_SO_MYSPACE --><td align="right"><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a></td>
-							<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">{L_SO_MYSPACE}</a></td> <!-- ENDIF -->
+							<!-- IF postrow.S_SO_REDDIT --><td align="right"><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png" alt="{L_SHARE_ON_REDDIT}" /></a></td>
+							<td><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;">{L_SO_REDDIT}</a></td> <!-- ENDIF -->
 
 							<!-- IF postrow.S_SO_DELICIOUS --><td align="right"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
 							<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">{L_SO_DELICIOUS}</a></td> <!-- ENDIF -->
@@ -334,13 +345,13 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			</div>
 		<!-- ENDIF -->
 	<!-- ENDIF -->
-	<!-- Share_On_2.1.0_MOD -->]]></action>
+	<!-- Share_On_2.1.1_MOD -->]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/theme/buttons.css">
 			<edit>
 				<find><![CDATA[.quote-icon, .quote-icon a		{ background: none top left no-repeat; }]]></find>
-				<action type="after-add"><![CDATA[/* Share On 2.1.0 */
+				<action type="after-add"><![CDATA[/* Share On 2.1.1 */
 .facebook-icon, .facebook-icon a	{ background: none top left no-repeat; }
 .twitter-icon, .twitter-icon a		{ background: none top left no-repeat; }
 .tuenti-icon, .tuenti-icon a		{ background: none top left no-repeat; }
@@ -348,16 +359,16 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 .friendfeed-icon, .friendfeed-icon a	{ background: none top left no-repeat; }
 .orkut-icon, .orkut-icon a		{ background: none top left no-repeat; }
 .digg-icon, .digg-icon a		{ background: none top left no-repeat; }
-.myspace-icon, .myspace-icon a		{ background: none top left no-repeat; }
+.reddit-icon, .reddit-icon a		{ background: none top left no-repeat; }
 .delicious-icon, .delicious-icon a	{ background: none top left no-repeat; }
 .technorati-icon, .technorati-icon a	{ background: none top left no-repeat; }
 .tumblr-icon, .tumblr-icon a		{ background: none top left no-repeat; }
 .google-icon, .google-icon a		{ background: none top left no-repeat; }
-/* Share On 2.1.0 */]]></action>
+/* Share On 2.1.1 */]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[ul.profile-icons li.quote-icon	{ width: {IMG_ICON_POST_QUOTE_WIDTH}px; height: {IMG_ICON_POST_QUOTE_HEIGHT}px; }]]></find>
-				<action type="after-add"><![CDATA[/* Share On 2.1.0 */
+				<action type="after-add"><![CDATA[/* Share On 2.1.1 */
 ul.profile-icons li.facebook-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.twitter-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.tuenti-icon		{ width: 20px; height: 20px; }
@@ -365,18 +376,18 @@ ul.profile-icons li.sonico-icon		{ width: 20px; height: 20px; }
 ul.profile-icons li.friendfeed-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.orkut-icon		{ width: 20px; height: 20px; }
 ul.profile-icons li.digg-icon		{ width: 20px; height: 20px; }
-ul.profile-icons li.myspace-icon	{ width: 20px; height: 20px; }
+ul.profile-icons li.reddit-icon		{ width: 20px; height: 20px; }
 ul.profile-icons li.delicious-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.technorati-icon	{ width: 20px; height: 20px; }
 ul.profile-icons li.tumblr-icon		{ width: 20px; height: 20px; }
 ul.profile-icons li.google-icon		{ width: 20px; height: 20px; }
-/* Share On 2.1.0 */]]></action>
+/* Share On 2.1.1 */]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/theme/colours.css">
 			<edit>
 				<find><![CDATA[.quote-icon, .quote-icon a		{ background-image: url("{IMG_ICON_POST_QUOTE_SRC}"); }]]></find>
-				<action type="after-add"><![CDATA[/* Share On 2.1.0 */
+				<action type="after-add"><![CDATA[/* Share On 2.1.1 */
 .facebook-icon, .facebook-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png"); }
 .twitter-icon, .twitter-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_twitter.png"); }
 .tuenti-icon, .tuenti-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tuenti.png"); }
@@ -384,12 +395,12 @@ ul.profile-icons li.google-icon		{ width: 20px; height: 20px; }
 .friendfeed-icon, .friendfeed-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png"); }
 .orkut-icon, .orkut-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif"); }
 .digg-icon, .digg-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif"); }
-.myspace-icon, .myspace-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png"); }
+.reddit-icon, .reddit-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png"); }
 .delicious-icon, .delicious-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif"); }
 .technorati-icon, .technorati-icon a	{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png"); }
 .tumblr-icon, .tumblr-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png"); }
 .google-icon, .google-icon a		{ background-image: url("{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.gif"); }
-/* Share On 2.1.0 */]]></action>
+/* Share On 2.1.1 */]]></action>
 			</edit>
 		</open>
 		<php-installer><![CDATA[install.php]]></php-installer>

@@ -34,7 +34,7 @@ class acp_shareon
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
 		// Version Check
-		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.1.0';
+		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.1.1';
 
 		$submit = (isset($_POST['submit'])) ? true : false;
 		if ($submit)
@@ -53,7 +53,7 @@ class acp_shareon
 			set_config('so_friendfeed', request_var('so_friendfeed', true));
 			set_config('so_orkut', request_var('so_orkut', true));
 			set_config('so_digg', request_var('so_digg', true));
-			set_config('so_myspace', request_var('so_myspace', true));
+			set_config('so_reddit', request_var('so_reddit', true));
 			set_config('so_delicious', request_var('so_delicious', true));
 			set_config('so_technorati', request_var('so_technorati', true));
 			set_config('so_tumblr', request_var('so_tumblr', true));
@@ -72,7 +72,7 @@ class acp_shareon
 			'SO_FRIENDFEED'	=> (!empty($config['so_friendfeed'])) ? true : false,
 			'SO_ORKUT'		=> (!empty($config['so_orkut'])) ? true : false,
 			'SO_DIGG'		=> (!empty($config['so_digg'])) ? true : false,
-			'SO_MYSPACE'	=> (!empty($config['so_myspace'])) ? true : false,
+			'SO_REDDIT'		=> (!empty($config['so_reddit'])) ? true : false,
 			'SO_DELICIOUS'	=> (!empty($config['so_delicious'])) ? true : false,
 			'SO_TECHNORATI'	=> (!empty($config['so_technorati'])) ? true : false,
 			'SO_TUMBLR'		=> (!empty($config['so_tumblr'])) ? true : false,

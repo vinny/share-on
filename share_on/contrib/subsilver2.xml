@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
 <!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
 <!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
-<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
@@ -11,7 +11,7 @@
 - Facebook
 - Twitter
 - Digg
-- MySpace
+- Reddit
 - Orkut
 - Delicious
 - Technorati
@@ -66,11 +66,11 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.1.0</mod-version>
+		<mod-version>2.1.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
-			<target-version>3.0.11</target-version>
+			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Main Install</link>
@@ -85,7 +85,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				<find><![CDATA[						<tr valign="middle">
 							<td class="gensmall" align="{S_CONTENT_FLOW_END}">
 							<!-- IF not S_IS_BOT -->]]></find>
-				<action type="after-add"><![CDATA[<!-- Share_On_2.1.0_MOD -->
+				<action type="after-add"><![CDATA[<!-- Share_On_2.1.1_MOD -->
 	<!-- IF postrow.S_SO_POSITION eq 1 -->
 		<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 			<!-- IF postrow.S_SO_FACEBOOK --><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a><!-- ENDIF -->
@@ -95,18 +95,18 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_FRIENDFEED --><a href="{postrow.U_FRIENDFEED}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FRIENDFEED}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_friendfeed.png" alt="{L_SHARE_ON_FRIENDFEED}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_ORKUT --><a title="{L_SHARE_ON_ORKUT}" href="javascript:(function(){var d=document,l=d.location,e=encodeURIComponent,u='http://promote.orkut.com/preview?src=bkmrklt&amp;v=1&amp;nt=orkut.com&amp;du='+e(l.href)+'&amp;tt='+e(d.title),s='&amp;rdrinl=1';if(!window.open(u,'','height=575,width=700,directories=0,location=1,menubar=0,resizable=0,scrollbars=1,status=1,toolbar=0'))l.href=u+s;})();"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_orkut.gif" alt="{L_SHARE_ON_ORKUT}" /></a><!-- ENDIF -->								
 			<!-- IF postrow.S_SO_DIGG --><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a><!-- ENDIF -->
-			<!-- IF postrow.S_SO_MYSPACE --><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_REDDIT --><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png" alt="{L_SHARE_ON_REDDIT}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_DELICIOUS --><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TECHNORATI --><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TUMBLR --><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_GOOGLE --><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.gif" alt="{L_SHARE_ON_GOOGLE}" /></a><!-- ENDIF -->
 		<!-- ENDIF -->
 	<!-- ENDIF -->
-<!-- Share_On_2.1.0_MOD -->]]></action>
+<!-- Share_On_2.1.1_MOD -->]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[<!-- END postrow -->]]></find>
-				<action type="before-add"><![CDATA[<!-- Share_On_2.1.0_MOD -->
+				<action type="before-add"><![CDATA[<!-- Share_On_2.1.1_MOD -->
 <!-- IF postrow.S_SO_POSITION eq 0 -->
 	<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 <br clear="all" />
@@ -136,8 +136,8 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_DIGG --><td align="right"><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a></td>
 			<td><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;">{L_SO_DIGG}</a></td><!-- ENDIF -->
 
-			<!-- IF postrow.S_SO_MYSPACE --><td align="right"><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_MYSPACE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_myspace.png" alt="{L_SHARE_ON_MYSPACE}" /></a></td>
-			<td><a href="{postrow.U_MYSPACE}" onclick="window.open(this.href);return false;">{L_SO_MYSPACE}</a></td><!-- ENDIF -->
+			<!-- IF postrow.S_SO_REDDIT --><td align="right"><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png" alt="{L_SHARE_ON_REDDIT}" /></a></td>
+			<td><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;">{L_SO_REDDIT}</a></td><!-- ENDIF -->
 
 			<!-- IF postrow.S_SO_DELICIOUS --><td align="right"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
 			<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">{L_SO_DELICIOUS}</a></td><!-- ENDIF -->
@@ -155,7 +155,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 <br clear="all" />
 	<!-- ENDIF -->
 <!-- ENDIF -->
-<!-- Share_On_2.1.0_MOD -->]]></action>
+<!-- Share_On_2.1.1_MOD -->]]></action>
 			</edit>
 		</open>
 		<diy-instructions lang="en"><![CDATA[Purge the cache and refresh the subsilver2 template.]]></diy-instructions>
