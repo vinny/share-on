@@ -55,7 +55,7 @@ $lang = array_merge($lang, array(
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
+	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
@@ -78,7 +78,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DIGG'			=> 'Share on Digg',
 	'SHARE_ON_REDDIT'		=> 'Share on Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
-	'SHARE_ON_TECHNORATI'	=> 'Share on Technorati',
+	'SHARE_ON_VK'			=> 'Share on VK',
 	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
 ));

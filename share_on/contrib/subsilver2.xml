@@ -14,7 +14,7 @@
 - Reddit
 - Orkut
 - Delicious
-- Technorati
+- VK
 - Tuenti
 - Sonico
 - Friendfeed
@@ -66,7 +66,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.1.1</mod-version>
+		<mod-version>2.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>240</time>
@@ -85,7 +85,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				<find><![CDATA[						<tr valign="middle">
 							<td class="gensmall" align="{S_CONTENT_FLOW_END}">
 							<!-- IF not S_IS_BOT -->]]></find>
-				<action type="after-add"><![CDATA[<!-- Share_On_2.1.1_MOD -->
+				<action type="after-add"><![CDATA[<!-- Share_On_2.2.0_MOD -->
 	<!-- IF postrow.S_SO_POSITION eq 1 -->
 		<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 			<!-- IF postrow.S_SO_FACEBOOK --><a href="{postrow.U_FACEBOOK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_FACEBOOK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_facebook.png" alt="{L_SHARE_ON_FACEBOOK}" /></a><!-- ENDIF -->
@@ -97,16 +97,16 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_DIGG --><a href="{postrow.U_DIGG}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DIGG}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_digg.gif" alt="{L_SHARE_ON_DIGG}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_REDDIT --><a href="{postrow.U_REDDIT}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_REDDIT}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_reddit.png" alt="{L_SHARE_ON_REDDIT}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_DELICIOUS --><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a><!-- ENDIF -->
-			<!-- IF postrow.S_SO_TECHNORATI --><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a><!-- ENDIF -->
+			<!-- IF postrow.S_SO_VK --><a href="{postrow.U_VK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_VK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_vk.png" alt="{L_SHARE_ON_VK}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_TUMBLR --><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a><!-- ENDIF -->
 			<!-- IF postrow.S_SO_GOOGLE --><a href="{postrow.U_GOOGLE}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_GOOGLE}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_google.gif" alt="{L_SHARE_ON_GOOGLE}" /></a><!-- ENDIF -->
 		<!-- ENDIF -->
 	<!-- ENDIF -->
-<!-- Share_On_2.1.1_MOD -->]]></action>
+<!-- Share_On_2.2.0_MOD -->]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[<!-- END postrow -->]]></find>
-				<action type="before-add"><![CDATA[<!-- Share_On_2.1.1_MOD -->
+				<action type="before-add"><![CDATA[<!-- Share_On_2.2.0_MOD -->
 <!-- IF postrow.S_SO_POSITION eq 0 -->
 	<!-- IF postrow.S_SO_STATUS and postrow.S_FIRST_ROW -->
 <br clear="all" />
@@ -142,8 +142,8 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 			<!-- IF postrow.S_SO_DELICIOUS --><td align="right"><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_DELICIOUS}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_delicious.gif" alt="{L_SHARE_ON_DELICIOUS}" /></a></td>
 			<td><a href="{postrow.U_DELICIOUS}" onclick="window.open(this.href);return false;">{L_SO_DELICIOUS}</a></td><!-- ENDIF -->
 
-			<!-- IF postrow.S_SO_TECHNORATI --><td align="right"><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TECHNORATI}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_technorati.png" alt="{L_SHARE_ON_TECHNORATI}" /></a></td>
-			<td><a href="{postrow.U_TECHNORATI}" onclick="window.open(this.href);return false;">{L_SO_TECHNORATI}</a></td><!-- ENDIF -->
+			<!-- IF postrow.S_SO_VK --><td align="right"><a href="{postrow.U_VK}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_VK}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_vk.png" alt="{L_SHARE_ON_TECHNORATI}" /></a></td>
+			<td><a href="{postrow.U_VK}" onclick="window.open(this.href);return false;">{L_SO_VK}</a></td><!-- ENDIF -->
 
 			<!-- IF postrow.S_SO_TUMBLR --><td align="right"><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;" title="{L_SHARE_ON_TUMBLR}"><img src="{T_IMAGESET_LANG_PATH}/share_on_buttons/shareon_tumblr.png" alt="{L_SHARE_ON_TUMBLR}" /></a></td>
 			<td><a href="{postrow.U_TUMBLR}" onclick="window.open(this.href);return false;">{L_SO_TUMBLR}</a></td><!-- ENDIF -->
@@ -155,7 +155,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 <br clear="all" />
 	<!-- ENDIF -->
 <!-- ENDIF -->
-<!-- Share_On_2.1.1_MOD -->]]></action>
+<!-- Share_On_2.2.0_MOD -->]]></action>
 			</edit>
 		</open>
 		<diy-instructions lang="en"><![CDATA[Purge the cache and refresh the subsilver2 template.]]></diy-instructions>
