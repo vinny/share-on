@@ -66,7 +66,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.1.1</mod-version>
+		<mod-version>2.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>600</time>
@@ -267,6 +267,7 @@ $user->setup('viewtopic', $topic_data['forum_style']);]]></find>
 				<action type="before-add"><![CDATA[		// Share On 2.2.0 MOD
 		'S_SO_STATUS'		=> (!empty($config['so_status'])) ? true : false,
 		'S_SO_POSITION'		=> (!empty($config['so_position'])) ? true : false,
+		'S_SO_TYPE'			=> (!empty($config['so_type'])) ? true : false,
 		'S_SO_FACEBOOK'		=> (!empty($config['so_facebook'])) ? true : false,
 		'S_SO_TWITTER'		=> (!empty($config['so_twitter'])) ? true : false,
 		'S_SO_TUENTI'		=> (!empty($config['so_tuenti'])) ? true : false,
@@ -283,6 +284,13 @@ $user->setup('viewtopic', $topic_data['forum_style']);]]></find>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/viewtopic_body.html">
+			<edit>
+				<find><![CDATA[			<!-- IF postrow.U_EDIT or postrow.U_DELETE or postrow.U_REPORT or postrow.U_WARN or postrow.U_INFO or postrow.U_QUOTE -->]]></find>
+				<inline-edit>
+					<inline-find><![CDATA[postrow.U_QUOTE]]></inline-find>
+					<inline-action type="after-add"><![CDATA[ or (postrow.S_SO_STATUS || postrow.S_SO_POSITION eq 1)]]></inline-action>
+				</inline-edit>
+			</edit>
 			<edit>
 				<find><![CDATA[<!-- IF postrow.U_EDIT --><li class="edit-icon"><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}"><span>{L_EDIT_POST}</span></a></li><!-- ENDIF -->]]></find>
 				<action type="before-add"><![CDATA[					<!-- Share_On_2.2.0_MOD -->
