@@ -18,6 +18,11 @@
 				<input type="radio" class="radio" name="so_position" value="0" <!-- IF not SO_POSITION -->checked="checked"<!-- ENDIF --> /> {L_SO_AFTER_POST}</dd>
 		</dl>
 		<dl>
+			<dt><label id="so_type" for="so_type">{L_SO_TYPE}</label><br /><span>{L_SO_TYPE_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="so_type" value="1" <!-- IF SO_TYPE -->checked="checked"<!-- ENDIF -->/> {L_TOPIC} &nbsp; 
+				<input type="radio" class="radio" name="so_type" value="0" <!-- IF not SO_TYPE -->checked="checked"<!-- ENDIF --> /> {L_POST}</dd>
+		</dl>
+		<dl>
 			<dt><label>{L_SO_VERSION_OLD}</label></dt>
 			<dd><strong>{S_VERSIONOLD}</strong></dd>
 		</dl>

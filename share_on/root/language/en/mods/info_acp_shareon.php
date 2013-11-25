@@ -67,7 +67,11 @@ $lang = array_merge($lang, array(
 	'SO_DEFAULT'	=> 'Standard',
 	'SO_AFTER_POST'	=> 'After the first post',
 	'SO_POSITION_EXPLAIN'	=> 'The <strong>Standard</strong> position shows the buttons next to the edit button for prosilver and in subsilver2 next to the report button. On <strong>After the first post</strong> position shows the buttons, obviously, after each first post on topic.',
-	
+
+	// Share Type
+	'SO_TYPE'			=> 'Share Type:',
+	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share a single <strong>post</strong> from the topic. You should set the <strong>Standard</strong> position to use this feature.',
+
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
 	'SHARE_ON_TWITTER'		=> 'Share on Twitter',

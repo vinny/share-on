@@ -46,6 +46,7 @@ class acp_shareon
 
 			set_config('so_status', request_var('so_status', true));
 			set_config('so_position', request_var('so_position', true));
+			set_config('so_type', request_var('so_type', true));
 			set_config('so_facebook', request_var('so_facebook', true));
 			set_config('so_twitter', request_var('so_twitter', true));
 			set_config('so_tuenti', request_var('so_tuenti', true));
@@ -65,6 +66,7 @@ class acp_shareon
 		$template->assign_vars(array(
 			'SO_STATUS'		=> (!empty($config['so_status'])) ? true : false,
 			'SO_POSITION'	=> (!empty($config['so_position'])) ? true : false,
+			'SO_TYPE'		=> (!empty($config['so_type'])) ? true : false,
 			'SO_FACEBOOK'	=> (!empty($config['so_facebook'])) ? true : false,
 			'SO_TWITTER'	=> (!empty($config['so_twitter'])) ? true : false,
 			'SO_TUENTI'		=> (!empty($config['so_tuenti'])) ? true : false,
