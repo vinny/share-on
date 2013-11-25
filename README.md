@@ -7,12 +7,12 @@ Social Networks
 -------
 The following Social Networks are supported.
 * [Facebook](http://www.facebook.com/)
-* [Twitter](http://twitter.com/)
+* [Twitter](https://twitter.com/)
 * [Digg](http://digg.com/)
 * [Reddit](http://www.reddit.com/)
 * [Orkut](http://www.orkut.com/)
 * [Delicious](http://delicious.com/)
-* [Technorati](http://technorati.com/)
+* [VK](http://vk.com/)
 * [Tuenti](http://www.tuenti.com/)
 * [Sonico](http://www.sonico.com/)
 * [Friendfeed](http://friendfeed.com/)

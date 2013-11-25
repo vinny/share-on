@@ -107,6 +107,7 @@ $versions = array(
 	// Lets add a config setting
 	'config_add' => array(
 		array('so_vk', true),
+		array('so_type', true),
 		),
 
 	// Lets remove a config setting
