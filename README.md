@@ -18,6 +18,7 @@ The following Social Networks are supported.
 * [Friendfeed](http://friendfeed.com/)
 * [Tumblr](http://www.tumblr.com/)
 * [Google+](https://plus.google.com/)
+* [MySpace](https://myspace.com/‎)
 
 
 Installation
