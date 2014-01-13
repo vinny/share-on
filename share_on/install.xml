@@ -72,6 +72,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP]]></d
 			<link type="language" href="contrib/es.xml" lang="en">Spanish Language</link>
 			<link type="language" href="contrib/pt_br.xml" lang="en">Brazilian Portuguese Language</link>
 			<link type="language" href="contrib/fr.xml" lang="en">French Language</link>
+			<link type="language" href="contrib/fr.xml" lang="en">French Language</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.0.1.xml">Update from 2.0.0 to 2.0.1</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.0_to_2.1.0.xml">Update from 2.0.0 to 2.1.0</link>
 			<link type="contrib" lang="en" href="contrib/update_2.0.1_to_2.1.0.xml">Update from 2.0.1 to 2.1.0</link>
