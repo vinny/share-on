@@ -1,4 +1,4 @@
-[Share On](http://www.phpbb.com/customise/db/mod/share_on/)
+[Share On](https://www.phpbb.com/customise/db/mod/share_on/)
 =============
 Share On is a phpBB3 MOD that allows users and guests of the board to share the topics on social networks.
 
@@ -18,12 +18,12 @@ The following Social Networks are supported.
 * [Friendfeed](http://friendfeed.com/)
 * [Tumblr](http://www.tumblr.com/)
 * [Google+](https://plus.google.com/)
-* [MySpace](https://myspace.com/‎)
+* [MySpace](https://myspace.com‎)
 
 
 Installation
 -----------
-[How to install a MODX modification ](http://www.phpbb.com/community/viewtopic.php?f=71&t=724145)
+[How to install a MODX modification ](https://www.phpbb.com/community/viewtopic.php?f=71&t=724145)
 
 
 Git branches
