@@ -51,8 +51,6 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 	</header>
 	<action-group>
 		<copy>
-			<file from="root/styles/prosilver/imageset/pt_br/share_on_buttons/*.*" to="styles/prosilver/imageset/pt_br/share_on_buttons/*.*"/>
-			<file from="root/styles/subsilver2/imageset/pt_br/share_on_buttons/*.*" to="styles/subsilver2/imageset/pt_br/share_on_buttons/*.*"/>
 			<file from="root/language/pt_br/mods/info_acp_shareon.php" to="language/pt_br/mods/info_acp_shareon.php"/>
 		</copy>
 	</action-group>

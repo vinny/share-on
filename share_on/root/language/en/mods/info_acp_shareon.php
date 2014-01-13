@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
 	'SO_POSITION'	=> 'Position:',
@@ -70,7 +71,7 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Share Type:',
-	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share a single <strong>post</strong> from the topic. You should set the <strong>Standard</strong> position to use this feature.',
+	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share every single <strong>post</strong> from the topic. You should set the <strong>Standard</strong> position to use this feature.',
 
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
@@ -85,6 +86,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> 'Share on VK',
 	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
+	'SHARE_ON_MYSPACE'		=> 'Share on MySpace',
 ));
 
 ?>

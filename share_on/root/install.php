@@ -108,6 +108,7 @@ $versions = array(
 	'config_add' => array(
 		array('so_vk', true),
 		array('so_type', true),
+		array('so_myspace', true),
 		),
 
 	// Lets remove a config setting

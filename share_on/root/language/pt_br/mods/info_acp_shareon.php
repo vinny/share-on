@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
 	'SO_POSITION'	=> 'Posição:',
@@ -70,7 +71,7 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Tipo de Compartilhamento:',
-	'SO_TYPE_EXPLAIN'	=> 'Você pode escolher entre compartilhar o endereço do <strong>tópico</strong> ou compartilhar apenas uma única <strong>mensagem</strong> do tópico. Você deve definir a posição como <strong>Padrão</strong> para usar este recurso.',
+	'SO_TYPE_EXPLAIN'	=> 'Você pode escolher entre compartilhar o endereço do <strong>tópico</strong> ou compartilhar cada <strong>mensagem</strong> do tópico. Você deve definir a posição como <strong>Padrão</strong> para usar este recurso.',
 
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
@@ -85,6 +86,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> 'Compartilhar no VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartilhar no Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Compartilhar no Google+',
+	'SHARE_ON_MYSPACE'		=> 'Compartilhar no MySpace',
 ));
 
 ?>

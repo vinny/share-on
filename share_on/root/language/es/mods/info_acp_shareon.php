@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
 	'SO_POSITION'	=> 'Posición:',
@@ -85,6 +86,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> 'Compartir en VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartir en Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Compartir en Google+',
+	'SHARE_ON_MYSPACE'		=> 'Compartir en MySpace',
 ));
 
 ?>

@@ -59,6 +59,7 @@ class acp_shareon
 			set_config('so_vk', request_var('so_vk', true));
 			set_config('so_tumblr', request_var('so_tumblr', true));
 			set_config('so_google', request_var('so_google', true));
+			set_config('so_myspace', request_var('so_myspace', true));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
@@ -79,6 +80,7 @@ class acp_shareon
 			'SO_VK'			=> (!empty($config['so_vk'])) ? true : false,
 			'SO_TUMBLR'		=> (!empty($config['so_tumblr'])) ? true : false,
 			'SO_GOOGLE'		=> (!empty($config['so_google'])) ? true : false,
+			'SO_MYSPACE'	=> (!empty($config['so_myspace'])) ? true : false,
 			'U_ACTION'		=> $this->u_action,
 			'SHAREON_VERSION'		=> $config['SHAREON_VERSION'],
 			'S_VERSION_UP_TO_DATE'	=> $this->shareon_version_compare($config['SHAREON_VERSION']),
