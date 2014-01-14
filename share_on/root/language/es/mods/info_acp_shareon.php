@@ -71,7 +71,7 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Modo de Compartir:',
-	'SO_TYPE_EXPLAIN'	=> 'Usted puede elegir el compartir el enlace del <strong>tema</strong> o compartir un simple <strong>mensaje</strong> del tema. Debe establecer la posición <strong>Estándar</strong> para poder usar esta función.',
+	'SO_TYPE_EXPLAIN'	=> 'Usted puede elegir el compartir el enlace del <strong>tema</strong> o compartir simplemente cada <strong>mensaje</strong> del tema. Debe establecer la posición <strong>Estándar</strong> para poder usar esta función.',
 
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
