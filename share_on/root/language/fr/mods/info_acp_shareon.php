@@ -5,7 +5,7 @@
 *
 * @package language
 * @version $Id: info_acp_shareon.php
-* @copyright (c) Mathieu CHARREYRE ( http://wda-fr.org )
+* @copyright (c) Maël Soucaze ( http://www.maelsoucaze.com/ )
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 * 
 */
@@ -40,22 +40,22 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'MOD Share On',
-    'SO_TITLE'		=> 'Paramètres du MOD Share On',
-	'SO_EXPLAIN'	=> 'Configurer dans quels sites vous souhaitez partager vos sujets.',	
+	'SO_TITLE'		=> 'Paramètres du MOD Share On',
+	'SO_EXPLAIN'	=> 'Vous permet de sélectionner dans quels sites vous souhaitez partager vos sujets.',        
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Paramètres',
-	'SO_VERSION_OLD'	=> 'Version actuelle du MOD:',
+	'SO_VERSION_OLD'	=> 'Version actuelle du MOD :',
 	'SO_VERSION_NEW'	=> 'Dernière version du MOD :',
-	'SO_SAVED'		=> 'Modifications effectuées.',
-	'SO_SELECT'		=> 'Share On:',
+	'SO_SAVED'		=> 'Modifications sauvegardées.',
+	'SO_SELECT'		=> 'Partager sur :',
 	'SO_STATUS'		=> 'Activer le MOD Share On :',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_ORKUT'		=> 'Orkut',
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
-	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
+	'SO_DELICIOUS'	=> 'Delicious',
+	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
@@ -64,15 +64,15 @@ $lang = array_merge($lang, array(
 	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
-	'SO_POSITION'	=> 'Position:',
-	'SO_DEFAULT'	=> 'Standard',
-	'SO_AFTER_POST'	=> 'Après le premier post',
-	'SO_POSITION_EXPLAIN'	=> 'La position <strong>standard</strong> montre les boutons à côté du bouton d\'édition pour prosilver et subsilver2, à côté du bouton de rapport. La position <strong>Après le premier post</strong> montre les boutons, évidemment, après chaque premier post sur le sujet.',
+	'SO_POSITION'	=> 'Position :',
+	'SO_DEFAULT'	=> 'Par défaut',
+	'SO_AFTER_POST'	=> 'Après le premier message',
+	'SO_POSITION_EXPLAIN'	=> 'La position <strong>par défaut</strong> affiche les boutons, dans prosilver, à côté du bouton d’édition, et, dans subsilver2, à côté du bouton de rapport. La position <strong>après le premier message</strong> affiche, comme son nom l’indique, les boutons après chaque premier message d’un sujet.',
 
 	// Share Type
-	'SO_TYPE'			=> 'Share Type:',
-	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share a single <strong>post</strong> from the topic. You should set the <strong>Standard</strong> position to use this feature.',
-	
+	'SO_TYPE'			=> 'Méthode de partage :',
+	'SO_TYPE_EXPLAIN'	=> 'Vous pouvez choisir de partager le lien vers un <strong>sujet</strong> ou partager uniquement un <strong>message</strong> d’un sujet. Vous devriez utiliser la position <strong>par défaut</strong> afin d’utiliser cette fonctionnalité.',
+
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Partager sur Facebook',
 	'SHARE_ON_TWITTER'		=> 'Partager sur Twitter',
@@ -83,7 +83,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DIGG'			=> 'Partager sur Digg',
 	'SHARE_ON_REDDIT'		=> 'Partager sur Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Partager sur Delicious',
-	'SHARE_ON_TECHNORATI'	=> 'Partager sur Technorati',
+	'SHARE_ON_VK'			=> 'Partager sur VK',
 	'SHARE_ON_TUMBLR'		=> 'Partager sur Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Partager sur Google+',
 	'SHARE_ON_MYSPACE'		=> 'Partager sur MySpace',
