@@ -2,7 +2,7 @@
 	"name": "vinny/shareon",
 	"type": "phpbb-extension",
 	"description": "Share On is a phpBB3 Extension that allows users and guests of the board to share the topics on social networks.",
-	"homepage": "https://github.com/mvinny/Share-On/tree/ascraeus",
+	"homepage": "https://github.com/mvinny/Share-On/tree/extension",
 	"version": "1.0.0",
 	"time": "2013-10-26",
 	"licence": "GPL-2.0",

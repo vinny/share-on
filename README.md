@@ -22,7 +22,7 @@ The following Social Networks are supported.
 
 Git branches
 ------------
-The main development branch is `master`, contains the latest stable version. The `develop` branch contains future development versions. The `ascraeus` branch contains the extension for phpBB 3.1.0.
+The main development branch is `master`, contains the latest stable version. The `develop` branch contains future development versions. The `extension` branch contains the extension for phpBB 3.1.0.
 
 
 Contributing
