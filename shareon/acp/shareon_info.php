@@ -29,7 +29,7 @@ class shareon_info
 			'title'		=> 'SO_ACP',
 			'version'	=> '1.1.0',
 			'modes'		=> array(
-				'settings'	=> array('title' => 'SO_CONFIG', 'auth'	=> 'acl_a_board', 'cat'	=> array('SHARE_ON_MOD')),
+				'settings'	=> array('title' => 'SO_CONFIG', 'auth'	=> 'ext_vinny/shareon', 'cat'	=> array('SHARE_ON_MOD')),
 			),
 		);
 	}
