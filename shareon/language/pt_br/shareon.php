@@ -20,36 +20,7 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	// ACP
-	'SO_ACP'		=> 'Share On MOD',
-	'SO_TITLE'		=> 'Configurações Share On Mod',
-	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos.',	
-	'SHARE_ON_MOD'	=> 'Share On',
-	'SO_CONFIG'		=> 'Configurações',
-	'SO_VERSION_OLD'	=> 'Versão atual instalada:',
-	'SO_VERSION_NEW'	=> 'Última versão:',
-	'SO_SAVED'		=> 'Configurações alteradas com sucesso.',
-	'SO_SELECT'		=> 'Compartilhar Em:',
-	'SO_STATUS'		=> 'Ativar Share On MOD:',
-	'SO_FACEBOOK'	=> 'Facebook',
-	'SO_TWITTER'	=> 'Twitter',
-	'SO_ORKUT'		=> 'Orkut',
-	'SO_DIGG'		=> 'Digg',
-	'SO_REDDIT'		=> 'Reddit',
-	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
-	'SO_TUENTI'		=> 'Tuenti',
-	'SO_SONICO'		=> 'Sonico',
-	'SO_FRIENDFEED'	=> 'FriendFeed',
-	'SO_TUMBLR'		=> 'Tumblr',
-	'SO_GOOGLE'		=> 'Google+',
-
-	// Share On Position
-	'SO_POSITION'	=> 'Posição:',
-	'SO_DEFAULT'	=> 'Padrão',
-	'SO_AFTER_POST'	=> 'Após primeira mensagem',
-	'SO_POSITION_EXPLAIN'	=> 'A posição <strong>Padrão</strong> mostra os botões ao lado do icone Editar em prosilver e o subsilver2 ao lado do icone Reportar. Na posição <strong>Após primeira mensagem</strong> mostra os botões, obvio, após a primeira mensagem no tópico.',
-	
+	'SO_SELECT'		=> 'Compartilhar Em',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
 	'SHARE_ON_TWITTER'		=> 'Compartilhar no Twitter',

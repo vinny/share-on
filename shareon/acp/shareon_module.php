@@ -9,78 +9,69 @@
 
 namespace vinny\shareon\acp;
 
-/**
-* @ignore
-*/
-if (!defined('IN_PHPBB'))
-{
-	exit;
-}
-
-/**
-* @package acp
-*/
 class shareon_module
 {
 	var $u_action;
 
 	function main($id, $mode)
 	{
-		global $db, $user, $auth, $template, $cache;
+		global $db, $user, $auth, $template, $cache, $request;
 		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
+		
+		$this->config = $config;
+		$this->request = $request;
 
 		$user->add_lang('acp/common');
-		$user->add_lang_ext('vinny/shareon', 'shareon');
+		$user->add_lang_ext('vinny/shareon', 'acp/info_acp_shareon');
 		$this->tpl_name = 'acp_shareon';
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
 		// Version Check
-		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '1.0.0';
+		$this->config['SHAREON_VERSION'] = (isset($this->config['SHAREON_VERSION'])) ? $this->config['SHAREON_VERSION'] : '1.0.0';
 
-		$submit = (isset($_POST['submit'])) ? true : false;
-		if ($submit)
+		if ($request->is_set_post('submit'))
 		{
 			if (!check_form_key('acp_shareon'))
 			{
 				trigger_error('FORM_INVALID');
 			}
 
-			set_config('so_status', request_var('so_status', true));
-			set_config('so_position', request_var('so_position', true));
-			set_config('so_facebook', request_var('so_facebook', true));
-			set_config('so_twitter', request_var('so_twitter', true));
-			set_config('so_tuenti', request_var('so_tuenti', true));
-			set_config('so_sonico', request_var('so_sonico', true));
-			set_config('so_friendfeed', request_var('so_friendfeed', true));
-			set_config('so_orkut', request_var('so_orkut', true));
-			set_config('so_digg', request_var('so_digg', true));
-			set_config('so_reddit', request_var('so_reddit', true));
-			set_config('so_delicious', request_var('so_delicious', true));
-			set_config('so_technorati', request_var('so_technorati', true));
-			set_config('so_tumblr', request_var('so_tumblr', true));
-			set_config('so_google', request_var('so_google', true));
+			$config->set('so_status', $request->variable('so_status', true));
+			$config->set('so_position', $request->variable('so_position', true));
+			$config->set('so_facebook', $request->variable('so_facebook', true));
+			$config->set('so_twitter', $request->variable('so_twitter', true));
+			$config->set('so_tuenti', $request->variable('so_tuenti', true));
+			$config->set('so_sonico', $request->variable('so_sonico', true));
+			$config->set('so_friendfeed', $request->variable('so_friendfeed', true));
+			$config->set('so_orkut', $request->variable('so_orkut', true));
+			$config->set('so_digg', $request->variable('so_digg', true));
+			$config->set('so_reddit', $request->variable('so_reddit', true));
+			$config->set('so_delicious', $request->variable('so_delicious', true));
+			$config->set('so_technorati', $request->variable('so_technorati', true));
+			$config->set('so_tumblr', $request->variable('so_tumblr', true));
+			$config->set('so_google', $request->variable('so_google', true));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
 		
 		$template->assign_vars(array(
-			'SO_STATUS'		=> (!empty($config['so_status'])) ? true : false,
-			'SO_POSITION'	=> (!empty($config['so_position'])) ? true : false,
-			'SO_FACEBOOK'	=> (!empty($config['so_facebook'])) ? true : false,
-			'SO_TWITTER'	=> (!empty($config['so_twitter'])) ? true : false,
-			'SO_TUENTI'		=> (!empty($config['so_tuenti'])) ? true : false,
-			'SO_SONICO'		=> (!empty($config['so_sonico'])) ? true : false,
-			'SO_FRIENDFEED'	=> (!empty($config['so_friendfeed'])) ? true : false,
-			'SO_ORKUT'		=> (!empty($config['so_orkut'])) ? true : false,
-			'SO_DIGG'		=> (!empty($config['so_digg'])) ? true : false,
-			'SO_REDDIT'		=> (!empty($config['so_reddit'])) ? true : false,
-			'SO_DELICIOUS'	=> (!empty($config['so_delicious'])) ? true : false,
-			'SO_TECHNORATI'	=> (!empty($config['so_technorati'])) ? true : false,
-			'SO_TUMBLR'		=> (!empty($config['so_tumblr'])) ? true : false,
-			'SO_GOOGLE'		=> (!empty($config['so_google'])) ? true : false,
+			'SO_STATUS'		=> (!empty($this->config['so_status'])) ? true : false,
+			'SO_POSITION'	=> (!empty($this->config['so_position'])) ? true : false,
+			'SO_FACEBOOK'	=> (!empty($this->config['so_facebook'])) ? true : false,
+			'SO_TWITTER'	=> (!empty($this->config['so_twitter'])) ? true : false,
+			'SO_TUENTI'		=> (!empty($this->config['so_tuenti'])) ? true : false,
+			'SO_SONICO'		=> (!empty($this->config['so_sonico'])) ? true : false,
+			'SO_FRIENDFEED'	=> (!empty($this->config['so_friendfeed'])) ? true : false,
+			'SO_ORKUT'		=> (!empty($this->config['so_orkut'])) ? true : false,
+			'SO_DIGG'		=> (!empty($this->config['so_digg'])) ? true : false,
+			'SO_REDDIT'		=> (!empty($this->config['so_reddit'])) ? true : false,
+			'SO_DELICIOUS'	=> (!empty($this->config['so_delicious'])) ? true : false,
+			'SO_TECHNORATI'	=> (!empty($this->config['so_technorati'])) ? true : false,
+			'SO_TUMBLR'		=> (!empty($this->config['so_tumblr'])) ? true : false,
+			'SO_GOOGLE'		=> (!empty($this->config['so_google'])) ? true : false,
 			'U_ACTION'		=> $this->u_action,
-			'SHAREON_VERSION'		=> $config['SHAREON_VERSION'],
-			'S_VERSION_UP_TO_DATE'	=> $this->shareon_version_compare($config['SHAREON_VERSION']),
+			'SHAREON_VERSION'		=> $this->config['SHAREON_VERSION'],
+			'S_VERSION_UP_TO_DATE'	=> $this->shareon_version_compare($this->config['SHAREON_VERSION']),
 		));
 	}
 	/**
