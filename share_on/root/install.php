@@ -101,6 +101,21 @@ $versions = array(
 		array('so_myspace'),
 		),
 	),
+
+	// Version 2.2.0
+	'2.2.0' => array(
+	// Lets add a config setting
+	'config_add' => array(
+		array('so_vk', true),
+		array('so_type', true),
+		array('so_myspace', true),
+		),
+
+	// Lets remove a config setting
+	'config_remove' => array(
+		array('so_technorati'),
+		),
+	),
 	
 );
 

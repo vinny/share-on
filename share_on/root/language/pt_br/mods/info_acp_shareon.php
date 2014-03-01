@@ -55,19 +55,24 @@ $lang = array_merge($lang, array(
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
+	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
 	'SO_POSITION'	=> 'Posição:',
 	'SO_DEFAULT'	=> 'Padrão',
 	'SO_AFTER_POST'	=> 'Após primeira mensagem',
 	'SO_POSITION_EXPLAIN'	=> 'A posição <strong>Padrão</strong> mostra os botões ao lado do icone Editar em prosilver e o subsilver2 ao lado do icone Reportar. Na posição <strong>Após primeira mensagem</strong> mostra os botões, obvio, após a primeira mensagem no tópico.',
-	
+
+	// Share Type
+	'SO_TYPE'			=> 'Tipo de Compartilhamento:',
+	'SO_TYPE_EXPLAIN'	=> 'Você pode escolher entre compartilhar o endereço do <strong>tópico</strong> ou compartilhar cada <strong>mensagem</strong> do tópico. Você deve definir a posição como <strong>Padrão</strong> para usar este recurso.',
+
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
 	'SHARE_ON_TWITTER'		=> 'Compartilhar no Twitter',
@@ -78,9 +83,10 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DIGG'			=> 'Compartilhar no Digg',
 	'SHARE_ON_REDDIT'		=> 'Compartilhar no Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Compartilhar no Delicious',
-	'SHARE_ON_TECHNORATI'	=> 'Compartilhar no Technorati',
+	'SHARE_ON_VK'			=> 'Compartilhar no VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartilhar no Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Compartilhar no Google+',
+	'SHARE_ON_MYSPACE'		=> 'Compartilhar no MySpace',
 ));
 
 ?>

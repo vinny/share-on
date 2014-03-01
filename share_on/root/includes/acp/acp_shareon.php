@@ -34,7 +34,7 @@ class acp_shareon
 		$this->page_title = $user->lang['SHARE_ON_MOD'];
 		add_form_key('acp_shareon');
 		// Version Check
-		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.1.1';
+		$config['SHAREON_VERSION'] = (isset($config['SHAREON_VERSION'])) ? $config['SHAREON_VERSION'] : '2.2.0';
 
 		$submit = (isset($_POST['submit'])) ? true : false;
 		if ($submit)
@@ -46,6 +46,7 @@ class acp_shareon
 
 			set_config('so_status', request_var('so_status', true));
 			set_config('so_position', request_var('so_position', true));
+			set_config('so_type', request_var('so_type', true));
 			set_config('so_facebook', request_var('so_facebook', true));
 			set_config('so_twitter', request_var('so_twitter', true));
 			set_config('so_tuenti', request_var('so_tuenti', true));
@@ -55,9 +56,10 @@ class acp_shareon
 			set_config('so_digg', request_var('so_digg', true));
 			set_config('so_reddit', request_var('so_reddit', true));
 			set_config('so_delicious', request_var('so_delicious', true));
-			set_config('so_technorati', request_var('so_technorati', true));
+			set_config('so_vk', request_var('so_vk', true));
 			set_config('so_tumblr', request_var('so_tumblr', true));
 			set_config('so_google', request_var('so_google', true));
+			set_config('so_myspace', request_var('so_myspace', true));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
@@ -65,6 +67,7 @@ class acp_shareon
 		$template->assign_vars(array(
 			'SO_STATUS'		=> (!empty($config['so_status'])) ? true : false,
 			'SO_POSITION'	=> (!empty($config['so_position'])) ? true : false,
+			'SO_TYPE'		=> (!empty($config['so_type'])) ? true : false,
 			'SO_FACEBOOK'	=> (!empty($config['so_facebook'])) ? true : false,
 			'SO_TWITTER'	=> (!empty($config['so_twitter'])) ? true : false,
 			'SO_TUENTI'		=> (!empty($config['so_tuenti'])) ? true : false,
@@ -74,9 +77,10 @@ class acp_shareon
 			'SO_DIGG'		=> (!empty($config['so_digg'])) ? true : false,
 			'SO_REDDIT'		=> (!empty($config['so_reddit'])) ? true : false,
 			'SO_DELICIOUS'	=> (!empty($config['so_delicious'])) ? true : false,
-			'SO_TECHNORATI'	=> (!empty($config['so_technorati'])) ? true : false,
+			'SO_VK'			=> (!empty($config['so_vk'])) ? true : false,
 			'SO_TUMBLR'		=> (!empty($config['so_tumblr'])) ? true : false,
 			'SO_GOOGLE'		=> (!empty($config['so_google'])) ? true : false,
+			'SO_MYSPACE'	=> (!empty($config['so_myspace'])) ? true : false,
 			'U_ACTION'		=> $this->u_action,
 			'SHAREON_VERSION'		=> $config['SHAREON_VERSION'],
 			'S_VERSION_UP_TO_DATE'	=> $this->shareon_version_compare($config['SHAREON_VERSION']),

@@ -14,20 +14,15 @@
 - Reddit
 - Orkut
 - Delicious
-- Technorati
+- VK
 - Tuenti
 - Sonico
 - Friendfeed
 - Tumblr
 - Google+
+- MySpace
 
-You can follow the development through the repository: http://goo.gl/zGvsP
-
-** FEATURES **
-- ACP module to manage the MOD.
-- Each button can be enabled/disabled individually.
-- Buttons position.
-- Check version: displays when a new version is available.]]></description>
+You can follow the development through the repository: http://goo.gl/zGvsP]]></description>
 		<author-group>
 			<author>
 				<realname><![CDATA[Marcus Vinicius]]></realname>
@@ -39,7 +34,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.1.1</mod-version>
+		<mod-version>2.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -51,8 +46,6 @@ You can follow the development through the repository: http://goo.gl/zGvsP
 	</header>
 	<action-group>
 		<copy>
-			<file from="root/styles/prosilver/imageset/pt_br/share_on_buttons/*.*" to="styles/prosilver/imageset/pt_br/share_on_buttons/*.*"/>
-			<file from="root/styles/subsilver2/imageset/pt_br/share_on_buttons/*.*" to="styles/subsilver2/imageset/pt_br/share_on_buttons/*.*"/>
 			<file from="root/language/pt_br/mods/info_acp_shareon.php" to="language/pt_br/mods/info_acp_shareon.php"/>
 		</copy>
 	</action-group>

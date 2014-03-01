@@ -55,19 +55,24 @@ $lang = array_merge($lang, array(
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
+	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
 	'SO_POSITION'	=> 'Position:',
 	'SO_DEFAULT'	=> 'Standard',
 	'SO_AFTER_POST'	=> 'After the first post',
 	'SO_POSITION_EXPLAIN'	=> 'The <strong>Standard</strong> position shows the buttons next to the edit button for prosilver and in subsilver2 next to the report button. On <strong>After the first post</strong> position shows the buttons, obviously, after each first post on topic.',
-	
+
+	// Share Type
+	'SO_TYPE'			=> 'Share Type:',
+	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share every single <strong>post</strong> from the topic. You should set the <strong>Standard</strong> position to use this feature.',
+
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
 	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
@@ -78,9 +83,10 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DIGG'			=> 'Share on Digg',
 	'SHARE_ON_REDDIT'		=> 'Share on Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
-	'SHARE_ON_TECHNORATI'	=> 'Share on Technorati',
+	'SHARE_ON_VK'			=> 'Share on VK',
 	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
+	'SHARE_ON_MYSPACE'		=> 'Share on MySpace',
 ));
 
 ?>
