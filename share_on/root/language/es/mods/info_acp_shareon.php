@@ -55,19 +55,24 @@ $lang = array_merge($lang, array(
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
+	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_MYSPACE'	=> 'MySpace',
 
 	// Share On Position
 	'SO_POSITION'	=> 'Posición:',
 	'SO_DEFAULT'	=> 'Estándar',
 	'SO_AFTER_POST'	=> 'Después del primer mensaje',
 	'SO_POSITION_EXPLAIN'	=> 'La posición <strong>Estándar</strong> muestra los botones después del botón de editar en prosilver y después del botón de reportar en subsilver2. La posición <strong>Después del primer mensaje</strong> muestra los botones después del primer mensaje.',
-	
+
+	// Share Type
+	'SO_TYPE'			=> 'Modo de Compartir:',
+	'SO_TYPE_EXPLAIN'	=> 'Usted puede elegir el compartir el enlace del <strong>tema</strong> o compartir simplemente cada <strong>mensaje</strong> del tema. Debe establecer la posición <strong>Estándar</strong> para poder usar esta función.',
+
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
 	'SHARE_ON_TWITTER'		=> 'Compartir en Twitter',
@@ -78,9 +83,10 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DIGG'			=> 'Compartir en Digg',
 	'SHARE_ON_REDDIT'		=> 'Compartir en Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
-	'SHARE_ON_TECHNORATI'	=> 'Compartir en Technorati',
+	'SHARE_ON_VK'			=> 'Compartir en VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartir en Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Compartir en Google+',
+	'SHARE_ON_MYSPACE'		=> 'Compartir en MySpace',
 ));
 
 ?>

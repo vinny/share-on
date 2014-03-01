@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Share On - Spanish Translation]]></title>
+		<title lang="en"><![CDATA[Share On - French Translation]]></title>
 		<description lang="en"><![CDATA[With Share On MOD, users can share the topics in the following social networks:
 - Facebook
 - Twitter
@@ -25,13 +25,9 @@
 You can follow the development through the repository: http://goo.gl/zGvsP]]></description>
 		<author-group>
 			<author>
-				<realname><![CDATA[Salva]]></realname>
-				<username><![CDATA[Saske1]]></username>
-				<homepage><![CDATA[http://www.phpbb-es.com/]]></homepage>
-				<email><![CDATA[salva_bxt@hotmail.com]]></email>
-				<contributions-group>
-					<contributions status="current" from="2011-06-07" position="Developer"/>
-				</contributions-group>
+				<realname><![CDATA[Maël Soucaze]]></realname>
+				<username><![CDATA[Maël Soucaze]]></username>
+				<homepage><![CDATA[http://www.maelsoucaze.com/]]></homepage>
 			</author>
 		</author-group>
 		<mod-version>2.2.0</mod-version>
@@ -46,7 +42,7 @@ You can follow the development through the repository: http://goo.gl/zGvsP]]></d
 	</header>
 	<action-group>
 		<copy>
-			<file from="root/language/es/mods/info_acp_shareon.php" to="language/es/mods/info_acp_shareon.php"/>
+			<file from="root/language/fr/mods/info_acp_shareon.php" to="language/fr/mods/info_acp_shareon.php"/>
 		</copy>
 	</action-group>
 </mod>
