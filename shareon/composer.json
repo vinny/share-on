@@ -5,20 +5,20 @@
 	"homepage": "https://github.com/mvinny/Share-On/tree/extension",
 	"version": "1.0.0",
 	"time": "2013-10-26",
-	"licence": "GPL-2.0",
-	"authors": [
-		{
+	"license": "GPL-2.0",
+	"authors": [{
 			"name": "Marcus Vinícius (_Vinny_)",
 			"email": "vinny@suportephpbb.com.br",
 			"homepage": "http://www.suportephpbb.com.br",
 			"role": "Developer"
-		}
-	],
+		}],
 	"require": {
-		"php": ">=5.3.3",
-		"phpbb/phpbb": "3.1.*@dev"
+		"php": ">=5.3.3"
 	},
 	"extra": {
-		"display-name": "Share On"
+		"display-name": "Share On",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
+		}
 	}
 }

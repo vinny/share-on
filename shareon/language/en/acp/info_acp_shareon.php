@@ -44,9 +44,4 @@ $lang = array_merge($lang, array(
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
 
-	// Share On Position
-	'SO_POSITION'	=> 'Position',
-	'SO_DEFAULT'	=> 'Standard',
-	'SO_AFTER_POST'	=> 'After the first post',
-	'SO_POSITION_EXPLAIN'	=> 'The <strong>Standard</strong> position shows the buttons next to the edit button for prosilver and in subsilver2 next to the report button. On <strong>After the first post</strong> position shows the buttons, obviously, after each first post on topic.',
 ));

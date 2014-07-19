@@ -43,10 +43,4 @@ $lang = array_merge($lang, array(
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
-
-	// Share On Position
-	'SO_POSITION'	=> 'Posição',
-	'SO_DEFAULT'	=> 'Padrão',
-	'SO_AFTER_POST'	=> 'Após primeira mensagem',
-	'SO_POSITION_EXPLAIN'	=> 'A posição <strong>Padrão</strong> mostra os botões ao lado do icone Editar em prosilver e o subsilver2 ao lado do icone Reportar. Na posição <strong>Após primeira mensagem</strong> mostra os botões, obvio, após a primeira mensagem no tópico.',
 ));

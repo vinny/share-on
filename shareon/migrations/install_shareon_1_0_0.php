@@ -47,7 +47,9 @@ class install_shareon_1_0_0 extends \phpbb\db\migration\migration
 				'SO_ACP'
 			)),
 			array('module.add', array(
-				'acp', 'SO_ACP', array(
+				'acp',
+				'SO_ACP',
+				array(
 					'module_basename'	=> '\vinny\shareon\acp\shareon_module',
 					'modes'				=> array('settings'),
 				),

@@ -24,8 +24,7 @@ class listener implements EventSubscriberInterface
 		return array(
 			'core.common'							=> 'common_setup',
 			'core.user_setup'						=> 'load_language_on_setup',
-			// Viewtopic event
-			'core.viewtopic_modify_post_row'		=> 'viewtopic_postrow_add_shareon',
+			'core.viewtopic_modify_post_row'		=> 'viewtopic_postrow_shareon',
 		);
 	}
 
@@ -87,7 +86,7 @@ class listener implements EventSubscriberInterface
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
 
-	public function viewtopic_postrow_add_shareon($event)
+	public function viewtopic_postrow_shareon($event)
 	{
 		if (!$this->config['so_status'])
 		{

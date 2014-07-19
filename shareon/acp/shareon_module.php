@@ -37,7 +37,6 @@ class shareon_module
 			}
 
 			$config->set('so_status', $request->variable('so_status', true));
-			$config->set('so_position', $request->variable('so_position', true));
 			$config->set('so_facebook', $request->variable('so_facebook', true));
 			$config->set('so_twitter', $request->variable('so_twitter', true));
 			$config->set('so_tuenti', $request->variable('so_tuenti', true));
@@ -56,7 +55,6 @@ class shareon_module
 		
 		$template->assign_vars(array(
 			'SO_STATUS'		=> (!empty($this->config['so_status'])) ? true : false,
-			'SO_POSITION'	=> (!empty($this->config['so_position'])) ? true : false,
 			'SO_FACEBOOK'	=> (!empty($this->config['so_facebook'])) ? true : false,
 			'SO_TWITTER'	=> (!empty($this->config['so_twitter'])) ? true : false,
 			'SO_TUENTI'		=> (!empty($this->config['so_tuenti'])) ? true : false,
@@ -92,7 +90,7 @@ class shareon_module
 		$errstr = '';
 		$errno = 0;
 
-		$info = get_remote_file('www.suportephpbb.com.br', '/shareon', 'shareon.txt', $errstr, $errno);
+		$info = get_remote_file('www.suportephpbb.com.br', '/shareon', 'shareon_ext.txt', $errstr, $errno);
 		if ($info === false)
 		{
 			$template->assign_var('S_VERSIONCHECK_FAIL', true);
