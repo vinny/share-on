@@ -13,6 +13,11 @@
 				<input type="radio" class="radio" name="so_status" value="0" <!-- IF not SO_STATUS -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>
 		<dl>
+			<dt><label id="so_type" for="so_type">{L_SO_TYPE}{L_COLON}</label><br /><span>{L_SO_TYPE_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="so_type" value="1" <!-- IF SO_TYPE -->checked="checked"<!-- ENDIF -->/> {L_TOPIC} &nbsp; 
+				<input type="radio" class="radio" name="so_type" value="0" <!-- IF not SO_TYPE -->checked="checked"<!-- ENDIF --> /> {L_POST}</dd>
+		</dl>
+		<dl>
 			<dt><label>{L_SO_VERSION_OLD}{L_COLON}</label></dt>
 			<dd><strong>{S_VERSIONOLD}</strong></dd>
 		</dl>
@@ -45,14 +50,9 @@
 				<input type="radio" class="radio" name="so_reddit" value="0" <!-- IF not SO_REDDIT -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>
 		<dl>
-			<dt><label id="so_orkut" for="so_orkut">{L_SO_ORKUT}</label></dt>
-			<dd><input type="radio" class="radio" name="so_orkut" value="1" <!-- IF SO_ORKUT -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
-				<input type="radio" class="radio" name="so_orkut" value="0" <!-- IF not SO_ORKUT -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
-		</dl>
-		<dl>
-			<dt><label id="so_technorati" for="so_technorati">{L_SO_TECHNORATI}</label></dt>
-			<dd><input type="radio" class="radio" name="so_technorati" value="1" <!-- IF SO_TECHNORATI -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
-				<input type="radio" class="radio" name="so_technorati" value="0" <!-- IF not SO_TECHNORATI -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+			<dt><label id="so_vk" for="so_vk">{L_SO_VK}</label></dt>
+			<dd><input type="radio" class="radio" name="so_vk" value="1" <!-- IF SO_VK -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
+				<input type="radio" class="radio" name="so_vk" value="0" <!-- IF not SO_VK -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
 		</dl>
 		<dl>
 			<dt><label id="so_twitter" for="so_twitter">{L_SO_TWITTER}</label></dt>

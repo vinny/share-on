@@ -25,16 +25,15 @@ class install_shareon_1_0_0 extends \phpbb\db\migration\migration
 	{
 		return array(
 			array('config.add', array('so_status', 1)),
-			array('config.add', array('so_position', 1)),
+			array('config.add', array('so_type', 1)),
 			array('config.add', array('so_facebook', 1)),
 			array('config.add', array('so_twitter', 1)),
 			array('config.add', array('so_tuenti', 1)),
 			array('config.add', array('so_sonico', 1)),
 			array('config.add', array('so_friendfeed', 1)),
-			array('config.add', array('so_orkut', 1)),
 			array('config.add', array('so_digg', 1)),
 			array('config.add', array('so_delicious', 1)),
-			array('config.add', array('so_technorati', 1)),
+			array('config.add', array('so_vk', 1)),
 			array('config.add', array('so_tumblr', 1)),
 			array('config.add', array('so_google', 1)),
 			array('config.add', array('so_reddit', 1)),

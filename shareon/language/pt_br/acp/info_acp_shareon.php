@@ -33,14 +33,17 @@ $lang = array_merge($lang, array(
 	'SO_STATUS'		=> 'Ativar Share On Extension',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
-	'SO_ORKUT'		=> 'Orkut',
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_DELICIOUS' 	=> 'Delicious',
-	'SO_TECHNORATI'	=> 'Technorati',
+	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_SONICO'		=> 'Sonico',
 	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+
+	// Share Type
+	'SO_TYPE'			=> 'Tipo de Compartilhamento',
+	'SO_TYPE_EXPLAIN'	=> 'Você pode escolher entre compartilhar o endereço do <strong>tópico</strong> ou compartilhar cada <strong>mensagem</strong> do tópico. Você deve definir a posição como <strong>Padrão</strong> para usar este recurso.',
 ));

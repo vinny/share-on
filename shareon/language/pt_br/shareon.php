@@ -31,7 +31,7 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_DIGG'			=> 'Compartilhar no Digg',
 	'SHARE_ON_REDDIT'		=> 'Compartilhar no Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Compartilhar no Delicious',
-	'SHARE_ON_TECHNORATI'	=> 'Compartilhar no Technorati',
+	'SHARE_ON_VK'			=> 'Compartilhar no VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartilhar no Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Compartilhar no Google+',
 ));
