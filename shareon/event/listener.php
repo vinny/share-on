@@ -105,16 +105,16 @@ class listener implements EventSubscriberInterface
 		$topic_title = str_replace(array('Re: '), '', $topic_title);
 
 		$post_row = array_merge($post_row, array(
-			'U_FACEBOOK'	=> 'http://www.facebook.com/share.php?t=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
+			'U_FACEBOOK'	=> 'https://www.facebook.com/share.php?t=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
 			'U_TWITTER'		=> 'https://twitter.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_DIGG'		=> 'http://digg.com/submit?phase=2&amp;url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
 			'U_REDDIT'		=> 'http://www.reddit.com/submit?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
-			'U_DELICIOUS' 	=> 'http://delicious.com/post?url=' . urlencode($share_url) . '&amp;title='. urlencode($topic_title),
+			'U_DELICIOUS' 	=> 'https://delicious.com/post?url=' . urlencode($share_url) . '&amp;title='. urlencode($topic_title),
 			'U_VK'			=> 'http://vk.com/share.php?url=' . urlencode($share_url),
 			'U_TUENTI'		=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;suggested-text='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_SONICO'		=> 'http://www.sonico.com/share.php?title='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . urlencode($share_url),
-			'U_TUMBLR'		=> 'http://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
+			'U_TUMBLR'		=> 'https://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
 			'U_GOOGLE'		=> 'https://plus.google.com/share?url=' . urlencode($share_url),
 		));
 		$event['post_row'] = $post_row;

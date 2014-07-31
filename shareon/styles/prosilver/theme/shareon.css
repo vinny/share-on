@@ -21,9 +21,9 @@
 	content: '';
 	display: inline-block;
 	float: right;
-	height: 12px;
-	margin: 3px 0 0 2px;
-	width: 12px;
+	height: 16px;
+	margin: 2px 0 0 2px;
+	width: 16px;
 }
 
 .dropdown-select.share-icon-button:before {
@@ -31,7 +31,7 @@
 }
 
 .post-buttons .share-icon-button {
-	padding: 0 5px;
+	padding: 0 3px;
 }
 
 .hastouch .post-buttons .share-icon-button {
@@ -50,14 +50,14 @@
 	margin-left: 0;
 }
 
-.facebook-icon:before							{ background-position: -122px 0; }
-.twitter-icon		{ background: transparent url("./images/shareon_twitter.png") top left no-repeat; }
-.tuenti-icon		{ background: transparent url("./images/shareon_tuenti.png") top left no-repeat; }
-.sonico-icon		{ background: transparent url("./images/shareon_sonico.png") top left no-repeat; }
-.friendfeed-icon	{ background: transparent url("./images/shareon_friendfeed.png") top left no-repeat; }
-.digg-icon, .digg-icon 	{	 background: transparent url("./images/shareon_digg.gif") top left no-repeat; }
-.reddit-icon, .reddit-icon	{ background: transparent url("./images/shareon_reddit.png") top left no-repeat; }
-.delicious-icon, .delicious-icon	{ background: transparent url("./images/shareon_delicious.gif") top left no-repeat; }
-.vk-icon, .vk-icon					{ background: transparent url("./images/shareon_vk.png") top left no-repeat; }
-.tumblr-icon, .tumblr-icon			{ background: transparent url("./images/shareon_tumblr.png") top left no-repeat; }
-.google-icon, .google-icon			{ background: transparent url("./images/shareon_google.gif") top left no-repeat; }
+.facebook-icon:before	{ background-position: 452px 0; }
+.twitter-icon:before	{ background-position: 431px 0px; }
+.tuenti-icon:before		{ background-position: 410px 0px; }
+.sonico-icon:before		{ background-position: 389px 0px; }
+.friendfeed-icon:before	{ background-position: 368px 0px; }
+.digg-icon:before 		{ background-position: 347px 0px; }
+.reddit-icon:before		{ background-position: 326px 0px; }
+.delicious-icon:before	{ background-position: 305px 0px; }
+.vk-icon:before			{ background-position: 284px 0px; }
+.tumblr-icon:before		{ background-position: 263px 0px; }
+.google-icon:before		{ background-position: 242px 0px; }

@@ -6,16 +6,16 @@ Share On is a phpBB3 Extension that allows users and guests of the board to shar
 Social Networks
 -------
 The following Social Networks are supported.
-* [Facebook](http://www.facebook.com/)
+* [Facebook](https://www.facebook.com/)
 * [Twitter](http://twitter.com/)
 * [Digg](http://digg.com/)
 * [Reddit](http://www.reddit.com/)
-* [Delicious](http://delicious.com/)
+* [Delicious](https://delicious.com/)
 * [VK](http://vk.com/)
 * [Tuenti](http://www.tuenti.com/)
 * [Sonico](http://www.sonico.com/)
 * [Friendfeed](http://friendfeed.com/)
-* [Tumblr](http://www.tumblr.com/)
+* [Tumblr](https://www.tumblr.com/)
 * [Google+](https://plus.google.com/)
 
 
