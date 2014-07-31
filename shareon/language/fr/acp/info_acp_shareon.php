@@ -45,5 +45,5 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Méthode de partage',
-	'SO_TYPE_EXPLAIN'	=> 'Vous pouvez choisir de partager le lien vers un <strong>sujet</strong> ou partager uniquement un <strong>message</strong> d’un sujet. Vous devriez utiliser la position <strong>par défaut</strong> afin d’utiliser cette fonctionnalité.',
+	'SO_TYPE_EXPLAIN'	=> 'Vous pouvez choisir de partager le lien vers un <strong>sujet</strong> ou partager uniquement un <strong>message</strong> d’un sujet.',
 ));

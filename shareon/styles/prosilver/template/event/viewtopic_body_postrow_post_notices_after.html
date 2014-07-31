@@ -1,47 +1,50 @@
 <!-- IF S_SO_STATUS -->
-<ul class="post-buttons">
-	<!-- IF S_SO_FACEBOOK --><li>
-		<a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" class="button icon-button facebook-icon"><span>{L_SHARE_ON_FACEBOOK}</span></a>
-	</li><!-- ENDIF -->
+	<!-- IF S_SO_TYPE == '0' || postrow.S_FIRST_ROW -->
+		<ul class="post-buttons">
+			<!-- IF S_SO_FACEBOOK --><li>
+				<a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" class="share-button share-icon-button facebook-icon"><span>{L_SHARE_ON_FACEBOOK}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_TWITTER --><li>
-		<a href="{postrow.U_TWITTER}" title="{L_SHARE_ON_TWITTER}" class="button icon-button twitter-icon"><span>{L_SHARE_ON_TWITTER}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_TWITTER --><li>
+				<a href="{postrow.U_TWITTER}" title="{L_SHARE_ON_TWITTER}" class="share-button share-icon-button twitter-icon"><span>{L_SHARE_ON_TWITTER}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_TUENTI -->
-		<a href="{postrow.U_TUENTI}" title="{L_SHARE_ON_TUENTI}" class="button icon-button tuenti-icon"><span>{L_SHARE_ON_TUENTI}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_TUENTI -->
+				<a href="{postrow.U_TUENTI}" title="{L_SHARE_ON_TUENTI}" class="share-button share-icon-button tuenti-icon"><span>{L_SHARE_ON_TUENTI}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_SONICO --><li>
-		<a href="{postrow.U_SONICO}" title="{L_SHARE_ON_SONICO}" class="button icon-button sonico-icon"><span>{L_SHARE_ON_SONICO}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_SONICO --><li>
+				<a href="{postrow.U_SONICO}" title="{L_SHARE_ON_SONICO}" class="share-button share-icon-button sonico-icon"><span>{L_SHARE_ON_SONICO}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_FRIENDFEED --><li>
-		<a href="{postrow.U_FRIENDFEED}" title="{L_SHARE_ON_FRIENDFEED}" class="button icon-button friendfeed-icon"><span>{L_SHARE_ON_FRIENDFEED}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_FRIENDFEED --><li>
+				<a href="{postrow.U_FRIENDFEED}" title="{L_SHARE_ON_FRIENDFEED}" class="share-button share-icon-button friendfeed-icon"><span>{L_SHARE_ON_FRIENDFEED}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_DIGG --><li>
-		<a href="{postrow.U_DIGG}" title="{L_SHARE_ON_DIGG}" class="button icon-button digg-icon"><span>{L_SHARE_ON_DIGG}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_DIGG --><li>
+				<a href="{postrow.U_DIGG}" title="{L_SHARE_ON_DIGG}" class="share-button share-icon-button digg-icon"><span>{L_SHARE_ON_DIGG}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_REDDIT --><li>
-		<a href="{postrow.U_REDDIT}" title="{L_SHARE_ON_REDDIT}" class="button icon-button reddit-icon"><span>{L_SHARE_ON_REDDIT}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_REDDIT --><li>
+				<a href="{postrow.U_REDDIT}" title="{L_SHARE_ON_REDDIT}" class="share-button share-icon-button reddit-icon"><span>{L_SHARE_ON_REDDIT}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_DELICIOUS --><li>
-		<a href="{postrow.U_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" class="button icon-button delicious-icon"><span>{L_SHARE_ON_DELICIOUS}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_DELICIOUS --><li>
+				<a href="{postrow.U_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" class="share-button share-icon-button delicious-icon"><span>{L_SHARE_ON_DELICIOUS}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_VK --><li>
-		<a href="{postrow.U_VK}" title="{L_SHARE_ON_VK}" class="button icon-button vk-icon"><span>{L_SHARE_ON_VK}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_VK --><li>
+				<a href="{postrow.U_VK}" title="{L_SHARE_ON_VK}" class="share-button share-icon-button vk-icon"><span>{L_SHARE_ON_VK}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_TUMBLR --><li>
-		<a href="{postrow.U_TUMBLR}" title="{L_SHARE_ON_TUMBLR}" class="button icon-button tumblr-icon"><span>{L_SHARE_ON_TUMBLR}</span></a>
-	</li><!-- ENDIF -->
+			<!-- IF S_SO_TUMBLR --><li>
+				<a href="{postrow.U_TUMBLR}" title="{L_SHARE_ON_TUMBLR}" class="share-button share-icon-button tumblr-icon"><span>{L_SHARE_ON_TUMBLR}</span></a>
+			</li><!-- ENDIF -->
 
-	<!-- IF S_SO_GOOGLE --><li>
-		<a href="{postrow.U_GOOGLE}" title="{L_SHARE_ON_GOOGLE}" class="button icon-button google-icon"><span>{L_SHARE_ON_GOOGLE}</span></a>
-	</li><!-- ENDIF -->
-</ul>
+			<!-- IF S_SO_GOOGLE --><li>
+				<a href="{postrow.U_GOOGLE}" title="{L_SHARE_ON_GOOGLE}" class="share-button share-icon-button google-icon"><span>{L_SHARE_ON_GOOGLE}</span></a>
+			</li><!-- ENDIF -->
+		</ul>
+		<br />
+	<!-- ENDIF -->
 <!-- ENDIF -->

@@ -45,5 +45,5 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Share Type',
-	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share every single <strong>post</strong> from the topic. You should set the <strong>Standard</strong> position to use this feature.',
+	'SO_TYPE_EXPLAIN'	=> 'You can choose to share the <strong>topic</strong> link or share every single <strong>post</strong> from the topic.',
 ));

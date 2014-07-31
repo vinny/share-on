@@ -45,5 +45,5 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Tipo de Compartilhamento',
-	'SO_TYPE_EXPLAIN'	=> 'Você pode escolher entre compartilhar o endereço do <strong>tópico</strong> ou compartilhar cada <strong>mensagem</strong> do tópico. Você deve definir a posição como <strong>Padrão</strong> para usar este recurso.',
+	'SO_TYPE_EXPLAIN'	=> 'Você pode escolher entre compartilhar o endereço do <strong>tópico</strong> ou compartilhar cada <strong>mensagem</strong> do tópico.',
 ));

@@ -1,6 +1,56 @@
 /* Share On Extension */
 
-.facebook-icon		{ background: transparent url("./images/shareon_facebook.png") top left no-repeat; }
+.share-icon-button:before	{ background-image: url("./images/icons_share.png"); }
+
+.share-button {
+	cursor: pointer;
+	display: inline-block;
+	height: 18px;
+	font-size: 13px;
+	white-space: nowrap;
+	border-radius: 0;
+	padding: 2px 8px;
+	font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+	position: relative;
+	text-decoration: none !important;
+	outline-style: none !important;
+	vertical-align: bottom;
+}
+
+.share-icon-button:before {
+	content: '';
+	display: inline-block;
+	float: right;
+	height: 12px;
+	margin: 3px 0 0 2px;
+	width: 12px;
+}
+
+.dropdown-select.share-icon-button:before {
+	margin-right: 4px;
+}
+
+.post-buttons .share-icon-button {
+	padding: 0 5px;
+}
+
+.hastouch .post-buttons .share-icon-button {
+	padding: 2px 8px;
+}
+
+.post-buttons .share-icon-button span {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.post-buttons .share-icon-button:before {
+	margin-left: 0;
+}
+
+.facebook-icon:before							{ background-position: -122px 0; }
 .twitter-icon		{ background: transparent url("./images/shareon_twitter.png") top left no-repeat; }
 .tuenti-icon		{ background: transparent url("./images/shareon_tuenti.png") top left no-repeat; }
 .sonico-icon		{ background: transparent url("./images/shareon_sonico.png") top left no-repeat; }
