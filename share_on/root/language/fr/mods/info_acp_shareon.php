@@ -40,13 +40,13 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'MOD Share On',
-	'SO_TITLE'		=> 'Paramètres du MOD Share On',
-	'SO_EXPLAIN'	=> 'Vous permet de sélectionner dans quels sites vous souhaitez partager vos sujets.',        
+	'SO_TITLE'		=> 'Param&egrave;tres du MOD Share On',
+	'SO_EXPLAIN'	=> 'Vous permet de s&eacute;lectionner dans quels sites vous souhaitez partager vos sujets.',        
 	'SHARE_ON_MOD'	=> 'Share On',
-	'SO_CONFIG'		=> 'Paramètres',
+	'SO_CONFIG'		=> 'Param&egrave;tres',
 	'SO_VERSION_OLD'	=> 'Version actuelle du MOD :',
-	'SO_VERSION_NEW'	=> 'Dernière version du MOD :',
-	'SO_SAVED'		=> 'Modifications sauvegardées.',
+	'SO_VERSION_NEW'	=> 'Derni&egrave;re version du MOD :',
+	'SO_SAVED'		=> 'Modifications sauvegard&eacute;es.',
 	'SO_SELECT'		=> 'Partager sur :',
 	'SO_STATUS'		=> 'Activer le MOD Share On :',
 	'SO_FACEBOOK'	=> 'Facebook',
@@ -65,13 +65,13 @@ $lang = array_merge($lang, array(
 
 	// Share On Position
 	'SO_POSITION'	=> 'Position :',
-	'SO_DEFAULT'	=> 'Par défaut',
-	'SO_AFTER_POST'	=> 'Après le premier message',
-	'SO_POSITION_EXPLAIN'	=> 'La position <strong>par défaut</strong> affiche les boutons, dans prosilver, à côté du bouton d’édition, et, dans subsilver2, à côté du bouton de rapport. La position <strong>après le premier message</strong> affiche, comme son nom l’indique, les boutons après chaque premier message d’un sujet.',
+	'SO_DEFAULT'	=> 'Par d&eacute;faut',
+	'SO_AFTER_POST'	=> 'Apr&egrave;s le premier message',
+	'SO_POSITION_EXPLAIN'	=> 'La position <strong>par d&eacute;faut</strong> affiche les boutons, dans prosilver, &agrave; c&ocirc;t&eacute; du bouton d	&#146;&eacute;dition, et, dans subsilver2, &agrave; c&ocirc;t&eacute; du bouton de rapport. La position <strong>apr&egrave;s le premier message</strong> affiche, comme son nom l&#146;indique, les boutons apr&egrave;s chaque premier message d&#146;un sujet.',
 
 	// Share Type
-	'SO_TYPE'			=> 'Méthode de partage :',
-	'SO_TYPE_EXPLAIN'	=> 'Vous pouvez choisir de partager le lien vers un <strong>sujet</strong> ou partager uniquement un <strong>message</strong> d’un sujet. Vous devriez utiliser la position <strong>par défaut</strong> afin d’utiliser cette fonctionnalité.',
+	'SO_TYPE'			=> 'M&eacute;thode de partage :',
+	'SO_TYPE_EXPLAIN'	=> 'Vous pouvez choisir de partager le lien vers un <strong>sujet</strong> ou partager uniquement un <strong>message</strong> d&#146;un sujet. Vous devriez utiliser la position <strong>par d&eacute;faut</strong> afin d&#146;utiliser cette fonctionnalit&eacute;.',
 
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Partager sur Facebook',
