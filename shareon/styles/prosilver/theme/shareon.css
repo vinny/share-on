@@ -1,5 +1,18 @@
 /* Share On Extension */
 
+.share-buttons {
+	float: none;
+	position: absolute;
+	margin: 0;
+	right: 0;
+	list-style: none;
+}
+
+.share-buttons > li {
+	float: left;
+	margin-right: 3px;
+}
+
 .share-icon-button:before	{ background-image: url("./images/icons_share.png"); }
 
 .share-button {
@@ -30,15 +43,15 @@
 	margin-right: 4px;
 }
 
-.post-buttons .share-icon-button {
+.share-buttons .share-icon-button {
 	padding: 0 3px;
 }
 
-.hastouch .post-buttons .share-icon-button {
+.hastouch .share-buttons .share-icon-button {
 	padding: 2px 8px;
 }
 
-.post-buttons .share-icon-button span {
+.share-buttons .share-icon-button span {
 	display: block;
 	height: 0;
 	overflow: hidden;
@@ -46,7 +59,7 @@
 	width: 1px;
 }
 
-.post-buttons .share-icon-button:before {
+.share-buttons .share-icon-button:before {
 	margin-left: 0;
 }
 

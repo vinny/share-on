@@ -1,6 +1,6 @@
 [Share On](http://www.phpbb.com/customise/db/mod/share_on/)
 =============
-Share On is a phpBB3 Extension that allows users and guests of the board to share the topics on social networks.
+Share On is a phpBB3 Extension that allows users to share the topics and posts on social networks.
 
 
 Social Networks
@@ -21,7 +21,7 @@ The following Social Networks are supported.
 
 Git branches
 ------------
-The main development branch is `master`, contains the latest stable version. The `develop` branch contains future development versions. The `extension` branch contains the extension for phpBB 3.1.0.
+The main development branch is `master`, contains the latest stable version. The `develop` branch contains future development versions. The `extension` branch contains the extension for phpBB 3.1.
 
 
 Contributing
