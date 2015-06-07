@@ -72,3 +72,10 @@
 .vk-icon:before			{ background-position: 284px 0; }
 .tumblr-icon:before		{ background-position: 263px 0; }
 .google-icon:before		{ background-position: 242px 0; }
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.share-buttons {
+		float: none;
+		right: 20px;
+	}
+}
