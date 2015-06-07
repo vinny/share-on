@@ -1,9 +1,10 @@
 <?php
 /**
 *
-* @package Share On
-* @copyright (c) 2013 Vinny
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* Topics Descriptions extension for the phpBB Forum Software package.
+*
+* @copyright (c) 2015 Vinny <https://github.com/vinny>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 

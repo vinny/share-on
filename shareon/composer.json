@@ -2,13 +2,13 @@
 	"name": "vinny/shareon",
 	"type": "phpbb-extension",
 	"description": "Share On is a phpBB3 Extension that allows users to share the topics and posts on social networks.",
-	"homepage": "https://github.com/mvinny/Share-On/tree/extension",
+	"homepage": "https://github.com/vinny/Share-On",
 	"version": "1.0.0",
 	"license": "GPL-2.0",
 	"authors": [
 		{
-			"name": "Marcus Vinícius (_Vinny_)",
-			"homepage": "http://www.suportephpbb.com.br",
+			"name": "_Vinny_",
+			"homepage": "https://github.com/vinny",
 			"role": "Developer"
 		}
 	],
@@ -19,6 +19,11 @@
 		"display-name": "Share On",
 		"soft-require": {
 			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
-		}
+		},
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/shareon",
+            "filename": "version_check"
+        }
 	}
 }

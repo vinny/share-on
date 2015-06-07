@@ -1,5 +1,3 @@
-/* Share On Extension */
-
 .share-buttons {
 	float: none;
 	position: absolute;
@@ -64,13 +62,13 @@
 }
 
 .facebook-icon:before	{ background-position: 452px 0; }
-.twitter-icon:before	{ background-position: 431px 0px; }
-.tuenti-icon:before		{ background-position: 410px 0px; }
-.sonico-icon:before		{ background-position: 389px 0px; }
-.friendfeed-icon:before	{ background-position: 368px 0px; }
-.digg-icon:before 		{ background-position: 347px 0px; }
-.reddit-icon:before		{ background-position: 326px 0px; }
-.delicious-icon:before	{ background-position: 305px 0px; }
-.vk-icon:before			{ background-position: 284px 0px; }
-.tumblr-icon:before		{ background-position: 263px 0px; }
-.google-icon:before		{ background-position: 242px 0px; }
+.twitter-icon:before	{ background-position: 431px 0; }
+.tuenti-icon:before		{ background-position: 410px 0; }
+.sonico-icon:before		{ background-position: 389px 0; }
+.friendfeed-icon:before	{ background-position: 368px 0; }
+.digg-icon:before 		{ background-position: 347px 0; }
+.reddit-icon:before		{ background-position: 326px 0; }
+.delicious-icon:before	{ background-position: 305px 0; }
+.vk-icon:before			{ background-position: 284px 0; }
+.tumblr-icon:before		{ background-position: 263px 0; }
+.google-icon:before		{ background-position: 242px 0; }

@@ -1,9 +1,10 @@
 <?php
 /**
 *
-* @package Share On
-* @copyright (c) 2013 Vinny
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* Share On extension for the phpBB Forum Software package.
+*
+* @copyright (c) 2015 Vinny <https://github.com/vinny>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 
@@ -94,17 +95,16 @@ class listener implements EventSubscriberInterface
 		}
 
 		$row = $event['row'];
+		$postrow = $event['post_row'];
+		$topic_data = $event['topic_data'];
+		$forum_id = (int) $row['forum_id'];
+		$topic_title = $event['topic_data']['topic_title'];
 
-		$post_row = $event['post_row'];
-		
-		$topic_url = generate_board_url() . "/viewtopic.$this->php_ext?" . 'f=' . $event['row']['forum_id'] . '&t=' . $event['row']['topic_id'];
+		$topic_url = generate_board_url() . "/viewtopic.$this->php_ext?" . 'f=' . $forum_id . '&t=' . $event['row']['topic_id'];
 		$post_url = generate_board_url() . "/viewtopic.$this->php_ext?" . 'p=' . $event['row']['post_id'] . '#p' . $event['row']['post_id'];
 		$share_url = !$this->config['so_type'] ? $post_url : $topic_url;
 
-		$topic_title = $row['post_subject'];
-		$topic_title = str_replace(array('Re: '), '', $topic_title);
-
-		$post_row = array_merge($post_row, array(
+		$postrow = array_merge($postrow, array(
 			'U_FACEBOOK'	=> 'https://www.facebook.com/share.php?t=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
 			'U_TWITTER'		=> 'https://twitter.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_DIGG'		=> 'http://digg.com/submit?phase=2&amp;url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
@@ -117,6 +117,6 @@ class listener implements EventSubscriberInterface
 			'U_TUMBLR'		=> 'https://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
 			'U_GOOGLE'		=> 'https://plus.google.com/share?url=' . urlencode($share_url),
 		));
-		$event['post_row'] = $post_row;
+		$event['post_row'] = $postrow;
 	}
 }

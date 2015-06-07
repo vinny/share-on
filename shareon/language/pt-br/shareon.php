@@ -2,6 +2,7 @@
 /**
 *
 * Share On extension for the phpBB Forum Software package.
+* Brazilian Portuguese translation
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -38,17 +39,18 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'SO_SELECT'				=> 'Share On',
+	'SO_SELECT'		=> 'Compartilhar Em',
 	// Share On viewtopic.php
-	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
-	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
-	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
-	'SHARE_ON_SONICO'		=> 'Share on Sonico',
-	'SHARE_ON_FRIENDFEED'	=> 'Share on FriendFeed',
-	'SHARE_ON_DIGG'			=> 'Share on Digg',
-	'SHARE_ON_REDDIT'		=> 'Share on Reddit',
-	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
-	'SHARE_ON_VK'			=> 'Share on VK',
-	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
-	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
+	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
+	'SHARE_ON_TWITTER'		=> 'Compartilhar no Twitter',
+	'SHARE_ON_TUENTI'		=> 'Compartilhar no Tuenti',
+	'SHARE_ON_SONICO'		=> 'Compartilhar no Sonico',
+	'SHARE_ON_FRIENDFEED'	=> 'Compartilhar no FriendFeed',
+	'SHARE_ON_ORKUT'		=> 'Compartilhar no Orkut',
+	'SHARE_ON_DIGG'			=> 'Compartilhar no Digg',
+	'SHARE_ON_REDDIT'		=> 'Compartilhar no Reddit',
+	'SHARE_ON_DELICIOUS'	=> 'Compartilhar no Delicious',
+	'SHARE_ON_VK'			=> 'Compartilhar no VK',
+	'SHARE_ON_TUMBLR'		=> 'Compartilhar no Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Compartilhar no Google+',
 ));
