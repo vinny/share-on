@@ -20,6 +20,10 @@ The following Social Networks are supported.
 * [Google+](https://plus.google.com/)
 
 
+Support
+------------
+Support requests should be posted and discussed in the [Share On topic at phpBB.com](https://www.phpbb.com/customise/db/extension/shareon/support).
+
 Installation
 ------------
 1. [Download the latest release](https://github.com/vinny/Share-On/archive/extension.zip).
@@ -28,6 +32,12 @@ Installation
 4. Navigate in the ACP to `Customise -> Manage extensions`.
 5. Look for `Share On` under the Disabled Extensions list, and click its `Enable` link.
 6. Set up and configure options available.
+
+Uninstallation
+------------
+1. Navigate in the ACP to Customise -> Manage extensions.
+2. Click the Disable link for `Share On`.
+3. To permanently uninstall, click Delete Data, then delete the `shareon` folder from `phpBB/ext/vinny/`.
 
 
 Contributing
