@@ -2,7 +2,7 @@
 /**
 *
 * Share On extension for the phpBB Forum Software package.
-* French translation
+* French translation by Maël Soucaze (http://www.maelsoucaze.com) & Galixte (http://www.galixte.com)
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -35,19 +35,19 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ’ » “ ” …
+// ’ « » “ ” …
 //
 
 $lang = array_merge($lang, array(
 	// ACP
-	'SO_ACP'		=> 'Extension Share On',
-    'SO_TITLE'		=> 'Paramètres du Extension Share On',
-	'SO_EXPLAIN'	=> 'Vous permet de sélectionner dans quels sites vous souhaitez partager vos sujets.',
-	'SHARE_ON_MOD'	=> 'Share On',
+	'SO_ACP'		=> 'Extension « Partager sur »',
+    'SO_TITLE'		=> 'Paramètres du l’extension « Partager sur »',
+	'SO_EXPLAIN'	=> 'Permet de choisir les sites sur lesquels les sujets seront partagés.',
+	'SHARE_ON_MOD'	=> 'Partager sur',
 	'SO_CONFIG'		=> 'Paramètres',
 	'SO_SELECT'		=> 'Partager sur',
-	'SO_SAVED'		=> 'Modifications sauvegardées.',
-	'SO_STATUS'		=> 'Activer le Extension Share On',
+	'SO_SAVED'		=> 'Les modifications ont été sauvegardées.',
+	'SO_STATUS'		=> 'Activer l’extension « Partager sur »',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_DIGG'		=> 'Digg',
@@ -61,6 +61,6 @@ $lang = array_merge($lang, array(
 	'SO_GOOGLE'		=> 'Google+',
 
 	// Share Type
-	'SO_TYPE'			=> 'Méthode de partage',
-	'SO_TYPE_EXPLAIN'	=> 'Vous pouvez choisir de partager le lien vers un <strong>sujet</strong> ou partager uniquement un <strong>message</strong> d’un sujet.',
+	'SO_TYPE'			=> 'Type de partage',
+	'SO_TYPE_EXPLAIN'	=> 'Permet de choisir si le lien de partage redirige vers un <strong>sujet</strong> ou uniquement vers un <strong>message</strong> d’un sujet.',
 ));
