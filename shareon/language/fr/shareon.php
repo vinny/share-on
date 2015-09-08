@@ -2,7 +2,7 @@
 /**
 *
 * Share On extension for the phpBB Forum Software package.
-* French translation
+* French translation by Maël Soucaze (http://www.maelsoucaze.com) & Galixte (http://www.galixte.com)
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -35,11 +35,11 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ’ » “ ” …
+// ’ « » “ ” …
 //
 
 $lang = array_merge($lang, array(
-	'SO_SELECT'				=> 'Partager sur',
+	'SO_SELECT'				=> 'Partager sur les réseaux sociaux',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Partager sur Facebook',
 	'SHARE_ON_TWITTER'		=> 'Partager sur Twitter',
@@ -52,5 +52,4 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> 'Partager sur VK',
 	'SHARE_ON_TUMBLR'		=> 'Partager sur Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Partager sur Google+',
-	'SHARE_ON_MYSPACE'		=> 'Partager sur MySpace',
 ));
