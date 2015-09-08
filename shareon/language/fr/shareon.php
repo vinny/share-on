@@ -39,7 +39,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'SO_SELECT'				=> 'Partager sur',
+	'SO_SELECT'				=> 'Partager sur les réseaux sociaux',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Partager sur Facebook',
 	'SHARE_ON_TWITTER'		=> 'Partager sur Twitter',
