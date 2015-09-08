@@ -40,14 +40,14 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	// ACP
-	'SO_ACP'		=> 'Extension « Partager sur »',
-    'SO_TITLE'		=> 'Paramètres du l’extension « Partager sur »',
+	'SO_ACP'		=> 'Partager sur les réseaux sociaux',
+    'SO_TITLE'		=> 'Paramètres du l’extension « Partager sur les réseaux sociaux »',
 	'SO_EXPLAIN'	=> 'Permet de choisir les sites sur lesquels les sujets seront partagés.',
-	'SHARE_ON_MOD'	=> 'Partager sur',
+	'SHARE_ON_MOD'	=> 'Partager sur les réseaux sociaux',
 	'SO_CONFIG'		=> 'Paramètres',
 	'SO_SELECT'		=> 'Partager sur',
 	'SO_SAVED'		=> 'Les modifications ont été sauvegardées.',
-	'SO_STATUS'		=> 'Activer l’extension « Partager sur »',
+	'SO_STATUS'		=> 'Activer l’extension',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_DIGG'		=> 'Digg',
