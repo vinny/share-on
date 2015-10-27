@@ -39,17 +39,17 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'SO_SELECT'		=> 'Partilhar Em',
+	'SO_SELECT'			=> 'Partilhar Em',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Partilhar no Facebook',
 	'SHARE_ON_TWITTER'		=> 'Partilhar no Twitter',
 	'SHARE_ON_TUENTI'		=> 'Partilhar no Tuenti',
 	'SHARE_ON_SONICO'		=> 'Partilhar no Sonico',
-	'SHARE_ON_FRIENDFEED'	=> 'Partilhar no FriendFeed',
+	'SHARE_ON_FRIENDFEED'		=> 'Partilhar no FriendFeed',
 	'SHARE_ON_ORKUT'		=> 'Partilhar no Orkut',
 	'SHARE_ON_DIGG'			=> 'Partilhar no Digg',
 	'SHARE_ON_REDDIT'		=> 'Partilhar no Reddit',
-	'SHARE_ON_DELICIOUS'	=> 'Partilhar no Delicious',
+	'SHARE_ON_DELICIOUS'		=> 'Partilhar no Delicious',
 	'SHARE_ON_VK'			=> 'Partilhar no VK',
 	'SHARE_ON_TUMBLR'		=> 'Partilhar no Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Partilhar no Google+',
