@@ -2,7 +2,7 @@
 /**
 *
 * Share On extension for the phpBB Forum Software package.
-* Brazilian Portuguese translation
+* Portuguese translation
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
