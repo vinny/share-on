@@ -26,7 +26,7 @@ Support requests should be posted and discussed in the [Share On topic at phpBB.
 
 Donate
 -------
- If you like this mod and want to show some appreciation, you can make a donation.
+ If you like this extension and want to show some appreciation, you can make a donation.
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JWB6R5RMVQTT8)
 
 
