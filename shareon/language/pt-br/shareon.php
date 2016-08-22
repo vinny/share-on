@@ -1,8 +1,7 @@
 <?php
 /**
-*
-* Share On extension for the phpBB Forum Software package.
 * Brazilian Portuguese translation
+* Share On extension for the phpBB Forum Software package.
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -39,18 +38,18 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'SO_SELECT'		=> 'Compartilhar Em',
+	'SO_SELECT'				=> 'Compartilhar Em',
+	'SHARE_TOPIC'			=> 'Compartilhar tópico no',
+	'SHARE_POST'			=> 'Compartilhar mensagem no',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartilhar no Facebook',
 	'SHARE_ON_TWITTER'		=> 'Compartilhar no Twitter',
 	'SHARE_ON_TUENTI'		=> 'Compartilhar no Tuenti',
-	'SHARE_ON_SONICO'		=> 'Compartilhar no Sonico',
-	'SHARE_ON_FRIENDFEED'	=> 'Compartilhar no FriendFeed',
-	'SHARE_ON_ORKUT'		=> 'Compartilhar no Orkut',
 	'SHARE_ON_DIGG'			=> 'Compartilhar no Digg',
 	'SHARE_ON_REDDIT'		=> 'Compartilhar no Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Compartilhar no Delicious',
 	'SHARE_ON_VK'			=> 'Compartilhar no VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartilhar no Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Compartilhar no Google+',
+	'SHARE_ON_WHATSAPP'		=> 'Compartilhar no Whatsapp',
 ));

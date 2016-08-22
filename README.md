@@ -14,15 +14,21 @@ The following Social Networks are supported.
 * [Delicious](https://delicious.com/)
 * [VK](http://vk.com/)
 * [Tuenti](http://www.tuenti.com/)
-* [Sonico](http://www.sonico.com/)
-* [Friendfeed](http://friendfeed.com/)
 * [Tumblr](https://www.tumblr.com/)
 * [Google+](https://plus.google.com/)
+* [Whatsapp](https://www.whatsapp.com/)
 
 
 Support
 ------------
 Support requests should be posted and discussed in the [Share On topic at phpBB.com](https://www.phpbb.com/customise/db/extension/shareon/support).
+
+
+Donate
+-------
+ If you like this mod and want to show some appreciation, you can make a donation.
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JWB6R5RMVQTT8)
+
 
 Installation
 ------------

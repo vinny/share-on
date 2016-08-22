@@ -32,29 +32,33 @@ class listener implements EventSubscriberInterface
 	/* @var \phpbb\controller\helper */
 	protected $helper;
 
-	/* @var \phpbb\template\template */
+	/** @var \phpbb\template\template */
 	protected $template;
 
 	/** @var \phpbb\config\config */
 	protected $config;
 
-	/** @var string */
+	/** @var string phpBB root path  */
 	protected $root_path;
 
-	/** @var string */
+	/** @var string PHP file extension */
 	protected $php_ext;
 
 	/**
 	* Constructor
 	* 
-	* @param \phpbb\controller\helper	$helper		Controller helper object
-	* @param \phpbb\template			$template	Template object
+	* @param \phpbb\controller\helper $helper
+	* @param \phpbb\template\template $template
+	* @param \phpbb\config\config $config
+	* @param string $root_path
+	* @param string $php_ext
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config, $php_ext)
+	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config, $root_path, $php_ext)
 	{
 		$this->helper = $helper;
 		$this->template = $template;
 		$this->config = $config;
+		$this->root_path = $root_path;
 		$this->php_ext = $php_ext;
 	}
 
@@ -66,14 +70,13 @@ class listener implements EventSubscriberInterface
 			'S_SO_FACEBOOK'		=> $this->config['so_facebook'] ? true : false,
 			'S_SO_TWITTER'		=> $this->config['so_twitter'] ? true : false,
 			'S_SO_TUENTI'		=> $this->config['so_tuenti'] ? true : false,
-			'S_SO_SONICO'		=> $this->config['so_sonico'] ? true : false,
-			'S_SO_FRIENDFEED'	=> $this->config['so_friendfeed'] ? true : false,
 			'S_SO_DIGG'			=> $this->config['so_digg'] ? true : false,
 			'S_SO_REDDIT'		=> $this->config['so_reddit'] ? true : false,
 			'S_SO_DELICIOUS'	=> $this->config['so_delicious'] ? true : false,
 			'S_SO_VK'			=> $this->config['so_vk'] ? true : false,
 			'S_SO_TUMBLR'		=> $this->config['so_tumblr'] ? true : false,
 			'S_SO_GOOGLE'		=> $this->config['so_google'] ? true : false,
+			'S_SO_WHATSAPP'		=> $this->config['so_whatsapp'] ? true : false,
 		));
 	}
 
@@ -112,10 +115,9 @@ class listener implements EventSubscriberInterface
 			'U_DELICIOUS' 	=> 'https://delicious.com/post?url=' . urlencode($share_url) . '&amp;title='. urlencode($topic_title),
 			'U_VK'			=> 'http://vk.com/share.php?url=' . urlencode($share_url),
 			'U_TUENTI'		=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;suggested-text='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
-			'U_SONICO'		=> 'http://www.sonico.com/share.php?title='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
-			'U_FRIENDFEED'	=> 'http://friendfeed.com/share?url=' . urlencode($share_url),
 			'U_TUMBLR'		=> 'https://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
 			'U_GOOGLE'		=> 'https://plus.google.com/share?url=' . urlencode($share_url),
+			'U_WHATSAPP'	=> 'whatsapp://send?text=' . urlencode($topic_title) . '&nbsp;' . urlencode($share_url),
 		));
 		$event['post_row'] = $postrow;
 	}

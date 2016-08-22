@@ -44,8 +44,8 @@ $lang = array_merge($lang, array(
 	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics.',	
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Settings',
-	'SO_SELECT'		=> 'Share On',
 	'SO_SAVED'		=> 'Changes Saved.',
+	'SO_SELECT'		=> 'Share On',
 	'SO_STATUS'		=> 'Enable Share On Extension',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
@@ -54,10 +54,9 @@ $lang = array_merge($lang, array(
 	'SO_DELICIOUS' 	=> 'Delicious',
 	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
-	'SO_SONICO'		=> 'Sonico',
-	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_WHATSAPP'	=> 'Whatsapp',
 
 	// Share Type
 	'SO_TYPE'			=> 'Share Type',

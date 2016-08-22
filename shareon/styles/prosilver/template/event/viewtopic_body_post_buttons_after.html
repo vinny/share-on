@@ -1,0 +1,53 @@
+<!-- IF S_SO_STATUS -->
+	<!-- IF S_SO_TYPE == '0' || postrow.S_FIRST_ROW -->
+		<li title="<!-- IF S_SO_TYPE == '0' -->{L_SHARE_POST}<!-- ELSE -->{L_SHARE_TOPIC}<!-- ENDIF -->" data-skip-responsive="true">
+			<div class="dropdown-container dropdown-left">
+			<a href="#" title="<!-- IF S_SO_TYPE == '0' -->{L_SHARE_POST}<!-- ELSE -->{L_SHARE_TOPIC}<!-- ENDIF -->" class="dropdown-trigger button icon-button share-icon-button share-icon"><span><!-- IF S_SO_TYPE == '0' -->{L_SHARE_POST}<!-- ELSE -->{L_SHARE_TOPIC}<!-- ENDIF --></span></a>
+				<div class="dropdown hidden">
+					<div class="pointer"><div class="pointer-inner"></div></div>
+					<div class="dropdown-contents contact-icons">
+					<!-- IF S_SO_FACEBOOK -->
+						<a href="{postrow.U_FACEBOOK}" title="{L_SHARE_ON_FACEBOOK}" class="share-button share-icon-button facebook-icon js-newWindow" data-popup="width=580,height=325"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_TWITTER -->
+						<a href="{postrow.U_TWITTER}" title="{L_SHARE_ON_TWITTER}" class="share-button share-icon-button twitter-icon js-newWindow" data-popup="width=550,height=300"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_TUENTI -->
+						<a href="{postrow.U_TUENTI}" title="{L_SHARE_ON_TUENTI}" class="share-button share-icon-button tuenti-icon js-newWindow" data-popup="width=741,height=551"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_DIGG -->
+						<a href="{postrow.U_DIGG}" title="{L_SHARE_ON_DIGG}" class="share-button share-icon-button digg-icon" onclick="target='_blank';"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_REDDIT -->
+						<a href="{postrow.U_REDDIT}" title="{L_SHARE_ON_REDDIT}" class="share-button share-icon-button reddit-icon" onclick="target='_blank';"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_DELICIOUS -->
+						<a href="{postrow.U_DELICIOUS}" title="{L_SHARE_ON_DELICIOUS}" class="share-button share-icon-button delicious-icon js-newWindow" data-popup="width=540,height=500"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_VK -->
+						<a href="{postrow.U_VK}" title="{L_SHARE_ON_VK}" class="share-button share-icon-button vk-icon js-newWindow" data-popup="width=607,height=510"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_TUMBLR -->
+						<a href="{postrow.U_TUMBLR}" title="{L_SHARE_ON_TUMBLR}" class="share-button share-icon-button tumblr-icon js-newWindow" data-popup="width=542,height=460"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_GOOGLE -->
+						<a href="{postrow.U_GOOGLE}" title="{L_SHARE_ON_GOOGLE}" class="share-button share-icon-button google-icon" onclick="target='_blank';"></a>
+					<!-- ENDIF -->
+
+					<!-- IF S_SO_WHATSAPP -->
+						<a href="{postrow.U_WHATSAPP}" title="{L_SHARE_ON_WHATSAPP}" class="share-button share-icon-button whatsapp-icon" onclick="target='_blank';"></a>
+					<!-- ENDIF -->
+					</div>
+				</div>
+			</div>
+		</li>
+	<!-- ENDIF -->
+<!-- ENDIF -->

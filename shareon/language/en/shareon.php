@@ -39,16 +39,17 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'SO_SELECT'				=> 'Share On',
+	'SHARE_TOPIC'			=> 'Share this topic on',
+	'SHARE_POST'			=> 'Share this post on',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
 	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
 	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
-	'SHARE_ON_SONICO'		=> 'Share on Sonico',
-	'SHARE_ON_FRIENDFEED'	=> 'Share on FriendFeed',
 	'SHARE_ON_DIGG'			=> 'Share on Digg',
 	'SHARE_ON_REDDIT'		=> 'Share on Reddit',
 	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
 	'SHARE_ON_VK'			=> 'Share on VK',
 	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
+	'SHARE_ON_WHATSAPP'		=> 'Share on Whatsapp',
 ));

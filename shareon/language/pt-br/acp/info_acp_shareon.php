@@ -1,8 +1,7 @@
 <?php
 /**
-*
-* Share On extension for the phpBB Forum Software package.
 * Brazilian Portuguese translation
+* Share On extension for the phpBB Forum Software package.
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -55,10 +54,9 @@ $lang = array_merge($lang, array(
 	'SO_DELICIOUS' 	=> 'Delicious',
 	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
-	'SO_SONICO'		=> 'Sonico',
-	'SO_FRIENDFEED'	=> 'FriendFeed',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
+	'SO_WHATSAPP'	=> 'Whatsapp',
 
 	// Share Type
 	'SO_TYPE'			=> 'Tipo de Compartilhamento',
