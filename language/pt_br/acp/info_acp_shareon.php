@@ -41,7 +41,7 @@ $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On Extension',
 	'SO_TITLE'		=> 'Configurações Share On Extension',
-	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos.',	
+	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos.',
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Configurações',
 	'SO_SAVED'		=> 'Configurações alteradas com sucesso.',

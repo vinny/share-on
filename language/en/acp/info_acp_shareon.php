@@ -40,8 +40,8 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On',
-    'SO_TITLE'		=> 'Share On Settings',
-	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics.',	
+	'SO_TITLE'		=> 'Share On Settings',
+	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics.',
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Settings',
 	'SO_SAVED'		=> 'Changes Saved.',
