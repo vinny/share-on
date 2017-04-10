@@ -1,6 +1,6 @@
 [Share On](https://www.phpbb.com/customise/db/mod/share_on/)
 =============
-Share On is a phpBB3 MOD that allows users and guests of the board to share the topics on social networks.
+Share On is a MOD for phpBB 3.0.x that allows users and guests of the board to share the topics on social networks.
 
 
 Social Networks
@@ -24,11 +24,6 @@ The following Social Networks are supported.
 Installation
 -----------
 [How to install a MODX modification ](https://www.phpbb.com/community/viewtopic.php?f=71&t=724145)
-
-
-Git branches
-------------
-The main development branch is `master`, contains the latest stable version. The `develop` branch contains future development versions.
 
 
 Contributing
