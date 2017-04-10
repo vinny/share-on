@@ -40,7 +40,7 @@ class listener implements EventSubscriberInterface
 
 	/**
 	* Constructor
-	* 
+	*
 	* @param \phpbb\template\template $template
 	* @param \phpbb\config\config $config
 	* @param string $php_ext
