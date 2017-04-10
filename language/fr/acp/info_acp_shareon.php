@@ -41,7 +41,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Partager sur les réseaux sociaux',
-    'SO_TITLE'		=> 'Paramètres du l’extension « Partager sur les réseaux sociaux »',
+	'SO_TITLE'		=> 'Paramètres du l’extension « Partager sur les réseaux sociaux »',
 	'SO_EXPLAIN'	=> 'Permet de choisir les sites sur lesquels les sujets seront partagés.',
 	'SHARE_ON_MOD'	=> 'Partager sur les réseaux sociaux',
 	'SO_CONFIG'		=> 'Paramètres',
@@ -52,7 +52,7 @@ $lang = array_merge($lang, array(
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_DIGG'		=> 'Digg',
 	'SO_REDDIT'		=> 'Reddit',
-	'SO_DELICIOUS' 	=> 'Delicious',
+	'SO_DELICIOUS'	=> 'Delicious',
 	'SO_VK'			=> 'VK',
 	'SO_TUENTI'		=> 'Tuenti',
 	'SO_TUMBLR'		=> 'Tumblr',

@@ -17,7 +17,7 @@ class shareon_module
 	function main($id, $mode)
 	{
 		global $user, $template, $request, $config;
-		
+
 		$this->config = $config;
 		$this->request = $request;
 
@@ -49,7 +49,7 @@ class shareon_module
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
-		
+
 		$template->assign_vars(array(
 			'SO_STATUS'		=> (!empty($this->config['so_status'])) ? true : false,
 			'SO_TYPE'		=> (!empty($this->config['so_type'])) ? true : false,
