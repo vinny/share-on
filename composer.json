@@ -14,12 +14,13 @@
             "role": "Developer"
         }
     ],
-    "require": {
-        "php": ">=5.3.3",
-    },
-    "require-dev": {
-        "phpbb/epv": "dev-master"
-    },
+	"require": {
+		"php": ">=5.3.3",
+		"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
 	"extra": {
 		"display-name": "Share On",
 		"soft-require": {
