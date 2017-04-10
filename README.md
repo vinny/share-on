@@ -1,7 +1,7 @@
-[Share On](http://www.phpbb.com/customise/db/mod/share_on/)
+[Share On](https://www.phpbb.com/customise/db/extension/shareon/)
 =============
 
-Share On is an extension for phpBB 3.1 that allows users to share the topics and posts on social networks.
+Share On allows users to share the topics and posts on social networks.
 
 
 Social Networks

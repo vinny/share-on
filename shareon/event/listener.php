@@ -29,17 +29,11 @@ class listener implements EventSubscriberInterface
 		);
 	}
 
-	/* @var \phpbb\controller\helper */
-	protected $helper;
-
 	/** @var \phpbb\template\template */
 	protected $template;
 
 	/** @var \phpbb\config\config */
 	protected $config;
-
-	/** @var string phpBB root path  */
-	protected $root_path;
 
 	/** @var string PHP file extension */
 	protected $php_ext;
@@ -47,18 +41,14 @@ class listener implements EventSubscriberInterface
 	/**
 	* Constructor
 	* 
-	* @param \phpbb\controller\helper $helper
 	* @param \phpbb\template\template $template
 	* @param \phpbb\config\config $config
-	* @param string $root_path
 	* @param string $php_ext
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config, $root_path, $php_ext)
+	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config, $php_ext)
 	{
-		$this->helper = $helper;
 		$this->template = $template;
 		$this->config = $config;
-		$this->root_path = $root_path;
 		$this->php_ext = $php_ext;
 	}
 
