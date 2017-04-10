@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* Topics Descriptions extension for the phpBB Forum Software package.
+* Share On extension for the phpBB Forum Software package.
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -28,7 +28,7 @@ class shareon_info
 		return array(
 			'filename'	=> '\vinny\shareon\acp\shareon_module',
 			'title'		=> 'SO_ACP',
-			'version'	=> '2.0.0',
+			'version'	=> '2.0.1',
 			'modes'		=> array(
 				'settings'	=> array('title' => 'SO_CONFIG', 'auth'	=> 'ext_vinny/shareon && acl_a_group', 'cat'	=> array('SHARE_ON_MOD')),
 			),

@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* Topics Descriptions extension for the phpBB Forum Software package.
+* Share On extension for the phpBB Forum Software package.
 *
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -16,8 +16,7 @@ class shareon_module
 
 	function main($id, $mode)
 	{
-		global $db, $user, $auth, $template, $cache, $request;
-		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
+		global $user, $template, $request, $config;
 		
 		$this->config = $config;
 		$this->request = $request;
