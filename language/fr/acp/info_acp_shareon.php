@@ -42,7 +42,7 @@ $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Partager sur les réseaux sociaux',
 	'SO_TITLE'		=> 'Paramètres du l’extension « Partager sur les réseaux sociaux »',
-	'SO_EXPLAIN'	=> 'Permet de choisir les sites sur lesquels les sujets seront partagés.',
+	'SO_EXPLAIN'	=> 'Permet de choisir les sites sur lesquels les sujets ou messages seront partagés.',
 	'SHARE_ON_MOD'	=> 'Partager sur les réseaux sociaux',
 	'SO_CONFIG'		=> 'Paramètres',
 	'SO_SAVED'		=> 'Les modifications ont été sauvegardées.',
