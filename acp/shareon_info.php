@@ -10,17 +10,6 @@
 
 namespace vinny\shareon\acp;
 
-/**
-* @ignore
-*/
-if (!defined('IN_PHPBB'))
-{
-	exit;
-}
-
-/**
-* @package module_install
-*/
 class shareon_info
 {
 	function module()
@@ -30,7 +19,7 @@ class shareon_info
 			'title'		=> 'SO_ACP',
 			'version'	=> '2.0.1',
 			'modes'		=> array(
-				'settings'	=> array('title' => 'SO_CONFIG', 'auth'	=> 'ext_vinny/shareon && acl_a_group', 'cat'	=> array('SHARE_ON_MOD')),
+				'settings'	=> array('title' => 'SO_CONFIG', 'auth'	=> 'ext_vinny/shareon && acl_a_group', 'cat' => array('SHARE_ON_MOD')),
 			),
 		);
 	}
