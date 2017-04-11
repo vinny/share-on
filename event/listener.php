@@ -10,9 +10,6 @@
 
 namespace vinny\shareon\event;
 
-/**
-* @ignore
-*/
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
@@ -20,20 +17,14 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 */
 class listener implements EventSubscriberInterface
 {
-	static public function getSubscribedEvents()
-	{
-		return array(
-			'core.common'							=> 'common_setup',
-			'core.user_setup'						=> 'load_language_on_setup',
-			'core.viewtopic_modify_post_row'		=> 'viewtopic_postrow_shareon',
-		);
-	}
-
 	/** @var \phpbb\template\template */
 	protected $template;
 
 	/** @var \phpbb\config\config */
 	protected $config;
+
+	/** @var \phpbb\user */
+	protected $user;
 
 	/** @var string PHP file extension */
 	protected $php_ext;
@@ -41,15 +32,31 @@ class listener implements EventSubscriberInterface
 	/**
 	* Constructor
 	*
-	* @param \phpbb\template\template $template
-	* @param \phpbb\config\config $config
+	* @param \phpbb\template\template $template Template object
+	* @param \phpbb\config\config     $config   Config object
+	* @param \phpbb\user              $user     User object
 	* @param string $php_ext
 	*/
-	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config, $php_ext)
+
+	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config, \phpbb\user $user, $php_ext)
 	{
 		$this->template = $template;
 		$this->config = $config;
+		$this->user = $user;
 		$this->php_ext = $php_ext;
+	}
+
+	/**
+	 * Assign functions defined in this class to event listeners in the core
+	 *
+	 * @return array
+	 */
+	static public function getSubscribedEvents()
+	{
+		return array(
+			'core.common'							=> 'common_setup',
+			'core.viewtopic_modify_post_row'		=> 'viewtopic_postrow_shareon',
+		);
 	}
 
 	public function common_setup($event)
@@ -67,17 +74,8 @@ class listener implements EventSubscriberInterface
 			'S_SO_TUMBLR'		=> $this->config['so_tumblr'] ? true : false,
 			'S_SO_GOOGLE'		=> $this->config['so_google'] ? true : false,
 			'S_SO_WHATSAPP'		=> $this->config['so_whatsapp'] ? true : false,
+			'S_SO_POCKET'		=> $this->config['so_pocket'] ? true : false,
 		));
-	}
-
-	public function load_language_on_setup($event)
-	{
-		$lang_set_ext = $event['lang_set_ext'];
-		$lang_set_ext[] = array(
-			'ext_name' => 'vinny/shareon',
-			'lang_set' => 'shareon',
-		);
-		$event['lang_set_ext'] = $lang_set_ext;
 	}
 
 	public function viewtopic_postrow_shareon($event)
@@ -87,6 +85,7 @@ class listener implements EventSubscriberInterface
 			return;
 		}
 
+		$this->user->add_lang_ext('vinny/shareon', 'shareon');
 		$row = $event['row'];
 		$postrow = $event['post_row'];
 		$topic_data = $event['topic_data'];
@@ -98,16 +97,17 @@ class listener implements EventSubscriberInterface
 		$share_url = !$this->config['so_type'] ? $post_url : $topic_url;
 
 		$postrow = array_merge($postrow, array(
-			'U_FACEBOOK'	=> 'https://www.facebook.com/share.php?t=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
+			'U_FACEBOOK'	=> 'https://www.facebook.com/sharer/sharer.php?t=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
 			'U_TWITTER'		=> 'https://twitter.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_DIGG'		=> 'http://digg.com/submit?phase=2&amp;url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
-			'U_REDDIT'		=> 'http://www.reddit.com/submit?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
-			'U_DELICIOUS' 	=> 'https://delicious.com/post?url=' . urlencode($share_url) . '&amp;title='. urlencode($topic_title),
-			'U_VK'			=> 'http://vk.com/share.php?url=' . urlencode($share_url),
-			'U_TUENTI'		=> 'http://www.tuenti.com/?m=Share&amp;func=index&amp;suggested-text='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
+			'U_REDDIT'		=> 'https://www.reddit.com/submit?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
+			'U_DELICIOUS' 	=> 'https://del.icio.us/post?url=' . urlencode($share_url) . '&amp;title='. urlencode($topic_title),
+			'U_VK'			=> 'https://vk.com/share.php?url=' . urlencode($share_url),
+			'U_TUENTI'		=> 'https://www.tuenti.com/?m=Share&amp;func=index&amp;suggested-text='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_TUMBLR'		=> 'https://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
 			'U_GOOGLE'		=> 'https://plus.google.com/share?url=' . urlencode($share_url),
 			'U_WHATSAPP'	=> 'whatsapp://send?text=' . urlencode($topic_title) . '&nbsp;' . urlencode($share_url),
+			'U_POCKET'		=> 'https://getpocket.com/save?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
 		));
 		$event['post_row'] = $postrow;
 	}

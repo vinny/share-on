@@ -46,6 +46,7 @@ class shareon_module
 			$config->set('so_tumblr', $request->variable('so_tumblr', true));
 			$config->set('so_google', $request->variable('so_google', true));
 			$config->set('so_whatsapp', $request->variable('so_whatsapp', true));
+			$config->set('so_pocket', $request->variable('so_pocket', true));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
@@ -63,6 +64,7 @@ class shareon_module
 			'SO_TUMBLR'		=> (!empty($this->config['so_tumblr'])) ? true : false,
 			'SO_GOOGLE'		=> (!empty($this->config['so_google'])) ? true : false,
 			'SO_WHATSAPP'	=> (!empty($this->config['so_whatsapp'])) ? true : false,
+			'SO_POCKET'		=> (!empty($this->config['so_pocket'])) ? true : false,
 			'U_ACTION'		=> $this->u_action,
 		));
 	}

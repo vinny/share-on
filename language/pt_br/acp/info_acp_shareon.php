@@ -39,14 +39,14 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	// ACP
-	'SO_ACP'		=> 'Share On Extension',
-	'SO_TITLE'		=> 'Configurações Share On Extension',
-	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos.',
+	'SO_ACP'		=> 'Share On',
+	'SO_TITLE'		=> 'Configurações Share On',
+	'SO_EXPLAIN'	=> 'Selecione em quais redes sociais você deseja compartilhar seus tópicos e mensagens.',
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Configurações',
 	'SO_SAVED'		=> 'Configurações alteradas com sucesso.',
 	'SO_SELECT'		=> 'Compartilhar Em',
-	'SO_STATUS'		=> 'Ativar Share On Extension',
+	'SO_STATUS'		=> 'Ativar',
 	'SO_FACEBOOK'	=> 'Facebook',
 	'SO_TWITTER'	=> 'Twitter',
 	'SO_DIGG'		=> 'Digg',
@@ -57,6 +57,7 @@ $lang = array_merge($lang, array(
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_POCKET'		=> 'Pocket',
 
 	// Share Type
 	'SO_TYPE'			=> 'Tipo de Compartilhamento',

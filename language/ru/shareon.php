@@ -53,4 +53,5 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_TUMBLR'		=> 'Поделиться в Tumblr',
 	'SHARE_ON_GOOGLE'		=> 'Поделиться в Google+',
 	'SHARE_ON_WHATSAPP'		=> 'Поделиться в Whatsapp',
+	'SHARE_ON_POCKET'		=> 'Поделиться в Pocket',
 ));

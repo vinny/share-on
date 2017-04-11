@@ -4,6 +4,7 @@ services:
         arguments:
             - '@template'
             - '@config'
+            - '@user'
             - '%core.php_ext%'
         tags:
             - { name: event.listener }

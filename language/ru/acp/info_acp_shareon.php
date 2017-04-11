@@ -58,6 +58,7 @@ $lang = array_merge($lang, array(
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_POCKET'		=> 'Pocket',
 
 	// Share Type
 	'SO_TYPE'			=> 'Способ поделиться',

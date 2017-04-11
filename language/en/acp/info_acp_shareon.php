@@ -41,7 +41,7 @@ $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On',
 	'SO_TITLE'		=> 'Share On Settings',
-	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics.',
+	'SO_EXPLAIN'	=> 'Configure in which sites you want to share your topics or posts.',
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Settings',
 	'SO_SAVED'		=> 'Changes Saved.',
@@ -57,6 +57,7 @@ $lang = array_merge($lang, array(
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_GOOGLE'		=> 'Google+',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_POCKET'		=> 'Pocket',
 
 	// Share Type
 	'SO_TYPE'			=> 'Share Type',
