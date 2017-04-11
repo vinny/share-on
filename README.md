@@ -1,7 +1,7 @@
 [Share On](https://www.phpbb.com/customise/db/extension/shareon/)
 =============
 
-Share On allows users to share the topics and posts on social networks.
+Share On allows users to share the topics and posts on social networks. [![Build Status](https://travis-ci.org/vinny/share-on.svg?branch=master)](https://travis-ci.org/vinny/share-on)
 
 
 Social Networks
@@ -17,6 +17,7 @@ The following Social Networks are supported.
 * [Tumblr](https://www.tumblr.com/)
 * [Google+](https://plus.google.com/)
 * [Whatsapp](https://www.whatsapp.com/)
+* [Pocket](https://getpocket.com/)
 
 
 Support
