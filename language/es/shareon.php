@@ -38,19 +38,19 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'SO_SELECT'				=> 'Share On',
-	'SHARE_TOPIC'			=> 'Share this topic on',
-	'SHARE_POST'			=> 'Share this post on',
+	'SO_SELECT'				=> 'Compartir',
+	'SHARE_TOPIC'			=> 'Compartir este tema en',
+	'SHARE_POST'			=> 'Compartir este mensaje en',
 	// Share On viewtopic.php
-	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
-	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
-	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
-	'SHARE_ON_DIGG'			=> 'Share on Digg',
-	'SHARE_ON_REDDIT'		=> 'Share on Reddit',
-	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
-	'SHARE_ON_VK'			=> 'Share on VK',
-	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
-	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
-	'SHARE_ON_WHATSAPP'		=> 'Share on Whatsapp',
-	'SHARE_ON_POCKET'		=> 'Share on Pocket',
+	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
+	'SHARE_ON_TWITTER'		=> 'Compartir en Twitter',
+	'SHARE_ON_TUENTI'		=> 'Compartir en Tuenti',
+	'SHARE_ON_DIGG'			=> 'Compartir en Digg',
+	'SHARE_ON_REDDIT'		=> 'Compartir en Reddit',
+	'SHARE_ON_DELICIOUS'	=> 'Compartir en Delicious',
+	'SHARE_ON_VK'			=> 'Compartir en VK',
+	'SHARE_ON_TUMBLR'		=> 'Compartir en Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Compartir en Google+',
+	'SHARE_ON_WHATSAPP'		=> 'Compartir en Whatsapp',
+	'SHARE_ON_POCKET'		=> 'Compartir en Pocket',
 ));
