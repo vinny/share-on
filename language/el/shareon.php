@@ -34,19 +34,19 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 $lang = array_merge($lang, array(
-	'SO_SELECT'				=> 'Share On',
-	'SHARE_TOPIC'			=> 'Share this topic on',
-	'SHARE_POST'			=> 'Share this post on',
+	'SO_SELECT'				=> 'Κοινοποίηση στο',
+	'SHARE_TOPIC'			=> 'Κοινοποίηση αυτού του θέματος στο',
+	'SHARE_POST'			=> 'Κοινοποίηση αυτής της απάντησης στο',
 	// Share On viewtopic.php
-	'SHARE_ON_FACEBOOK'		=> 'Share on Facebook',
-	'SHARE_ON_TWITTER'		=> 'Share on Twitter',
-	'SHARE_ON_TUENTI'		=> 'Share on Tuenti',
-	'SHARE_ON_DIGG'			=> 'Share on Digg',
-	'SHARE_ON_REDDIT'		=> 'Share on Reddit',
-	'SHARE_ON_DELICIOUS'	=> 'Share on Delicious',
-	'SHARE_ON_VK'			=> 'Share on VK',
-	'SHARE_ON_TUMBLR'		=> 'Share on Tumblr',
-	'SHARE_ON_GOOGLE'		=> 'Share on Google+',
-	'SHARE_ON_WHATSAPP'		=> 'Share on Whatsapp',
-	'SHARE_ON_POCKET'		=> 'Share on Pocket',
+	'SHARE_ON_FACEBOOK'		=> 'Κοινοποίηση στο Facebook',
+	'SHARE_ON_TWITTER'		=> 'Κοινοποίηση στο Twitter',
+	'SHARE_ON_TUENTI'		=> 'Κοινοποίηση στο Tuenti',
+	'SHARE_ON_DIGG'			=> 'Κοινοποίηση στο Digg',
+	'SHARE_ON_REDDIT'		=> 'Κοινοποίηση στο Reddit',
+	'SHARE_ON_DELICIOUS'	=> 'Κοινοποίηση στο Delicious',
+	'SHARE_ON_VK'			=> 'Κοινοποίηση στο VK',
+	'SHARE_ON_TUMBLR'		=> 'Κοινοποίηση στο Tumblr',
+	'SHARE_ON_GOOGLE'		=> 'Κοινοποίηση στο Google+',
+	'SHARE_ON_WHATSAPP'		=> 'Κοινοποίηση στο Whatsapp',
+	'SHARE_ON_POCKET'		=> 'Κοινοποίηση στο Pocket',
 ));
