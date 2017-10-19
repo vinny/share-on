@@ -6,7 +6,7 @@
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
-* Translated By : Basil Taha Alhitary - www.alhitary.net
+* Translated By : Bassel Taha Alhitary - www.alhitary.net
 */
 
 /**
@@ -43,7 +43,7 @@ $lang = array_merge($lang, array(
 	'SHARE_TOPIC'			=> 'شارك هذا الموضوع',
 	'SHARE_POST'			=> 'شارك هذه المُشاركة',
 	// Share On viewtopic.php
-	'SHARE_ON_FACEBOOK'		=> 'المُشاركة في الفيس يوك',
+	'SHARE_ON_FACEBOOK'		=> 'المُشاركة في الفيس بوك',
 	'SHARE_ON_TWITTER'		=> 'المُشاركة في تويتر',
 	'SHARE_ON_TUENTI'		=> 'المُشاركة في توينتي',
 	'SHARE_ON_DIGG'			=> 'المُشاركة في ديج',
@@ -53,4 +53,5 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_TUMBLR'		=> 'المُشاركة في تامبلار',
 	'SHARE_ON_GOOGLE'		=> 'المُشاركة في جوجل بلاس',
 	'SHARE_ON_WHATSAPP'		=> 'المُشاركة في الواتساب',
+	'SHARE_ON_POCKET'		=> 'المُشاركة في بوكيت',
 ));
