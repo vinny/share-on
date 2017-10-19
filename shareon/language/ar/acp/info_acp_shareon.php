@@ -6,7 +6,7 @@
 * @copyright (c) 2015 Vinny <https://github.com/vinny>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
-* Translated By : Basil Taha Alhitary - www.alhitary.net
+* Translated By : Bassel Taha Alhitary - www.alhitary.net
 */
 
 /**
@@ -40,10 +40,10 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	// ACP
-	'SO_ACP'		=> 'مشاركة المواقع الإجتماعية',
-    'SO_TITLE'		=> 'إعدادات مشاركة المواقع الإجتماعية',
-	'SO_EXPLAIN'	=> 'من هنا تستطيع تحديد المواقع التي تريد مُشاركة مواضيع منتداك.',	
-	'SHARE_ON_MOD'	=> 'مشاركة المواقع الإجتماعية',
+	'SO_ACP'		=> 'مُشاركة المواقع الإجتماعية',
+    'SO_TITLE'		=> 'إعدادات مُشاركة المواقع الإجتماعية',
+	'SO_EXPLAIN'	=> 'من هنا تستطيع تحديد المواقع التي تريد مُشاركة مواضيع أو مُشاركات منتداك.',	
+	'SHARE_ON_MOD'	=> 'مُشاركة المواقع الإجتماعية',
 	'SO_CONFIG'		=> 'الإعدادات',
 	'SO_SAVED'		=> 'تم حفظ الإعدادات بنجاح.',
 	'SO_SELECT'		=> 'المُشاركة في ',
@@ -58,8 +58,9 @@ $lang = array_merge($lang, array(
 	'SO_TUMBLR'		=> 'تامبلار Tumblr ',
 	'SO_GOOGLE'		=> 'جوجل بلاس Google+ ',
 	'SO_WHATSAPP'	=> 'الواتساب Whatsapp ',
+	'SO_POCKET'		=> 'بوكيت Pocket',
 
 	// Share Type
-	'SO_TYPE'			=> 'نوع المشاركة ',
-	'SO_TYPE_EXPLAIN'	=> 'تستطيع تحديد مشاركة رابط <strong>الموضوع</strong> فقط أو كل <strong>مشاركة</strong> على حده.',
+	'SO_TYPE'			=> 'نوع المُشاركة ',
+	'SO_TYPE_EXPLAIN'	=> 'تستطيع تحديد مُشاركة رابط <strong>الموضوع</strong> فقط أو كل <strong>مُشاركة</strong> على حده.',
 ));
