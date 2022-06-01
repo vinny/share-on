@@ -66,13 +66,9 @@ class listener implements EventSubscriberInterface
 			'S_SO_TYPE'			=> $this->config['so_type'] ? true : false,
 			'S_SO_FACEBOOK'		=> $this->config['so_facebook'] ? true : false,
 			'S_SO_TWITTER'		=> $this->config['so_twitter'] ? true : false,
-			'S_SO_TUENTI'		=> $this->config['so_tuenti'] ? true : false,
-			'S_SO_DIGG'			=> $this->config['so_digg'] ? true : false,
 			'S_SO_REDDIT'		=> $this->config['so_reddit'] ? true : false,
-			'S_SO_DELICIOUS'	=> $this->config['so_delicious'] ? true : false,
 			'S_SO_VK'			=> $this->config['so_vk'] ? true : false,
 			'S_SO_TUMBLR'		=> $this->config['so_tumblr'] ? true : false,
-			'S_SO_GOOGLE'		=> $this->config['so_google'] ? true : false,
 			'S_SO_WHATSAPP'		=> $this->config['so_whatsapp'] ? true : false,
 			'S_SO_POCKET'		=> $this->config['so_pocket'] ? true : false,
 		));
@@ -97,15 +93,11 @@ class listener implements EventSubscriberInterface
 		$share_url = !$this->config['so_type'] ? $post_url : $topic_url;
 
 		$postrow = array_merge($postrow, array(
-			'U_FACEBOOK'	=> 'https://www.facebook.com/sharer/sharer.php?t=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
+			'U_FACEBOOK'	=> 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
 			'U_TWITTER'		=> 'https://twitter.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
-			'U_DIGG'		=> 'http://digg.com/submit?phase=2&amp;url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
 			'U_REDDIT'		=> 'https://www.reddit.com/submit?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
-			'U_DELICIOUS' 	=> 'https://del.icio.us/post?url=' . urlencode($share_url) . '&amp;title='. urlencode($topic_title),
 			'U_VK'			=> 'https://vk.com/share.php?url=' . urlencode($share_url),
-			'U_TUENTI'		=> 'https://www.tuenti.com/?m=Share&amp;func=index&amp;suggested-text='. urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_TUMBLR'		=> 'https://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
-			'U_GOOGLE'		=> 'https://plus.google.com/share?url=' . urlencode($share_url),
 			'U_WHATSAPP'	=> 'whatsapp://send?text=' . urlencode($topic_title) . '&nbsp;' . urlencode($share_url),
 			'U_POCKET'		=> 'https://getpocket.com/save?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
 		));

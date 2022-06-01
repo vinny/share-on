@@ -17,7 +17,7 @@ class shareon_info
 		return array(
 			'filename'	=> '\vinny\shareon\acp\shareon_module',
 			'title'		=> 'SO_ACP',
-			'version'	=> '2.0.1',
+			'version'	=> '2.1.0',
 			'modes'		=> array(
 				'settings'	=> array('title' => 'SO_CONFIG', 'auth'	=> 'ext_vinny/shareon && acl_a_group', 'cat' => array('SHARE_ON_MOD')),
 			),

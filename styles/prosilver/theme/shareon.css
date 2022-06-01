@@ -1,77 +1,120 @@
-.share-buttons {
-	float: none;
-	position: absolute;
-	margin: 0;
-	right: 0;
-	list-style: none;
+#social {
+	margin: 20px 10px;
+	text-align: right;
 }
 
-.share-buttons > li {
-	float: left;
-	margin-right: 3px;
-}
-
-.share-icon-button:before	{ background-image: url("./images/icons_share.png"); }
-
-.share-button {
-	cursor: pointer;
+.global-button {
 	display: inline-block;
-	height: 18px;
-	white-space: nowrap;
-	border-radius: 0;
-	padding: 2px 8px;
 	position: relative;
-	vertical-align: bottom;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	padding: 0px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 2em;
+	border-radius: 15px;
 }
 
-.share-icon-button:before {
-	content: '';
-	display: inline-block;
-	float: right;
-	height: 16px;
-	margin: 2px 0 0 2px;
-	width: 16px;
+.global-button:hover { text-decoration: none; }
+
+.facebook-button {
+	background: #4060A5;
 }
 
-.dropdown-select.share-icon-button:before {
-	margin-right: 4px;
+.facebook-button:before {
+	font-family: "FontAwesome";
+	content: "\f09a";
 }
 
-.share-buttons .share-icon-button {
-	padding: 0 3px;
+.facebook-button:hover {
+	color: #4060A5;
+	background: #fff;
 }
 
-.hastouch .share-buttons .share-icon-button {
-	padding: 2px 8px;
+.twitter-button {
+	background: #00ABE3;
 }
 
-.share-buttons .share-icon-button span {
-	display: block;
-	height: 0;
-	overflow: hidden;
-	position: absolute;
-	width: 1px;
+.twitter-button:before {
+	font-family: "FontAwesome";
+	content: "\f099";
 }
 
-.share-buttons .share-icon-button:before {
-	margin-left: 0;
+.twitter-button:hover {
+	color: #00ABE3;
+	background: #fff;
 }
 
-.facebook-icon:before	{ background-position: 452px 0; }
-.twitter-icon:before	{ background-position: 431px 0; }
-.tuenti-icon:before		{ background-position: 410px 0; }
-.whatsapp-icon:before	{ background-position: 389px 0; }
-.pocket-icon:before		{ background-position: -83px -1px; }
-.digg-icon:before 		{ background-position: 347px 0; }
-.reddit-icon:before		{ background-position: 326px 0; }
-.delicious-icon:before	{ background-position: 305px 0; }
-.vk-icon:before			{ background-position: 284px 0; }
-.tumblr-icon:before		{ background-position: 263px 0; }
-.google-icon:before		{ background-position: 242px 0; }
+.reddit-button {
+	background: #ff4500;
+}
 
-@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
-	.share-buttons {
-		float: none;
-		right: 20px;
-	}
+.reddit-button:before {
+	font-family: "FontAwesome";
+	content: "\f281";
+}
+
+.reddit-button:hover {
+	color: #ff4500;
+	background: #fff;
+}
+
+.vk-button {
+	background: #4a76a8;
+}
+
+.vk-button:before {
+	font-family: "FontAwesome";
+	content: "\f189";
+}
+
+.vk-button:hover {
+	color: #4a76a8;
+	background: #fff;
+}
+
+.tumblr-button {
+	background: #3a5876;
+}
+
+.tumblr-button:before {
+	font-family: "FontAwesome";
+	content: "\f173";
+}
+
+.tumblr-button:hover {
+	color: #3a5876;
+	background: #fff;
+}
+
+.whatsapp-button {
+	background: #25d366;
+}
+
+.whatsapp-button:before {
+	font-family: "FontAwesome";
+	content: "\f232";
+}
+
+.whatsapp-button:hover {
+	color: #25d366;
+	background: #fff;
+}
+
+.pocket-button {
+	background: #ee4056;
+}
+
+.pocket-button:before {
+	font-family: "FontAwesome";
+	content: "\f265";
+}
+
+.pocket-button:hover {
+	color: #ee4056;
+	background: #fff;
 }

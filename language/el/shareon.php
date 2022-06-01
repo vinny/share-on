@@ -40,13 +40,9 @@ $lang = array_merge($lang, array(
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Κοινοποίηση στο Facebook',
 	'SHARE_ON_TWITTER'		=> 'Κοινοποίηση στο Twitter',
-	'SHARE_ON_TUENTI'		=> 'Κοινοποίηση στο Tuenti',
-	'SHARE_ON_DIGG'			=> 'Κοινοποίηση στο Digg',
 	'SHARE_ON_REDDIT'		=> 'Κοινοποίηση στο Reddit',
-	'SHARE_ON_DELICIOUS'	=> 'Κοινοποίηση στο Delicious',
 	'SHARE_ON_VK'			=> 'Κοινοποίηση στο VK',
 	'SHARE_ON_TUMBLR'		=> 'Κοινοποίηση στο Tumblr',
-	'SHARE_ON_GOOGLE'		=> 'Κοινοποίηση στο Google+',
 	'SHARE_ON_WHATSAPP'		=> 'Κοινοποίηση στο Whatsapp',
 	'SHARE_ON_POCKET'		=> 'Κοινοποίηση στο Pocket',
 ));

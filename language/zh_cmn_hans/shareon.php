@@ -45,13 +45,9 @@ $lang = array_merge($lang, array(
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> '分享到 Facebook',
 	'SHARE_ON_TWITTER'		=> '分享到 Twitter',
-	'SHARE_ON_TUENTI'		=> '分享到 Tuenti',
-	'SHARE_ON_DIGG'			=> '分享到 Digg',
 	'SHARE_ON_REDDIT'		=> '分享到 Reddit',
-	'SHARE_ON_DELICIOUS'	=> '分享到 Delicious',
 	'SHARE_ON_VK'			=> '分享到 VK',
 	'SHARE_ON_TUMBLR'		=> '分享到 Tumblr',
-	'SHARE_ON_GOOGLE'		=> '分享到 Google+',
 	'SHARE_ON_WHATSAPP'		=> '分享到 Whatsapp',
 	'SHARE_ON_POCKET'		=> '分享到 Pocket',
 ));
