@@ -49,7 +49,6 @@ $lang = array_merge($lang, array(
 	'SO_VK'			=> 'VK',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_WHATSAPP'	=> 'Whatsapp',
-	'SO_POCKET'		=> 'Pocket',
 	// Share Type
 	'SO_TYPE'			=> 'Τύπος Κοινοποίησης',
 	'SO_TYPE_EXPLAIN'	=> 'Μπορείτε να επιλέξετε να κοινοποιήσετε τον σύνδεσμο του <strong>θέματος</strong> ή να κοινοποιήσετε κάθε <strong>απάντηση</strong> του θέματος.',

@@ -44,5 +44,4 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> 'Κοινοποίηση στο VK',
 	'SHARE_ON_TUMBLR'		=> 'Κοινοποίηση στο Tumblr',
 	'SHARE_ON_WHATSAPP'		=> 'Κοινοποίηση στο Whatsapp',
-	'SHARE_ON_POCKET'		=> 'Κοινοποίηση στο Pocket',
 ));

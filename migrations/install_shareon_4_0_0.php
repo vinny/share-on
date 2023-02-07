@@ -29,6 +29,7 @@ class install_shareon_4_0_0 extends \phpbb\db\migration\migration
 			array('config.remove', array('so_digg')),
 			array('config.remove', array('so_delicious')),
 			array('config.remove', array('so_google')),
+			array('config.remove', array('so_pocket')),
 			array('config.update', array('shareon_version', '2.1.0')),
 		);
 	}

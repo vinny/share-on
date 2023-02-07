@@ -49,5 +49,4 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> '分享到 VK',
 	'SHARE_ON_TUMBLR'		=> '分享到 Tumblr',
 	'SHARE_ON_WHATSAPP'		=> '分享到 Whatsapp',
-	'SHARE_ON_POCKET'		=> '分享到 Pocket',
 ));

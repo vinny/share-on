@@ -70,7 +70,6 @@ class listener implements EventSubscriberInterface
 			'S_SO_VK'			=> $this->config['so_vk'] ? true : false,
 			'S_SO_TUMBLR'		=> $this->config['so_tumblr'] ? true : false,
 			'S_SO_WHATSAPP'		=> $this->config['so_whatsapp'] ? true : false,
-			'S_SO_POCKET'		=> $this->config['so_pocket'] ? true : false,
 		));
 	}
 
@@ -97,9 +96,8 @@ class listener implements EventSubscriberInterface
 			'U_TWITTER'		=> 'https://twitter.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_REDDIT'		=> 'https://www.reddit.com/submit?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
 			'U_VK'			=> 'https://vk.com/share.php?url=' . urlencode($share_url),
-			'U_TUMBLR'		=> 'https://www.tumblr.com/share/link?url=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
-			'U_WHATSAPP'	=> 'whatsapp://send?text=' . urlencode($topic_title) . '&nbsp;' . urlencode($share_url),
-			'U_POCKET'		=> 'https://getpocket.com/save?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
+			'U_TUMBLR'		=> 'http://tumblr.com/widgets/share/tool?canonicalUrl=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
+			'U_WHATSAPP'	=> 'https://wa.me/?text=' . urlencode($topic_title) . '&nbsp;' . urlencode($share_url),
 		));
 		$event['post_row'] = $postrow;
 	}

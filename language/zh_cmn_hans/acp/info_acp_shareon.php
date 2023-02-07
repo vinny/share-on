@@ -54,7 +54,6 @@ $lang = array_merge($lang, array(
 	'SO_VK'			=> 'VK',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_WHATSAPP'	=> 'Whatsapp',
-	'SO_POCKET'		=> 'Pocket',
 
 	// Share Type
 	'SO_TYPE'			=> '分享类型',
