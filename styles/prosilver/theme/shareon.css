@@ -104,17 +104,3 @@
 	color: #25d366;
 	background: #fff;
 }
-
-.pocket-button {
-	background: #ee4056;
-}
-
-.pocket-button:before {
-	font-family: "FontAwesome";
-	content: "\f265";
-}
-
-.pocket-button:hover {
-	color: #ee4056;
-	background: #fff;
-}

@@ -42,7 +42,6 @@ class shareon_module
 			$config->set('so_vk', $request->variable('so_vk', true));
 			$config->set('so_tumblr', $request->variable('so_tumblr', true));
 			$config->set('so_whatsapp', $request->variable('so_whatsapp', true));
-			$config->set('so_pocket', $request->variable('so_pocket', true));
 
 			trigger_error($user->lang['SO_SAVED'] . adm_back_link($this->u_action));
 		}
@@ -56,7 +55,6 @@ class shareon_module
 			'SO_VK'			=> (!empty($this->config['so_vk'])) ? true : false,
 			'SO_TUMBLR'		=> (!empty($this->config['so_tumblr'])) ? true : false,
 			'SO_WHATSAPP'	=> (!empty($this->config['so_whatsapp'])) ? true : false,
-			'SO_POCKET'		=> (!empty($this->config['so_pocket'])) ? true : false,
 			'U_ACTION'		=> $this->u_action,
 		));
 	}
