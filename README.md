@@ -5,7 +5,7 @@ Share On allows users to share the topics and posts on social networks
 
 Support 🆘
 ------------
-Support requests should be posted and discussed in the [Share On topic at phpBB.com](https://www.phpbb.com/customise/db/extension/shareon/support)
+Support requests should be posted and discussed in the [Share On at phpBB.com](https://www.phpbb.com/customise/db/extension/shareon/support)
 
 
 Donate 💲
@@ -29,7 +29,7 @@ Uninstallation ✂️
 3. To permanently uninstall, click Delete Data, then delete the `shareon` folder from `/ext/vinny/`.
 
 
-Contributing 🪜
+Contributing 🗽
 ------------
 Want to contribute? Great!
 * Fork it.
