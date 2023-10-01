@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'SO_SELECT'				=> 'Podeli na',
 	'SHARE_TOPIC'			=> 'Podeli ovu temu na',
-	'SHARE_POST'			=> 'Podeli ovaj odogovor na',
+	'SHARE_POST'			=> 'Podeli ovaj post na',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Podeli na Facebooku',
 	'SHARE_ON_TWITTER'		=> 'Podeli na Twitteru',
