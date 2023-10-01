@@ -41,7 +41,7 @@ $lang = array_merge($lang, array(
 	// ACP
 	'SO_ACP'		=> 'Share On',
 	'SO_TITLE'		=> 'Share On Podešavanja',
-	'SO_EXPLAIN'	=> 'Podesite na kojim veb lokacijama želite da delite svoje teme ili odgovore.',
+	'SO_EXPLAIN'	=> 'Podesite na kojim veb lokacijama želite da delite svoje teme ili postove.',
 	'SHARE_ON_MOD'	=> 'Share On',
 	'SO_CONFIG'		=> 'Podešavanja',
 	'SO_SAVED'		=> 'Podešavanja su sačuvana.',
