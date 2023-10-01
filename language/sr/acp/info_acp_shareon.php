@@ -56,5 +56,5 @@ $lang = array_merge($lang, array(
 
 	// Share Type
 	'SO_TYPE'			=> 'Tip deljenja',
-	'SO_TYPE_EXPLAIN'	=> 'Možete da izaberete da delite vezu <strong>tema</strong> ili svaki pojedinačni <strong>odgovor</strong> iz teme.',
+	'SO_TYPE_EXPLAIN'	=> 'Možete da izaberete da delite vezu <strong>tema</strong> ili svaki pojedinačni <strong>post</strong> iz teme.',
 ));
