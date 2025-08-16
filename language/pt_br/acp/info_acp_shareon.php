@@ -48,11 +48,12 @@ $lang = array_merge($lang, array(
 	'SO_SELECT'		=> 'Compartilhar Em',
 	'SO_STATUS'		=> 'Ativar',
 	'SO_FACEBOOK'	=> 'Facebook',
-	'SO_TWITTER'	=> 'Twitter',
+	'SO_TWITTER'	=> 'X',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_VK'			=> 'VK',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_BLUESKY'	=> 'Bluesky',
 
 	// Share Type
 	'SO_TYPE'			=> 'Tipo de Compartilhamento',

@@ -48,4 +48,5 @@ $lang = array_merge($lang, array(
 	'SHARE_ON_VK'			=> 'Podeli na VK-u',
 	'SHARE_ON_TUMBLR'		=> 'Podeli na Tumblru',
 	'SHARE_ON_WHATSAPP'		=> 'Podeli na Whatsappu',
+	'SHARE_ON_BLUESKY'		=> 'Podeli na Bluesky',
 ));

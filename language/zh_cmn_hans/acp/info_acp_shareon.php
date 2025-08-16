@@ -49,11 +49,12 @@ $lang = array_merge($lang, array(
 	'SO_SELECT'		=> '选择社交网站',
 	'SO_STATUS'		=> '启用',
 	'SO_FACEBOOK'	=> 'Facebook',
-	'SO_TWITTER'	=> 'Twitter',
+	'SO_TWITTER'	=> 'X',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_VK'			=> 'VK',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_BLUESKY'	=> 'Bluesky',
 
 	// Share Type
 	'SO_TYPE'			=> '分享类型',

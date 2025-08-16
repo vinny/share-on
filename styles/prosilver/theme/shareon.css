@@ -17,6 +17,7 @@
 	font-weight: normal;
 	line-height: 2em;
 	border-radius: 15px;
+	vertical-align: middle;
 }
 
 .global-button:hover { text-decoration: none; }
@@ -35,18 +36,35 @@
 	background: #fff;
 }
 
-.twitter-button {
-	background: #00ABE3;
+.x-button {
+	background: #000000;
 }
 
-.twitter-button:before {
-	font-family: "FontAwesome";
-	content: "\f099";
+.x-button::before {
+	content: '';
+	width: 13px;
+	height: 13px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-mask-image: url('./images/x.svg');
+	mask-image: url('./images/x.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
 }
 
-.twitter-button:hover {
-	color: #00ABE3;
-	background: #fff;
+.x-button:hover {
+	background: #ffffff;
+}
+
+.x-button:hover::before {
+	background-color: #000000;
 }
 
 .reddit-button {
@@ -103,4 +121,35 @@
 .whatsapp-button:hover {
 	color: #25d366;
 	background: #fff;
+}
+
+.bluesky-button {
+	background: #1185FE;
+}
+
+.bluesky-button::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-mask-image: url('./images/bluesky.svg');
+	mask-image: url('./images/bluesky.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+
+.bluesky-button:hover {
+	background: #ffffff;
+}
+
+.bluesky-button:hover::before {
+	background-color: #1185FE;
 }

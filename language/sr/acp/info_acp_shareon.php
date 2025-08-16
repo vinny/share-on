@@ -53,6 +53,7 @@ $lang = array_merge($lang, array(
 	'SO_VK'			=> 'VK',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_BLUESKY'	=> 'Bluesky',
 
 	// Share Type
 	'SO_TYPE'			=> 'Tip deljenja',

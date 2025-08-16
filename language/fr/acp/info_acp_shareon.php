@@ -49,11 +49,12 @@ $lang = array_merge($lang, array(
 	'SO_SELECT'		=> 'Partager sur',
 	'SO_STATUS'		=> 'Activer l’extension',
 	'SO_FACEBOOK'	=> 'Facebook',
-	'SO_TWITTER'	=> 'Twitter',
+	'SO_TWITTER'	=> 'X',
 	'SO_REDDIT'		=> 'Reddit',
 	'SO_VK'			=> 'VK',
 	'SO_TUMBLR'		=> 'Tumblr',
 	'SO_WHATSAPP'	=> 'Whatsapp',
+	'SO_BLUESKY'	=> 'Bluesky',
 
 	// Share Type
 	'SO_TYPE'			=> 'Type de partage',

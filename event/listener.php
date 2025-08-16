@@ -70,6 +70,7 @@ class listener implements EventSubscriberInterface
 			'S_SO_VK'			=> $this->config['so_vk'] ? true : false,
 			'S_SO_TUMBLR'		=> $this->config['so_tumblr'] ? true : false,
 			'S_SO_WHATSAPP'		=> $this->config['so_whatsapp'] ? true : false,
+			'S_SO_BLUESKY'		=> $this->config['so_bluesky'] ? true : false,
 		));
 	}
 
@@ -93,11 +94,12 @@ class listener implements EventSubscriberInterface
 
 		$postrow = array_merge($postrow, array(
 			'U_FACEBOOK'	=> 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode($topic_title) . '&amp;u=' . urlencode($share_url),
-			'U_TWITTER'		=> 'https://twitter.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
+			'U_TWITTER'		=> 'https://x.com/share?text=' . urlencode($topic_title) .'&amp;url=' . urlencode($share_url),
 			'U_REDDIT'		=> 'https://www.reddit.com/submit?url=' . urlencode($share_url) . '&amp;title=' . urlencode($topic_title),
 			'U_VK'			=> 'https://vk.com/share.php?url=' . urlencode($share_url),
 			'U_TUMBLR'		=> 'http://tumblr.com/widgets/share/tool?canonicalUrl=' . urlencode($share_url) . '&amp;name=' . urlencode($topic_title),
 			'U_WHATSAPP'	=> 'https://wa.me/?text=' . urlencode($topic_title) . '&nbsp;' . urlencode($share_url),
+			'U_BLUESKY'		=> 'https://bsky.app/intent/compose?text=' . urlencode($topic_title) .'&nbsp;' . urlencode($share_url),
 		));
 		$event['post_row'] = $postrow;
 	}

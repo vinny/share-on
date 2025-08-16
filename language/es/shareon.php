@@ -43,9 +43,10 @@ $lang = array_merge($lang, array(
 	'SHARE_POST'			=> 'Compartir este mensaje en',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Compartir en Facebook',
-	'SHARE_ON_TWITTER'		=> 'Compartir en Twitter',
+	'SHARE_ON_TWITTER'		=> 'Compartir en X',
 	'SHARE_ON_REDDIT'		=> 'Compartir en Reddit',
 	'SHARE_ON_VK'			=> 'Compartir en VK',
 	'SHARE_ON_TUMBLR'		=> 'Compartir en Tumblr',
 	'SHARE_ON_WHATSAPP'		=> 'Compartir en Whatsapp',
+	'SHARE_ON_BLUESKY'		=> 'Compartir en Bluesky',
 ));

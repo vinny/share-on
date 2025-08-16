@@ -39,9 +39,10 @@ $lang = array_merge($lang, array(
 	'SHARE_POST'			=> 'Κοινοποίηση αυτής της απάντησης στο',
 	// Share On viewtopic.php
 	'SHARE_ON_FACEBOOK'		=> 'Κοινοποίηση στο Facebook',
-	'SHARE_ON_TWITTER'		=> 'Κοινοποίηση στο Twitter',
+	'SHARE_ON_TWITTER'		=> 'Κοινοποίηση στο X',
 	'SHARE_ON_REDDIT'		=> 'Κοινοποίηση στο Reddit',
 	'SHARE_ON_VK'			=> 'Κοινοποίηση στο VK',
 	'SHARE_ON_TUMBLR'		=> 'Κοινοποίηση στο Tumblr',
 	'SHARE_ON_WHATSAPP'		=> 'Κοινοποίηση στο Whatsapp',
+	'SHARE_ON_BLUESKY'		=> 'Κοινοποίηση στο Bluesky',
 ));
