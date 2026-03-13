@@ -14,7 +14,7 @@ class install_shareon_5_0_0 extends \phpbb\db\migration\migration
 {
 	public function effectively_installed()
 	{
-		return isset($this->config['shareon_version']) && version_compare($this->config['shareon_version'], '2.1.0', '>=');
+		return isset($this->config['shareon_version']) && version_compare($this->config['shareon_version'], '2.2.0', '>=');
 	}
 
 	static public function depends_on()
