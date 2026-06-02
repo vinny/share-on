@@ -1,17 +1,13 @@
 [<img src="shareon_logo.svg" alt="Share On" style="max-width:40%" width="400">](https://www.phpbb.com/customise/db/extension/shareon/)
 
+[![Tests](https://github.com/vinny/share-on/actions/workflows/tests.yml/badge.svg)](https://github.com/vinny/share-on/actions/workflows/tests.yml)
+
 Share On allows users to share the topics and posts on social networks
 
 
 Support 🆘
 ------------
 Support requests should be posted and discussed in the [Share On at phpBB.com](https://www.phpbb.com/customise/db/extension/shareon/support)
-
-
-Donate 💲
--------
- If you like this extension and want to show some appreciation, you can make a donation.
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=KRKDCX2SYQ7VJ)
 
 
 Installation 🔩
