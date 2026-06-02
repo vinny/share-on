@@ -1,0 +1,35 @@
+#social {
+	margin: 20px 10px;
+	text-align: right;
+}
+
+.shareon-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	margin-left: 5px;
+	transition: opacity 0.2s, background-color 0.2s;
+	vertical-align: middle;
+}
+
+.shareon-button,
+.shareon-button:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.shareon-button:hover,
+.shareon-button:focus {
+	opacity: 0.8;
+	color: #fff;
+	text-decoration: none;
+}
+
+.shareon-button:active {
+	opacity: 0.6;
+	color: #fff;
+	text-decoration: none;
+}
